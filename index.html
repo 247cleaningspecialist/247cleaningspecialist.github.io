@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>24/7 Cleaning Specialist | Melbourne's Most Reviewed Cleaning Company</title>
 <meta name="description" content="Melbourne's most reviewed cleaning specialist. 2,000+ five-star reviews. Commercial, government and end of lease cleaning. Call 0403 423 348.">
-<meta name="keywords" content="cleaning Melbourne, end of lease cleaning Melbourne, commercial cleaning Melbourne, government cleaning Melbourne, bond cleaning Melbourne">
+<meta name="keywords" content="cleaning Melbourne, end of lease cleaning Melbourne, commercial cleaning Melbourne, government cleaning Melbourne, bond cleaning Melbourne, restaurant cleaning Melbourne, office cleaning Melbourne, warehouse cleaning Melbourne">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -105,11 +105,38 @@ nav{background:rgba(9,13,15,0.98);border-bottom:1px solid rgba(200,146,42,0.15);
 .trust-item{display:flex;align-items:center;gap:7px;font-size:0.69rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--silver)}
 .tdot{width:5px;height:5px;background:var(--gold);border-radius:50%}
 
+/* REVIEWS */
+.reviews-section{padding:80px 48px;background:linear-gradient(135deg,var(--ink),var(--navy))}
+.reviews-inner{max-width:1100px;margin:0 auto}
+.s-label{font-size:0.63rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.s-title{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:300;color:var(--white);margin-bottom:8px;line-height:1.2}
+.s-title em{font-style:italic;color:var(--gold-light)}
+.s-sub{font-size:0.93rem;color:var(--silver);line-height:1.8;margin-bottom:40px}
+
+/* REVIEW CATEGORIES */
+.review-cats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.review-cat{font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:6px 14px;border-radius:2px;border:1px solid rgba(255,255,255,0.12);color:var(--silver);cursor:pointer;transition:all 0.3s;background:transparent}
+.review-cat.active,.review-cat:hover{border-color:rgba(200,146,42,0.4);color:var(--gold);background:rgba(200,146,42,0.08)}
+
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.review-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:26px 22px;transition:all 0.3s;display:none}
+.review-card.show{display:block}
+.review-card:hover{background:rgba(200,146,42,0.05);border-color:rgba(200,146,42,0.2);transform:translateY(-3px)}
+.r-cat-badge{display:inline-flex;align-items:center;gap:5px;font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 8px;border-radius:2px;margin-bottom:12px}
+.r-stars{color:var(--gold);font-size:0.8rem;letter-spacing:3px;margin-bottom:10px}
+.r-text{font-family:var(--serif);font-size:0.95rem;font-style:italic;color:var(--offwhite);line-height:1.7;margin-bottom:14px}
+.r-author{display:flex;align-items:center;gap:9px}
+.r-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:0.85rem;color:var(--white);flex-shrink:0}
+.r-name{font-size:0.8rem;font-weight:600;color:var(--white)}
+.r-job{font-size:0.7rem;color:var(--silver)}
+
+.proof-bar{display:flex;align-items:center;justify-content:center;gap:40px;margin-top:40px;padding:28px;background:rgba(200,146,42,0.06);border:1px solid rgba(200,146,42,0.2);flex-wrap:wrap}
+.ps{text-align:center}
+.ps .n{font-family:var(--serif);font-size:2.2rem;color:var(--gold);display:block;line-height:1}
+.ps .l{font-size:0.63rem;color:var(--silver);letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;display:block}
+
 /* STORY */
 .story-section{padding:80px 48px;max-width:800px;margin:0 auto;text-align:center}
-.s-label{font-size:0.63rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.s-title{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:300;color:var(--white);margin-bottom:20px;line-height:1.2}
-.s-title em{font-style:italic;color:var(--gold-light)}
 .story-text{font-size:0.97rem;color:var(--silver);line-height:1.9;margin-bottom:16px}
 .story-quote{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--gold);padding:28px 32px;text-align:left;margin:32px 0}
 .story-quote blockquote{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--white);line-height:1.7;margin-bottom:10px}
@@ -161,12 +188,15 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
   .stats-inner{grid-template-columns:1fr 1fr}
   .stats-section{padding:44px 18px}
   .trust{padding:13px 18px;gap:14px}
+  .reviews-section{padding:56px 20px}
+  .reviews-grid{grid-template-columns:1fr}
   .story-section{padding:56px 20px}
   .contact-section{padding:56px 20px}
   .contact-cards{grid-template-columns:1fr}
   footer{padding:32px 18px 80px}
   .footer-top{flex-direction:column;gap:24px}
   .footer-bottom{flex-direction:column;text-align:center}
+  .proof-bar{gap:20px}
 }
 </style>
 </head>
@@ -175,20 +205,23 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-inner">
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tyler G.</span><span class="ticker-dot"></span><span class="ticker-review">"Cleaner now than when I moved in."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Solomon G.</span><span class="ticker-dot"></span><span class="ticker-review">"Hands down best end of lease clean ever."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tayt B.</span><span class="ticker-dot"></span><span class="ticker-review">"Real estate agent commented how clean everything was."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Meeki H.</span><span class="ticker-dot"></span><span class="ticker-review">"Went above and beyond… absolute superstar."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Rash R.</span><span class="ticker-dot"></span><span class="ticker-review">"7am to 7:30pm. Spotless. Post-renovation deep clean."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Alex X.</span><span class="ticker-dot"></span><span class="ticker-review">"Helen and the team were fantastic."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jade M.</span><span class="ticker-dot"></span><span class="ticker-review">"Incredible! Couldn't be happier with our clean!"</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tyler G.</span><span class="ticker-dot"></span><span class="ticker-review">"Cleaner now than when I moved in."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Solomon G.</span><span class="ticker-dot"></span><span class="ticker-review">"Hands down best end of lease clean ever."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tayt B.</span><span class="ticker-dot"></span><span class="ticker-review">"Real estate agent commented how clean everything was."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Meeki H.</span><span class="ticker-dot"></span><span class="ticker-review">"Went above and beyond… absolute superstar."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Rash R.</span><span class="ticker-dot"></span><span class="ticker-review">"7am to 7:30pm. Spotless. Post-renovation deep clean."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Alex X.</span><span class="ticker-dot"></span><span class="ticker-review">"Helen and the team were fantastic."</span></div>
-    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jade M.</span><span class="ticker-dot"></span><span class="ticker-review">"Incredible! Couldn't be happier with our clean!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jessica L.</span><span class="ticker-dot"></span><span class="ticker-review">"They went above and beyond and they are so friendly to deal with!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Andrew F.</span><span class="ticker-dot"></span><span class="ticker-review">"Very good work easy to deal with." — Restaurant deep clean</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jarrah H.</span><span class="ticker-dot"></span><span class="ticker-review">"Efficient & great quality. Will be keeping him on for more work." — Warehouse</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Amy O.</span><span class="ticker-dot"></span><span class="ticker-review">"Amazing to work with!! On time and great work!" — Commercial hospitality</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Rowan C.</span><span class="ticker-dot"></span><span class="ticker-review">"Did a great job on the carpets. Happy to recommend." — 5 floor common areas</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tracey L.</span><span class="ticker-dot"></span><span class="ticker-review">"Very professional highly recommend." — Office deep clean</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Sarah B.</span><span class="ticker-dot"></span><span class="ticker-review">"Cannot praise enough! 12/10 gold stars."</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Hussein I.</span><span class="ticker-dot"></span><span class="ticker-review">"Left the house better and cleaner than its ever been!"</span></div>
+    <!-- Duplicate for loop -->
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jessica L.</span><span class="ticker-dot"></span><span class="ticker-review">"They went above and beyond and they are so friendly to deal with!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Andrew F.</span><span class="ticker-dot"></span><span class="ticker-review">"Very good work easy to deal with." — Restaurant deep clean</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jarrah H.</span><span class="ticker-dot"></span><span class="ticker-review">"Efficient & great quality. Will be keeping him on for more work." — Warehouse</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Amy O.</span><span class="ticker-dot"></span><span class="ticker-review">"Amazing to work with!! On time and great work!" — Commercial hospitality</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Rowan C.</span><span class="ticker-dot"></span><span class="ticker-review">"Did a great job on the carpets. Happy to recommend." — 5 floor common areas</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tracey L.</span><span class="ticker-dot"></span><span class="ticker-review">"Very professional highly recommend." — Office deep clean</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Sarah B.</span><span class="ticker-dot"></span><span class="ticker-review">"Cannot praise enough! 12/10 gold stars."</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Hussein I.</span><span class="ticker-dot"></span><span class="ticker-review">"Left the house better and cleaner than its ever been!"</span></div>
   </div>
 </div>
 
@@ -230,10 +263,10 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
   <div class="hero-inner">
     <div class="hero-eyebrow">Melbourne's Most Reviewed Cleaning Specialist</div>
     <h1 class="hero-h1">Professional Cleaning<br>for Every <em>Client &amp; Contract</em></h1>
-    <p class="hero-sub">From end-of-lease bond cleans to council facility contracts — our professional cleaning fleet delivers results backed by 2,000+ five-star reviews and a 100% completion rate.</p>
+    <p class="hero-sub">From end-of-lease bond cleans to restaurant deep cleans, office contracts and council facilities — our professional cleaning fleet delivers results backed by 2,000+ five-star reviews.</p>
     <div class="hero-proof">
       <span class="stars">★★★★★</span>
-      <span class="proof-text"><strong>2,000+ reviews · 100% completion · 1,713+ bonds returned</strong></span>
+      <span class="proof-text"><strong>2,000+ reviews · 100% completion rate · Residential, Commercial &amp; Government</strong></span>
     </div>
   </div>
 </section>
@@ -254,11 +287,11 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
   <a href="commercial.html" class="service-card" style="--card-color:#c8922a">
     <span class="card-icon">🏢</span>
     <div class="card-title">Commercial &amp; Corporate</div>
-    <p class="card-desc">Ongoing office contracts, strata cleaning and facilities management. Free site inspection and fixed quote.</p>
+    <p class="card-desc">Offices, restaurants, warehouses, strata and facilities. Free site inspection. Fixed quote. Net 14 day invoicing.</p>
     <div class="card-tags">
       <span class="ctag" style="color:var(--gold);border-color:rgba(200,146,42,0.4);background:rgba(200,146,42,0.1)">Offices</span>
-      <span class="ctag" style="color:var(--gold);border-color:rgba(200,146,42,0.4);background:rgba(200,146,42,0.1)">Strata</span>
-      <span class="ctag" style="color:var(--gold);border-color:rgba(200,146,42,0.4);background:rgba(200,146,42,0.1)">Net 14 Days</span>
+      <span class="ctag" style="color:var(--gold);border-color:rgba(200,146,42,0.4);background:rgba(200,146,42,0.1)">Restaurants</span>
+      <span class="ctag" style="color:var(--gold);border-color:rgba(200,146,42,0.4);background:rgba(200,146,42,0.1)">Warehouses</span>
     </div>
     <div class="card-link">View Commercial Services →</div>
   </a>
@@ -293,6 +326,129 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
   <div class="trust-item"><div class="tdot"></div>WHS Compliant</div>
   <div class="trust-item"><div class="tdot"></div>30-Day Guarantee</div>
   <div class="trust-item"><div class="tdot"></div>7 Days a Week</div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section">
+  <div class="reviews-inner">
+    <div class="reveal">
+      <div class="s-label">Verified Client Reviews</div>
+      <h2 class="s-title">Trusted Across Every <em>Industry &amp; Client Type</em></h2>
+      <p class="s-sub">Real reviews from real clients. Residential, commercial, hospitality, warehouse and office — we deliver the same standard everywhere.</p>
+    </div>
+    <div class="review-cats reveal">
+      <button class="review-cat active" onclick="filterReviews('all',this)">All Reviews</button>
+      <button class="review-cat" onclick="filterReviews('residential',this)">🏠 Residential</button>
+      <button class="review-cat" onclick="filterReviews('commercial',this)">🏢 Commercial</button>
+      <button class="review-cat" onclick="filterReviews('hospitality',this)">🍽 Hospitality</button>
+      <button class="review-cat" onclick="filterReviews('warehouse',this)">🏗 Warehouse</button>
+    </div>
+    <div class="reviews-grid">
+
+      <!-- RESIDENTIAL -->
+      <div class="review-card show" data-cat="residential">
+        <div class="r-cat-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 End of Lease</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"On time and efficient, amazing work, they really take pride in their work! I genuinely couldn't recommend them more. They went above and beyond."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#1a7a4a,#0f3d26)">J</div><div><div class="r-name">Jessica L.</div><div class="r-job">End of lease clean</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="residential">
+        <div class="r-cat-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 End of Lease</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Amazing job! Cornelius completely fixed the bathroom and cleaned the exhaust fans so well that they now actually work! Cannot praise enough! 12/10 gold stars."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#1a7a4a,#0f3d26)">S</div><div><div class="r-name">Sarah B.</div><div class="r-job">End of lease cleaning</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="residential">
+        <div class="r-cat-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 End of Lease</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Left the house better and cleaner than it's ever been! He did the walls and garage as extra. Highly recommend."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#1a7a4a,#0f3d26)">H</div><div><div class="r-name">Hussein I.</div><div class="r-job">End of lease cleaning</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="residential">
+        <div class="r-cat-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 Bond Clean</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"They were super professional, and left our house looking even better than when we first moved in. Their attention to detail was impressive."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#1a7a4a,#0f3d26)">Q</div><div><div class="r-name">Qistina Z.</div><div class="r-job">End of lease cleaning</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="residential">
+        <div class="r-cat-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 Steam Clean</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Cleaned professionally, on time, efficient. Happy with results."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#1a7a4a,#0f3d26)">H</div><div><div class="r-name">Hariadhi W.</div><div class="r-job">Steam clean and deep clean</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="residential">
+        <div class="r-cat-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 Move-In Clean</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"They followed all my instructions and did a fantastic job. The place felt fresh, spotless and ready to live in. I really appreciate them booking me in on short notice."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#1a7a4a,#0f3d26)">K</div><div><div class="r-name">Kento H.</div><div class="r-job">Move-in deep cleaning</div></div></div>
+      </div>
+
+      <!-- COMMERCIAL -->
+      <div class="review-card show" data-cat="commercial">
+        <div class="r-cat-badge" style="background:rgba(200,146,42,0.12);color:var(--gold);border:1px solid rgba(200,146,42,0.3)">🏢 Office Clean</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Very professional highly recommend."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#c8922a,#8a5f1a)">T</div><div><div class="r-name">Tracey L.</div><div class="r-job">Office deep cleaning</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="commercial">
+        <div class="r-cat-badge" style="background:rgba(200,146,42,0.12);color:var(--gold);border:1px solid rgba(200,146,42,0.3)">🏢 Settlement Clean</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Prompt communicator, delivered a really good clean overall for what was needed. Very happy with his services. Would recommend."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#c8922a,#8a5f1a)">K</div><div><div class="r-name">Kyle C.</div><div class="r-job">Settlement clean — 1BR apartment</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="commercial">
+        <div class="r-cat-badge" style="background:rgba(200,146,42,0.12);color:var(--gold);border:1px solid rgba(200,146,42,0.3)">🏢 Pre-Sale Clean</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Very good cleaner."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#c8922a,#8a5f1a)">J</div><div><div class="r-name">Joe M.</div><div class="r-job">Clean a house ready for sale</div></div></div>
+      </div>
+
+      <!-- HOSPITALITY -->
+      <div class="review-card show" data-cat="hospitality">
+        <div class="r-cat-badge" style="background:rgba(192,57,43,0.12);color:#e74c3c;border:1px solid rgba(192,57,43,0.3)">🍽 Restaurant</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Very good work easy to deal with."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#c0392b,#7d2318)">A</div><div><div class="r-name">Andrew F.</div><div class="r-job">Deep cleaning — restaurant</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="hospitality">
+        <div class="r-cat-badge" style="background:rgba(192,57,43,0.12);color:#e74c3c;border:1px solid rgba(192,57,43,0.3)">🍽 Hospitality</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Amazing to work with!! On time and great work!"</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#c0392b,#7d2318)">A</div><div><div class="r-name">Amy O.</div><div class="r-job">Deep clean — commercial hospitality business</div></div></div>
+      </div>
+
+      <!-- WAREHOUSE -->
+      <div class="review-card show" data-cat="warehouse">
+        <div class="r-cat-badge" style="background:rgba(42,80,104,0.2);color:var(--mist);border:1px solid rgba(42,80,104,0.4)">🏗 Warehouse</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Efficient &amp; great quality. Will be keeping him on for more work."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#2a5068,#1a3040)">J</div><div><div class="r-name">Jarrah H.</div><div class="r-job">Warehouse bathroom cubicles clean</div></div></div>
+      </div>
+
+      <div class="review-card show" data-cat="warehouse">
+        <div class="r-cat-badge" style="background:rgba(42,80,104,0.2);color:var(--mist);border:1px solid rgba(42,80,104,0.4)">🏗 Common Areas</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Did a great job on the carpets. Happy to recommend."</p>
+        <div class="r-author"><div class="r-avatar" style="background:linear-gradient(135deg,#2a5068,#1a3040)">R</div><div><div class="r-name">Rowan C.</div><div class="r-job">Carpet cleaning — 5 floor common areas</div></div></div>
+      </div>
+
+    </div>
+
+    <div class="proof-bar reveal">
+      <div class="ps"><span class="n">2,000+</span><span class="l">Verified Reviews</span></div>
+      <div class="ps"><span class="n">★ 5.0</span><span class="l">Star Rating</span></div>
+      <div class="ps"><span class="n">100%</span><span class="l">Completion Rate</span></div>
+      <div class="ps"><span class="n">10+</span><span class="l">Years Experience</span></div>
+    </div>
+  </div>
 </div>
 
 <!-- STORY -->
@@ -364,7 +520,8 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
             <li><a href="residential.html">Bond Back Guarantee</a></li>
             <li><a href="residential.html">Steam &amp; Carpet Clean</a></li>
             <li><a href="commercial.html">Commercial Office Clean</a></li>
-            <li><a href="commercial.html">Strata &amp; Facilities</a></li>
+            <li><a href="commercial.html">Restaurant &amp; Hospitality</a></li>
+            <li><a href="commercial.html">Warehouse &amp; Facilities</a></li>
             <li><a href="government.html">Government &amp; Council</a></li>
           </ul>
         </div>
@@ -387,12 +544,26 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
 </footer>
 
 <script>
-const nav=document.querySelector('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+// NAV
 function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+
+// REVEAL
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// REVIEW FILTER
+function filterReviews(cat, btn) {
+  document.querySelectorAll('.review-cat').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.review-card').forEach(card=>{
+    if(cat==='all'||card.dataset.cat===cat){
+      card.classList.add('show');
+    } else {
+      card.classList.remove('show');
+    }
+  });
+}
 </script>
 <script src="chatbot.js"></script>
 </body>
