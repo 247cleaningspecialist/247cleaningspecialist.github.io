@@ -1,0 +1,506 @@
+Here is the full website code — long press on it, select all, and copy:
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24/7 Cleaning Specialist | Commercial & Government Cleaning Melbourne</title>
+<meta name="description" content="Melbourne's trusted commercial and government cleaning specialist. Serving councils, offices and commercial facilities across Melbourne. 10+ years experience, 12,000+ cleans, 5-star rated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+:root {
+--ink: #0d0f12;
+--deep-navy: #0f1520;
+--navy: #162035;
+--steel-blue: #2a4166;
+--pale-navy: #3d5a8a;
+--silver: #a8b8cc;
+--offwhite: #f2f4f7;
+--white: #ffffff;
+--gold: #c8a84b;
+--gold-light: #e8c96e;
+--serif: 'Playfair Display', Georgia, serif;
+--sans: 'DM Sans', system-ui, sans-serif;
+}
+body { background: var(--deep-navy); color: var(--offwhite); font-family: var(--sans); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+body::after { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9998; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--deep-navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 24px 64px; display: flex; justify-content: space-between; align-items: center; transition: all 0.4s ease; background: linear-gradient(to bottom, rgba(13,15,18,0.98), transparent); }
+nav.sticky { padding: 16px 64px; background: rgba(13,15,18,0.98); border-bottom: 1px solid rgba(200,168,75,0.15); backdrop-filter: blur(12px); }
+.nav-brand { display: flex; flex-direction: column; gap: 2px; }
+.nav-name { font-family: var(--serif); font-size: 1.1rem; font-weight: 500; color: var(--white); letter-spacing: 0.02em; }
+.nav-tagline { font-size: 0.64rem; font-weight: 500; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; }
+.nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+.nav-links a { font-size: 0.76rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); text-decoration: none; transition: color 0.3s; }
+.nav-links a:hover { color: var(--gold-light); }
+.nav-cta { background: var(--gold) !important; color: var(--ink) !important; padding: 10px 24px; border-radius: 2px; font-weight: 600 !important; }
+.nav-cta:hover { background: var(--gold-light) !important; color: var(--ink) !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 24px; height: 2px; background: var(--white); transition: all 0.3s; }
+.hero { min-height: 100vh; position: relative; display: flex; align-items: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 70% 50%, rgba(42,65,102,0.4) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 15% 80%, rgba(200,168,75,0.07) 0%, transparent 60%), linear-gradient(135deg, var(--ink) 0%, var(--deep-navy) 50%, var(--navy) 100%); }
+.hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(200,168,75,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(200,168,75,0.04) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%); }
+.hero-content { position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; padding: 120px 64px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; width: 100%; }
+.hero-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(200,168,75,0.1); border: 1px solid rgba(200,168,75,0.3); border-radius: 2px; padding: 8px 16px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
+.hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; animation: pulse 2s ease infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+.hero-title { font-family: var(--serif); font-size: clamp(2.6rem, 4.5vw, 4rem); font-weight: 400; line-height: 1.15; color: var(--white); margin-bottom: 24px; opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards; }
+.hero-title em { font-style: italic; color: var(--gold-light); }
+.hero-subtitle { font-size: 1rem; font-weight: 300; color: var(--silver); line-height: 1.8; margin-bottom: 40px; max-width: 480px; opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s ease 0.8s forwards; }
+.btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--ink); padding: 15px 32px; font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border-radius: 2px; border: none; cursor: pointer; transition: all 0.3s ease; }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(200,168,75,0.3); }
+.btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white); padding: 15px 32px; font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(255,255,255,0.25); border-radius: 2px; cursor: pointer; transition: all 0.3s ease; }
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+.hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; opacity: 0; animation: fadeUp 0.8s ease 1s forwards; }
+.stat-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); padding: 28px 24px; position: relative; overflow: hidden; transition: all 0.3s ease; }
+.stat-card:hover { background: rgba(200,168,75,0.06); border-color: rgba(200,168,75,0.2); }
+.stat-card::before { content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--gold); opacity:0.6; }
+.stat-number { font-family: var(--serif); font-size: 2.4rem; font-weight: 500; color: var(--white); line-height: 1; margin-bottom: 6px; }
+.stat-number span { color: var(--gold); }
+.stat-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver); }
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+.hero-divider { position:absolute; bottom:0; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,rgba(200,168,75,0.3),transparent); }
+.trust-strip { background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 18px 64px; display: flex; justify-content: center; gap: 52px; flex-wrap: wrap; }
+.trust-item { display: flex; align-items: center; gap: 10px; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); }
+.trust-icon { width: 30px; height: 30px; background: rgba(200,168,75,0.1); border: 1px solid rgba(200,168,75,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
+.section-wrap { padding: 96px 64px; max-width: 1280px; margin: 0 auto; }
+.section-label { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.section-title { font-family: var(--serif); font-size: clamp(1.9rem, 3.2vw, 2.9rem); font-weight: 400; line-height: 1.2; color: var(--white); margin-bottom: 18px; }
+.section-title em { font-style: italic; color: var(--gold-light); }
+.section-body { font-size: 0.98rem; color: var(--silver); max-width: 560px; line-height: 1.8; }
+.bg-navy { background: var(--navy); }
+.serve-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 56px; }
+.serve-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); padding: 44px 32px; position: relative; overflow: hidden; transition: all 0.4s ease; }
+.serve-card:hover { background: rgba(200,168,75,0.05); border-color: rgba(200,168,75,0.25); transform: translateY(-4px); }
+.serve-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--gold),transparent); transform:scaleX(0); transform-origin:left; transition:transform 0.4s ease; }
+.serve-card:hover::after { transform:scaleX(1); }
+.serve-icon { font-size: 1.9rem; margin-bottom: 18px; display: block; }
+.serve-title { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--white); margin-bottom: 10px; }
+.serve-desc { font-size: 0.88rem; color: var(--silver); line-height: 1.75; margin-bottom: 18px; }
+.serve-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.tag { font-size: 0.64rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); background: rgba(200,168,75,0.1); border: 1px solid rgba(200,168,75,0.2); padding: 4px 9px; border-radius: 2px; }
+.services-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 2px; margin-top: 56px; }
+.service-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); padding: 38px 32px; display: flex; gap: 22px; transition: all 0.3s ease; }
+.service-item:hover { background: rgba(200,168,75,0.04); border-color: rgba(200,168,75,0.2); }
+.service-num { font-family: var(--serif); font-size: 2.4rem; font-weight: 400; color: rgba(200,168,75,0.22); line-height: 1; flex-shrink: 0; width: 48px; }
+.service-content h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; color: var(--white); margin-bottom: 8px; }
+.service-content p { font-size: 0.87rem; color: var(--silver); line-height: 1.75; }
+.gov-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 56px; }
+.gov-features { display: flex; flex-direction: column; gap: 2px; }
+.gov-feature { display: flex; align-items: flex-start; gap: 16px; padding: 22px 20px; background: rgba(255,255,255,0.03); border-left: 2px solid var(--gold); transition: all 0.3s; }
+.gov-feature:hover { background: rgba(200,168,75,0.05); }
+.gov-feature-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+.gov-feature h4 { font-size: 0.88rem; font-weight: 600; color: var(--white); margin-bottom: 3px; }
+.gov-feature p { font-size: 0.82rem; color: var(--silver); line-height: 1.65; }
+.gov-highlight { background: linear-gradient(135deg, rgba(42,65,102,0.35), rgba(13,15,18,0.8)); border: 1px solid rgba(200,168,75,0.2); padding: 44px 36px; position: relative; overflow: hidden; }
+.gov-highlight::before { content:'"'; position:absolute; top:-20px; left:16px; font-family:var(--serif); font-size:11rem; color:rgba(200,168,75,0.06); line-height:1; }
+.gov-quote { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: var(--white); line-height: 1.65; margin-bottom: 20px; position: relative; z-index: 1; }
+.gov-quote em { color: var(--gold-light); font-style: normal; }
+.gov-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 28px; }
+.gov-metric { text-align: center; padding: 18px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); }
+.gov-metric .num { font-family: var(--serif); font-size: 1.9rem; color: var(--gold); display: block; }
+.gov-metric .lbl { font-size: 0.68rem; color: var(--silver); letter-spacing: 0.1em; text-transform: uppercase; }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 56px; }
+.why-list { display: flex; flex-direction: column; gap: 2px; }
+.why-item { display: flex; gap: 18px; padding: 26px 22px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); transition: all 0.3s ease; }
+.why-item:hover { background: rgba(200,168,75,0.05); border-color: rgba(200,168,75,0.2); }
+.why-check { width: 30px; height: 30px; background: rgba(200,168,75,0.12); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 0.72rem; flex-shrink: 0; margin-top: 2px; }
+.why-text h4 { font-family: var(--serif); font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+.why-text p { font-size: 0.85rem; color: var(--silver); line-height: 1.7; }
+.credentials { display: flex; flex-direction: column; gap: 2px; }
+.cred-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 28px 24px; position: relative; overflow: hidden; }
+.cred-card::before { content:''; position:absolute; top:0; left:0; width:100%; height:2px; background:linear-gradient(90deg,var(--gold),transparent); }
+.cred-card h4 { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.cred-card p { font-size: 0.95rem; color: var(--white); line-height: 1.6; }
+.cred-card small { display: block; font-size: 0.78rem; color: var(--silver); margin-top: 5px; }
+.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; margin-top: 56px; }
+.story-quote { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 36px; position: relative; overflow: hidden; margin-bottom: 20px; }
+.story-quote::before { content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--gold); }
+.story-quote blockquote { font-family: var(--serif); font-size: 1.2rem; font-style: italic; color: var(--white); line-height: 1.7; margin-bottom: 14px; }
+.story-quote cite { font-size: 0.76rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-style: normal; }
+.origin-pills { display: flex; gap: 2px; }
+.pill { flex: 1; padding: 20px 16px; background: rgba(200,168,75,0.06); border: 1px solid rgba(200,168,75,0.15); text-align: center; }
+.pill-val { font-family: var(--serif); font-size: 1.1rem; color: var(--white); display: block; }
+.pill-lbl { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--silver); margin-top: 3px; display: block; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 56px; }
+.testimonial { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); padding: 36px 28px; transition: all 0.3s ease; }
+.testimonial:hover { background: rgba(200,168,75,0.04); border-color: rgba(200,168,75,0.2); transform: translateY(-3px); }
+.testimonial-stars { color: var(--gold); font-size: 0.82rem; letter-spacing: 3px; margin-bottom: 14px; }
+.testimonial-text { font-family: var(--serif); font-size: 0.98rem; font-style: italic; color: var(--offwhite); line-height: 1.7; margin-bottom: 22px; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.author-avatar { width: 38px; height: 38px; background: linear-gradient(135deg, var(--steel-blue), var(--pale-navy)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 0.95rem; color: var(--white); flex-shrink: 0; }
+.author-name { font-size: 0.83rem; font-weight: 600; color: var(--white); }
+.author-role { font-size: 0.73rem; color: var(--silver); }
+.residential-strip { border-top: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); padding: 56px 64px; }
+.residential-strip-inner { max-width: 1280px; margin: 0 auto; }
+.residential-strip h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--silver); margin-bottom: 10px; }
+.residential-strip p { font-size: 0.86rem; color: rgba(168,184,204,0.7); max-width: 680px; line-height: 1.75; margin-bottom: 20px; }
+.res-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.res-tag { font-size: 0.64rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 2px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 72px; margin-top: 56px; }
+.contact-info { display: flex; flex-direction: column; gap: 28px; }
+.contact-detail { display: flex; gap: 18px; align-items: flex-start; }
+.contact-icon { width: 42px; height: 42px; background: rgba(200,168,75,0.1); border: 1px solid rgba(200,168,75,0.25); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.contact-detail h4 { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+.contact-detail a, .contact-detail p { font-size: 0.93rem; color: var(--offwhite); text-decoration: none; transition: color 0.3s; }
+.contact-detail a:hover { color: var(--gold); }
+.contact-form { display: flex; flex-direction: column; gap: 14px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 7px; }
+.form-group label { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver); }
+.form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 2px; padding: 13px 16px; font-family: var(--sans); font-size: 0.88rem; color: var(--white); outline: none; transition: border-color 0.3s; width: 100%; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); background: rgba(200,168,75,0.04); }
+.form-group select option { background: var(--deep-navy); }
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-submit { margin-top: 6px; background: var(--gold); color: var(--ink); border: none; padding: 15px 36px; font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: all 0.3s ease; align-self: flex-start; }
+.form-submit:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(200,168,75,0.3); }
+footer { background: var(--ink); border-top: 1px solid rgba(200,168,75,0.15); padding: 56px 64px 28px; }
+.footer-inner { max-width: 1280px; margin: 0 auto; }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 56px; margin-bottom: 44px; }
+.footer-brand-name { font-family: var(--serif); font-size: 1.15rem; color: var(--white); margin-bottom: 12px; }
+.footer-brand p { font-size: 0.85rem; color: var(--silver); line-height: 1.75; max-width: 280px; }
+.footer-tagline { font-size: 0.73rem; color: var(--gold); font-style: italic; margin-top: 10px; }
+.footer-col h4 { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.footer-col a { font-size: 0.85rem; color: var(--silver); text-decoration: none; transition: color 0.3s; }
+.footer-col a:hover { color: var(--white); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+.footer-bottom p { font-size: 0.76rem; color: var(--silver); }
+.footer-bottom span { color: var(--gold); }
+.abn-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 0.7rem; color: var(--silver); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 5px 12px; border-radius: 2px; }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+@media (max-width: 900px) {
+nav { padding: 18px 24px; }
+nav.sticky { padding: 14px 24px; }
+.nav-links { display: none; }
+.hamburger { display: flex; }
+.nav-links.open { display: flex; flex-direction: column; position: fixed; inset: 0; background: var(--ink); justify-content: center; align-items: center; gap: 32px; z-index: 999; }
+.nav-links.open a { font-size: 1.1rem; }
+.hero-content { grid-template-columns: 1fr; gap: 40px; padding: 100px 24px 60px; }
+.trust-strip { padding: 18px 24px; gap: 20px; }
+.section-wrap { padding: 64px 24px; }
+.serve-grid, .services-grid, .why-grid, .gov-grid, .story-grid, .testimonials-grid, .contact-grid { grid-template-columns: 1fr; gap: 2px; }
+.why-grid, .gov-grid, .story-grid, .contact-grid { gap: 36px; }
+.bg-navy .section-wrap, .residential-strip { padding-left: 24px; padding-right: 24px; }
+footer { padding: 44px 24px 24px; }
+.footer-top { grid-template-columns: 1fr; gap: 28px; }
+.footer-bottom { flex-direction: column; text-align: center; }
+.form-row { grid-template-columns: 1fr; }
+.origin-pills { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-brand">
+    <div class="nav-name">24/7 Cleaning Specialist</div>
+    <div class="nav-tagline">Commercial &amp; Government Cleaning — Melbourne</div>
+  </div>
+  <ul class="nav-links" id="navlinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#government">Government</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">Melbourne's Commercial &amp; Government Cleaning Partner</div>
+      <h1 class="hero-title">Precision Cleaning for<br><em>Government, Council</em><br>&amp; Commercial Clients</h1>
+      <p class="hero-subtitle">Serving Melbourne's most demanding facilities with uncompromising standards. A family-built business with over a decade of proven excellence — trusted by agents, facilities managers, and corporate clients across the city.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request a Quote →</a>
+        <a href="#government" class="btn-secondary">Government &amp; Tender Ready</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><div class="stat-number">12<span>K+</span></div><div class="stat-label">Cleans Completed</div></div>
+      <div class="stat-card"><div class="stat-number">10<span>+</span></div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-card"><div class="stat-number">98<span>%</span></div><div class="stat-label">Completion Rate</div></div>
+      <div class="stat-card"><div class="stat-number">5<span>★</span></div><div class="stat-label">Star Rated Service</div></div>
+    </div>
+  </div>
+  <div class="hero-divider"></div>
+</section>
+<div class="trust-strip">
+  <div class="trust-item"><div class="trust-icon">✓</div>ABN Registered</div>
+  <div class="trust-item"><div class="trust-icon">🛡</div>Fully Insured</div>
+  <div class="trust-item"><div class="trust-icon">📋</div>WHS Compliant</div>
+  <div class="trust-item"><div class="trust-icon">🔒</div>No Subcontracting</div>
+  <div class="trust-item"><div class="trust-icon">♻</div>Eco-Friendly</div>
+  <div class="trust-item"><div class="trust-icon">📸</div>Photo Documentation</div>
+</div>
+<div class="bg-navy">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label">Who We Serve</div>
+      <h2 class="section-title">Built for Melbourne's<br><em>Most Demanding Clients</em></h2>
+      <p class="section-body">We have the track record, compliance documentation, and professional systems to serve government bodies, councils, and commercial operators at the highest level.</p>
+    </div>
+    <div class="serve-grid">
+      <div class="serve-card reveal reveal-delay-1">
+        <span class="serve-icon">🏛</span>
+        <div class="serve-title">Government &amp; Council</div>
+        <p class="serve-desc">Council buildings, community centres, libraries, public facilities and government offices. We meet compliance requirements and deliver fully documented, consistent results every visit.</p>
+        <div class="serve-tags"><span class="tag">Local Council</span><span class="tag">State Government</span><span class="tag">Public Facilities</span></div>
+      </div>
+      <div class="serve-card reveal reveal-delay-2">
+        <span class="serve-icon">🏢</span>
+        <div class="serve-title">Commercial &amp; Corporate</div>
+        <p class="serve-desc">Office buildings, strata complexes, retail spaces and corporate headquarters. Minimal disruption, maximum professionalism — scheduled around your business hours.</p>
+        <div class="serve-tags"><span class="tag">Offices</span><span class="tag">Strata</span><span class="tag">Retail</span><span class="tag">Corporate</span></div>
+      </div>
+      <div class="serve-card reveal reveal-delay-3">
+        <span class="serve-icon">🏗</span>
+        <div class="serve-title">Builders &amp; Facilities</div>
+        <p class="serve-desc">Post-construction cleans, facilities management and large-scale deep cleaning. Handover-ready results that meet developer and project manager standards.</p>
+        <div class="serve-tags"><span class="tag">Builders Clean</span><span class="tag">Facilities Mgmt</span><span class="tag">Post-Construction</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-wrap" id="services">
+  <div class="reveal">
+    <div class="section-label">Our Services</div>
+    <h2 class="section-title">Commercial-Grade Cleaning<br><em>Across Every Discipline</em></h2>
+    <p class="section-body">Comprehensive cleaning solutions designed for organisations that cannot afford inconsistency. Every service delivered to a documented, verifiable standard.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-item reveal"><div class="service-num">01</div><div class="service-content"><h3>Government &amp; Council Facility Cleaning</h3><p>Cleaning services for public buildings, libraries and community centres. WHS-compliant procedures, professional uniforms, insured team and full service reporting. Ready for tender submissions and contract requirements.</p></div></div>
+    <div class="service-item reveal reveal-delay-1"><div class="service-num">02</div><div class="service-content"><h3>Commercial Office Cleaning</h3><p>Ongoing or one-off cleaning contracts for offices and corporate premises. Tailored frequency, scheduled around your hours. Documented quality checks and consistent staffing on every visit.</p></div></div>
+    <div class="service-item reveal reveal-delay-2"><div class="service-num">03</div><div class="service-content"><h3>Builders &amp; Post-Construction Clean</h3><p>Final-stage cleans for residential and commercial construction projects. Dust, debris and construction residue removed to developer handover standard — on time, every time.</p></div></div>
+    <div class="service-item reveal reveal-delay-3"><div class="service-num">04</div><div class="service-content"><h3>Steam &amp; Carpet Cleaning</h3><p>Industrial steam extraction and carpet cleaning for offices and commercial spaces. Deep sanitisation eliminating bacteria and allergens — not just surface-level cleaning.</p></div></div>
+    <div class="service-item reveal"><div class="service-num">05</div><div class="service-content"><h3>Strata &amp; Facilities Management</h3><p>Regular scheduled cleaning for strata buildings, apartment complexes and managed facilities. Consistent standards, documented records and reliable attendance — every single visit.</p></div></div>
+    <div class="service-item reveal reveal-delay-1"><div class="service-num">06</div><div class="service-content"><h3>Deep &amp; Specialised Cleaning</h3><p>Kitchens, bathrooms, mould treatment, wall washing and bespoke cleaning requests. One-off intensive cleans for facilities needing serious attention — handled without compromise.</p></div></div>
+  </div>
+</div>
+<div style="background: linear-gradient(135deg, var(--ink) 0%, var(--navy) 100%); border-top: 1px solid rgba(200,168,75,0.1); border-bottom: 1px solid rgba(200,168,75,0.1);">
+  <div class="section-wrap" id="government">
+    <div class="reveal">
+      <div class="section-label">Government Ready</div>
+      <h2 class="section-title">Built for Tender.<br><em>Proven in the Field.</em></h2>
+      <p class="section-body">Winning council and government contracts requires compliance, documentation, and a proven track record. We have all three — and we're ready to put them to work for you.</p>
+    </div>
+    <div class="gov-grid">
+      <div class="gov-features reveal">
+        <div class="gov-feature"><div class="gov-feature-icon">📋</div><div><h4>Compliance Documentation Ready</h4><p>ABN registered, fully insured with public liability, WHS policy and safe work procedures — all ready for tender submissions and procurement reviews.</p></div></div>
+        <div class="gov-feature"><div class="gov-feature-icon">🔁</div><div><h4>No Subcontracting — Ever</h4><p>All work is performed by our trained in-house team. You know exactly who is in your facility. No strangers, no surprises, no liability gaps.</p></div></div>
+        <div class="gov-feature"><div class="gov-feature-icon">📊</div><div><h4>Photo Documentation &amp; Reporting</h4><p>Photo confirmation and digital service records provided on every job. Full audit trail available for procurement compliance and quality assurance.</p></div></div>
+        <div class="gov-feature"><div class="gov-feature-icon">📍</div><div><h4>Local Melbourne — Western Suburbs</h4><p>Based in Sunshine — ideally positioned to serve Brimbank, Maribyrnong, Melton and Hobsons Bay councils, plus Melbourne CBD commercial clients.</p></div></div>
+        <div class="gov-feature"><div class="gov-feature-icon">⏰</div><div><h4>Flexible &amp; Responsive Scheduling</h4><p>After-hours, early morning and weekend cleaning available. We adapt to your facility's operational requirements — not the other way around.</p></div></div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="gov-highlight">
+          <p class="gov-quote">"We are not the cheapest — because we refuse to cut corners. Every facility reflects our name."</p>
+          <p style="font-size:0.83rem; color:var(--silver); line-height:1.7;">Government evaluators aren't looking for the lowest price. They're looking for reliability, compliance, and zero risk. Our numbers speak for themselves.</p>
+          <div class="gov-metrics">
+            <div class="gov-metric"><span class="num">1,713+</span><span class="lbl">5-Star Reviews</span></div>
+            <div class="gov-metric"><span class="num">98%</span><span class="lbl">Completion Rate</span></div>
+            <div class="gov-metric"><span class="num">10+</span><span class="lbl">Years Operating</span></div>
+            <div class="gov-metric"><span class="num">30 Day</span><span class="lbl">Service Guarantee</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-navy">
+  <div class="section-wrap" id="about">
+    <div class="reveal">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">The Standard Others<br><em>Are Measured Against</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-list reveal">
+        <div class="why-item"><div class="why-check">✓</div><div class="why-text"><h4>10+ Years Industry Experience</h4><p>Over a decade of professional cleaning across Melbourne's commercial and residential sectors. We understand what agents, facilities managers and procurement officers expect — and we exceed it.</p></div></div>
+        <div class="why-item"><div class="why-check">✓</div><div class="why-text"><h4>Commercial Equipment &amp; In-House Staff</h4><p>Industrial-grade equipment operated by professionally trained, permanently employed cleaners. No casuals, no subcontractors, no variance in quality.</p></div></div>
+        <div class="why-item"><div class="why-check">✓</div><div class="why-text"><h4>Consistent Results — Every Single Time</h4><p>12,000+ cleans completed with a 98% completion rate. Our documented systems ensure the same exacting standard whether it's your first engagement or your fiftieth.</p></div></div>
+        <div class="why-item"><div class="why-check">✓</div><div class="why-text"><h4>Fully Insured &amp; ABN Registered</h4><p>Public liability insurance, workers compensation, ABN registration and proper tax invoices. Every compliance box ticked — every time.</p></div></div>
+      </div>
+      <div class="credentials reveal reveal-delay-1">
+        <div class="cred-card"><h4>Our Guarantee</h4><p>30-Day Service Guarantee</p><small>If any issues are identified within 30 days of a clean, we return to rectify at no additional cost. No disputes, no delays.</small></div>
+        <div class="cred-card"><h4>Service Coverage</h4><p>All Melbourne &amp; Greater Metro</p><small>Sunshine, Footscray, Werribee, Melton, the CBD and all surrounding suburbs. We cover the entire Greater Melbourne region.</small></div>
+        <div class="cred-card"><h4>Business Credentials</h4><p>ABN Registered — Tax Invoices Provided</p><small>Trusted by real estate agencies, property managers and commercial clients who require proper documentation and accountability.</small></div>
+        <div class="cred-card"><h4>Direct Contact</h4><p>0403 423 348</p><small>sales@247cleaningspecialist.com.au — 7 days a week for quotes, bookings and tender enquiries.</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background: linear-gradient(135deg, #0d0f12 0%, #162035 100%); border-top: 1px solid rgba(200,168,75,0.1);">
+  <div class="section-wrap" id="story">
+    <div class="reveal">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">Built From Nothing.<br><em>Built With Purpose.</em></h2>
+    </div>
+    <div class="story-grid">
+      <div class="reveal">
+        <p style="font-size:1rem; color:var(--silver); line-height:1.85; margin-bottom:18px;">We arrived in Australia from Africa with a dream and a work ethic that refused to quit. As husband and wife, we built 24/7 Cleaning Specialist from the ground up — no shortcuts, no handouts, just relentless hard work and an uncompromising belief in doing things properly.</p>
+        <p style="font-size:1rem; color:var(--silver); line-height:1.85; margin-bottom:18px;">Over 10 years, we turned a small cleaning operation in Melbourne's western suburbs into a 5-star, 12,000+ clean business with 1,713 verified reviews and a 98% completion rate. We proved that reliability and integrity win — every time.</p>
+        <p style="font-size:1rem; color:var(--silver); line-height:1.85; margin-bottom:32px;">Now we're ready for the next chapter. We've mastered our craft. We've built the systems, the credentials, and the reputation. Our goal is to bring that same family commitment and professional standard to Melbourne's councils, government buildings, and commercial clients.</p>
+        <div class="origin-pills">
+          <div class="pill"><span class="pill-val">Africa</span><span class="pill-lbl">Our Roots</span></div>
+          <div class="pill"><span class="pill-val">Sunshine, VIC</span><span class="pill-lbl">Our Home</span></div>
+          <div class="pill"><span class="pill-val">All Melbourne</span><span class="pill-lbl">Our Market</span></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="story-quote">
+          <blockquote>"We didn't come this far to stay small. Every facility we walk into — we treat it like our own name is on the door. Because it is."</blockquote>
+          <cite>— Cornelius &amp; Family, Founders · 24/7 Cleaning Specialist</cite>
+        </div>
+        <div style="background:rgba(200,168,75,0.05); border:1px solid rgba(200,168,75,0.15); padding:28px; margin-top:2px;">
+          <p style="font-size:0.82rem; color:var(--silver); line-height:1.75;"><strong style="color:var(--gold); font-weight:600;">Why this matters to councils:</strong> Local governments actively prefer local, community-rooted businesses. As a family business built in Sunshine by migrants who invested in Melbourne — that is a genuine competitive advantage in tender assessments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-navy">
+  <div class="section-wrap" id="testimonials">
+    <div class="reveal">
+      <div class="section-label">Client Feedback</div>
+      <h2 class="section-title">What Our Clients<br><em>Say About Us</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Hands down the best professional clean I've ever seen. The property manager was blown away — bond returned in full within 48 hours. Absolutely flawless."</p><div class="testimonial-author"><div class="author-avatar">S</div><div><div class="author-name">Solomon G.</div><div class="author-role">Melbourne Client</div></div></div></div>
+      <div class="testimonial reveal reveal-delay-1"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"We locked them in as our ongoing office cleaning contractor after the first visit. In uniform, on time, thorough, and professional. Exactly what a business needs."</p><div class="testimonial-author"><div class="author-avatar">J</div><div><div class="author-name">Jennifer A.</div><div class="author-role">Facilities Manager, West Melbourne</div></div></div></div>
+      <div class="testimonial reveal reveal-delay-2"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"We've used many cleaning companies over the years. This team is on a different level. Systems, documentation, reliability — they operate like a proper business. Highly recommend."</p><div class="testimonial-author"><div class="author-avatar">M</div><div><div class="author-name">Michael T.</div><div class="author-role">Property Investor, Melbourne</div></div></div></div>
+    </div>
+    <div style="text-align:center; margin-top:44px;" class="reveal">
+      <p style="font-size:0.82rem; color:var(--silver); margin-bottom:16px;">1,713+ verified 5-star reviews · Airtasker Platform · 98% Completion Rate</p>
+      <a href="#contact" class="btn-primary">Request a Quote →</a>
+    </div>
+  </div>
+</div>
+<div style="background: linear-gradient(135deg, var(--ink) 0%, var(--deep-navy) 100%); border-top: 1px solid rgba(200,168,75,0.1);">
+  <div class="section-wrap" id="contact">
+    <div class="reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Request a Quote or<br><em>Tender Enquiry</em></h2>
+      <p class="section-body">Whether you need a one-off clean, an ongoing commercial contract, or want to discuss a government tender — we're ready to respond within 2 business hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-detail"><div class="contact-icon">📞</div><div><h4>Phone</h4><a href="tel:0403423348">0403 423 348</a></div></div>
+        <div class="contact-detail"><div class="contact-icon">✉</div><div><h4>Email</h4><a href="mailto:sales@247cleaningspecialist.com.au">sales@247cleaningspecialist.com.au</a></div></div>
+        <div class="contact-detail"><div class="contact-icon">🌐</div><div><h4>Website</h4><a href="https://www.247cleaningspecialist.com.au" target="_blank">www.247cleaningspecialist.com.au</a></div></div>
+        <div class="contact-detail"><div class="contact-icon">📍</div><div><h4>Location</h4><p>Sunshine, VIC — Serving All Melbourne &amp; Surrounds</p></div></div>
+        <div class="contact-detail"><div class="contact-icon">⏰</div><div><h4>Availability</h4><p>7 Days a Week — Including after-hours &amp; urgent jobs</p></div></div>
+      </div>
+      <form class="contact-form reveal reveal-delay-1" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
+          <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone *</label><input type="tel" placeholder="04XX XXX XXX" required></div>
+          <div class="form-group"><label>Email *</label><input type="email" placeholder="you@example.com" required></div>
+        </div>
+        <div class="form-group">
+          <label>Service Required *</label>
+          <select required>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Government / Council Facility Cleaning</option>
+            <option>Commercial Office Cleaning — Ongoing Contract</option>
+            <option>Commercial Office Cleaning — One-Off</option>
+            <option>Builders / Post-Construction Clean</option>
+            <option>Steam &amp; Carpet Cleaning</option>
+            <option>Strata / Facilities Management</option>
+            <option>Deep / Specialised Clean</option>
+            <option>Tender Enquiry</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Facility / Job Details</label>
+          <textarea placeholder="Tell us about the facility size, location, frequency required, and any specific compliance or scheduling requirements..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Enquiry →</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="residential-strip">
+  <div class="residential-strip-inner">
+    <h3>Also Available: Residential &amp; End of Lease Cleaning</h3>
+    <p>Our roots are in residential cleaning — end of lease, bond back, move-in, and deep cleans for Melbourne homeowners and tenants. 30-day bond back guarantee, digital receipts, and photo confirmation included.</p>
+    <div class="res-tags">
+      <span class="res-tag">End of Lease</span><span class="res-tag">Bond Back Guarantee</span><span class="res-tag">Move-In Clean</span><span class="res-tag">Steam &amp; Carpet</span><span class="res-tag">Deep Clean</span><span class="res-tag">Real Estate Ready</span>
+    </div>
+    <p style="margin-top:16px; font-size:0.82rem;"><a href="#contact" style="color:var(--gold); text-decoration:none;">→ Enquire about residential cleaning</a></p>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">24/7 Cleaning Specialist</div>
+        <p>Melbourne's trusted commercial and government cleaning partner. A family-built business founded on 10+ years of excellence, 12,000+ completed cleans, and a reputation that speaks for itself.</p>
+        <p class="footer-tagline">"If it needs to be cleaned, we're here to clean it for you."</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Government &amp; Council Cleaning</a></li>
+          <li><a href="#services">Commercial Office Cleaning</a></li>
+          <li><a href="#services">Builders &amp; Post-Construction</a></li>
+          <li><a href="#services">Steam &amp; Carpet Cleaning</a></li>
+          <li><a href="#services">Strata &amp; Facilities</a></li>
+          <li><a href="#services">Deep &amp; Specialised Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#government">Government &amp; Tender Ready</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+          <li><a href="tel:0403423348">0403 423 348</a></li>
+          <li><a href="mailto:sales@247cleaningspecialist.com.au">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 24/7 Cleaning Specialist. All rights reserved. <span>Sunshine, Melbourne VIC, Australia.</span></p>
+      <div class="abn-badge">🏛 ABN Registered Australian Business</div>
+    </div>
+  </div>
+</footer>
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar.classList.toggle('sticky', window.scrollY > 60); });
+function toggleMenu() { document.getElementById('navlinks').classList.toggle('open'); }
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navlinks').classList.remove('open')));
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = '✓ Sent — We\'ll respond within 2 hours';
+  btn.style.background = '#1a5c4a';
+  btn.style.color = '#fff';
+  btn.disabled = true;
+}
+</script>
+</body>
+</html>
