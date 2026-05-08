@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>End of Lease Cleaning Melbourne | Bond Back Guarantee | 24/7 Cleaning Specialist</title>
-<meta name="description" content="Melbourne's most reviewed end of lease cleaning team. 99% bond return rate. 30-day agent satisfaction guarantee. Same-day available. Call 0403 423 348.">
-<meta name="keywords" content="end of lease cleaning Melbourne, bond cleaning Melbourne, bond back guarantee Melbourne, same day end of lease Melbourne, carpet cleaning Melbourne">
+<title>Same-Day End of Lease Cleaning Melbourne | Bond Back Guaranteed | 24/7 Cleaning Specialist</title>
+<meta name="description" content="Melbourne's same-day end of lease cleaning specialists. 99% bond return rate. 30-day agent satisfaction guarantee. Call before 12pm — we clean today. 0403 423 348.">
+<meta name="keywords" content="same day end of lease cleaning Melbourne, urgent bond cleaning Melbourne, end of lease cleaning Melbourne, bond back guarantee Melbourne, carpet cleaning Melbourne">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -45,30 +45,66 @@ nav{background:rgba(9,13,15,0.98);border-bottom:1px solid rgba(26,122,74,0.2);pa
 .sticky-cta .scta-call{background:var(--accent);color:#fff}
 .sticky-cta .scta-book{background:rgba(26,122,74,0.12);color:var(--accent-light);border:1px solid rgba(26,122,74,0.3)}
 
-/* URGENT */
-.urgent{background:var(--red);padding:9px 24px;text-align:center;font-size:0.75rem;font-weight:600;color:#fff}
-.urgent a{color:#fff;text-decoration:underline}
+/* URGENT BAR */
+.urgent{background:var(--red);padding:10px 24px;text-align:center;font-size:0.76rem;font-weight:600;color:#fff;animation:urgentpulse 3s ease infinite}
+@keyframes urgentpulse{0%,100%{background:var(--red)}50%{background:#a93226}}
+.urgent a{color:#fff;text-decoration:underline;font-weight:700}
 
-/* HERO */
-.hero{background:linear-gradient(135deg,rgba(26,122,74,0.12),rgba(9,13,15,0.98));border-bottom:2px solid rgba(26,122,74,0.35);padding:80px 48px}
-.hero-inner{max-width:900px;margin:0 auto;text-align:center}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(26,122,74,0.15);border:1px solid rgba(26,122,74,0.4);border-radius:2px;padding:7px 16px;font-size:0.64rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-light);margin-bottom:22px}
-.hero-h1{font-family:var(--serif);font-size:clamp(2.6rem,5.5vw,4.5rem);font-weight:300;line-height:1.1;color:var(--white);margin-bottom:18px}
-.hero-h1 em{font-style:italic;color:var(--accent-light)}
-.hero-sub{font-size:1rem;color:var(--silver);line-height:1.8;max-width:620px;margin:0 auto 28px}
-.hero-proof{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:32px;flex-wrap:wrap}
-.stars{color:var(--gold);font-size:0.95rem;letter-spacing:2px}
-.proof-text{font-size:0.79rem;color:var(--mist)}
-.proof-text strong{color:var(--white)}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
-.btn-green{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:14px 28px;font-family:var(--sans);font-size:0.79rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:none;cursor:pointer;transition:all 0.3s}
-.btn-green:hover{background:#22996e;transform:translateY(-2px);box-shadow:0 12px 36px rgba(26,122,74,0.35)}
-.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);padding:14px 28px;font-family:var(--sans);font-size:0.79rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.2);border-radius:2px;cursor:pointer;transition:all 0.3s}
+/* HERO — SAME DAY FIRST */
+.hero{background:linear-gradient(135deg,rgba(192,57,43,0.15),rgba(9,13,15,0.98));border-bottom:3px solid rgba(192,57,43,0.5);padding:72px 48px}
+.hero-inner{max-width:960px;margin:0 auto}
+.hero-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hero-left{}
+.same-day-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(192,57,43,0.2);border:2px solid rgba(192,57,43,0.6);border-radius:2px;padding:8px 16px;font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#e74c3c;margin-bottom:20px;animation:badgepulse 2s ease infinite}
+@keyframes badgepulse{0%,100%{border-color:rgba(192,57,43,0.6)}50%{border-color:rgba(192,57,43,1)}}
+.same-day-badge::before{content:'';width:8px;height:8px;background:#e74c3c;border-radius:50%;animation:pulse 1.5s ease infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.5)}}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:300;line-height:1.1;color:var(--white);margin-bottom:16px}
+.hero-h1 em{font-style:italic;color:#e74c3c}
+.hero-h1 strong{font-weight:600}
+.hero-sub{font-size:0.97rem;color:var(--silver);line-height:1.8;margin-bottom:24px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.btn-red{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;padding:15px 28px;font-family:var(--sans);font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:none;cursor:pointer;transition:all 0.3s;box-shadow:0 8px 24px rgba(192,57,43,0.4)}
+.btn-red:hover{background:#a93226;transform:translateY(-2px);box-shadow:0 12px 36px rgba(192,57,43,0.5)}
+.btn-green{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:15px 28px;font-family:var(--sans);font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:none;cursor:pointer;transition:all 0.3s}
+.btn-green:hover{background:#22996e;transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);padding:15px 28px;font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.2);border-radius:2px;cursor:pointer;transition:all 0.3s}
 .btn-outline:hover{border-color:var(--accent-light);color:var(--accent-light)}
-.sameday-note{display:inline-flex;align-items:center;gap:8px;background:rgba(26,122,74,0.12);border:1px solid rgba(26,122,74,0.35);padding:10px 18px;font-size:0.76rem;font-weight:600;color:var(--accent-light)}
+.hero-proof{display:flex;align-items:center;gap:10px;font-size:0.78rem;color:var(--mist)}
+.hero-proof .stars{color:var(--gold);letter-spacing:2px}
+.hero-proof strong{color:var(--white)}
+
+/* HERO RIGHT — SAME DAY BOX */
+.same-day-box{background:rgba(192,57,43,0.1);border:2px solid rgba(192,57,43,0.4);padding:32px}
+.same-day-box h3{font-family:var(--serif);font-size:1.6rem;color:var(--white);margin-bottom:12px;line-height:1.2}
+.same-day-box h3 em{font-style:italic;color:#e74c3c}
+.same-day-steps{display:flex;flex-direction:column;gap:3px;margin:20px 0}
+.sd-step{display:flex;align-items:flex-start;gap:14px;padding:14px 16px;background:rgba(255,255,255,0.04);border-left:3px solid #e74c3c}
+.sd-step-num{font-family:var(--serif);font-size:1.4rem;color:#e74c3c;line-height:1;flex-shrink:0;width:24px}
+.sd-step-text h4{font-size:0.84rem;font-weight:600;color:var(--white);margin-bottom:2px}
+.sd-step-text p{font-size:0.78rem;color:var(--silver);line-height:1.5}
+.same-day-note{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:14px 16px;font-size:0.78rem;color:var(--silver);line-height:1.65;margin-top:3px}
+.same-day-note strong{color:var(--gold)}
+
+/* BOND SECTION */
+.bond-section{background:linear-gradient(135deg,rgba(26,122,74,0.12),rgba(9,13,15,0.97));border-bottom:2px solid rgba(26,122,74,0.3);padding:64px 48px}
+.bond-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.bond-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(26,122,74,0.15);border:1px solid rgba(26,122,74,0.4);border-radius:2px;padding:6px 14px;font-size:0.63rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-light);margin-bottom:16px}
+.bond-h2{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:300;color:var(--white);margin-bottom:12px;line-height:1.2}
+.bond-h2 em{font-style:italic;color:var(--accent-light)}
+.bond-desc{font-size:0.93rem;color:var(--silver);line-height:1.8;margin-bottom:20px}
+.bond-feats{display:flex;flex-direction:column;gap:2px}
+.bond-feat{display:flex;align-items:center;gap:12px;padding:11px 14px;background:rgba(255,255,255,0.03);border-left:2px solid var(--accent)}
+.bond-feat span{font-size:0.84rem;color:var(--mist)}
+.bond-feat strong{color:var(--white)}
+.bond-stats{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.bond-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:24px;text-align:center;transition:all 0.3s}
+.bond-stat:hover{background:rgba(26,122,74,0.08);border-color:rgba(26,122,74,0.3)}
+.bond-stat .n{font-family:var(--serif);font-size:2.4rem;color:var(--accent-light);display:block;line-height:1;margin-bottom:4px}
+.bond-stat .l{font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver)}
 
 /* SECTIONS */
-.section{padding:72px 48px;max-width:1000px;margin:0 auto}
+.section{padding:64px 48px;max-width:960px;margin:0 auto}
 .s-label{font-size:0.62rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent-light);margin-bottom:10px}
 .s-title{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:300;color:var(--white);margin-bottom:14px;line-height:1.2}
 .s-title em{font-style:italic;color:var(--accent-light)}
@@ -76,71 +112,64 @@ nav{background:rgba(9,13,15,0.98);border-bottom:1px solid rgba(26,122,74,0.2);pa
 .bg-dark{background:linear-gradient(135deg,var(--ink),var(--navy))}
 .bg-navy{background:var(--navy)}
 
-/* GUARANTEE */
-.guarantee-box{background:rgba(26,122,74,0.1);border:2px solid rgba(26,122,74,0.4);padding:40px;margin-top:40px;text-align:center}
-.guarantee-icon{font-size:3rem;margin-bottom:16px;display:block}
-.guarantee-title{font-family:var(--serif);font-size:2rem;color:var(--white);margin-bottom:12px}
-.guarantee-title em{font-style:italic;color:var(--accent-light)}
-.guarantee-desc{font-size:0.95rem;color:var(--silver);line-height:1.8;max-width:580px;margin:0 auto 20px}
-.guarantee-conditions{display:flex;flex-direction:column;gap:2px;text-align:left;max-width:560px;margin:0 auto}
-.g-cond{display:flex;align-items:flex-start;gap:12px;padding:11px 14px;background:rgba(255,255,255,0.03);border-left:2px solid var(--accent)}
-.g-cond span{font-size:0.84rem;color:var(--mist)}
-
-/* PAYMENT SECTION */
-.payment-box{background:linear-gradient(135deg,rgba(200,146,42,0.1),rgba(9,13,15,0.97));border:2px solid rgba(200,146,42,0.35);padding:40px;margin-top:40px;text-align:center}
-.payment-box h3{font-family:var(--serif);font-size:1.8rem;color:var(--white);margin-bottom:12px}
-.payment-box h3 em{font-style:italic;color:var(--gold-light)}
-.payment-box p{font-size:0.93rem;color:var(--silver);line-height:1.8;max-width:560px;margin:0 auto 24px}
-.btn-pay{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold),#b8821a);color:var(--ink);padding:16px 36px;font-family:var(--sans);font-size:0.85rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:none;cursor:pointer;transition:all 0.3s;box-shadow:0 8px 32px rgba(200,146,42,0.3);margin-bottom:16px}
-.btn-pay:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(200,146,42,0.45)}
-.payment-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:28px;text-align:left}
-.pay-step{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:20px}
-.pay-step-num{font-family:var(--serif);font-size:1.8rem;color:rgba(200,146,42,0.3);line-height:1;margin-bottom:8px}
-.pay-step h4{font-size:0.82rem;font-weight:600;color:var(--white);margin-bottom:4px}
-.pay-step p{font-size:0.76rem;color:var(--silver);line-height:1.6}
-.card-note{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:16px 20px;margin-top:3px;font-size:0.78rem;color:var(--silver);line-height:1.7;text-align:left}
-.card-note strong{color:var(--gold)}
-
 /* PRICING */
-.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:40px}
-.price-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:24px;display:flex;justify-content:space-between;align-items:center;transition:all 0.3s}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:36px}
+.price-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:22px;display:flex;justify-content:space-between;align-items:center;transition:all 0.3s}
 .price-card:hover{background:rgba(26,122,74,0.08);border-color:rgba(26,122,74,0.3)}
 .price-card.featured{background:rgba(26,122,74,0.1);border-color:rgba(26,122,74,0.35)}
-.price-type{font-size:0.9rem;font-weight:500;color:var(--white)}
-.price-type small{display:block;font-size:0.72rem;color:var(--silver);font-weight:300;margin-top:2px}
-.price-amt{font-family:var(--serif);font-size:1.6rem;color:var(--accent-light);white-space:nowrap}
+.price-type{font-size:0.88rem;font-weight:500;color:var(--white)}
+.price-type small{display:block;font-size:0.7rem;color:var(--silver);font-weight:300;margin-top:2px}
+.price-amt{font-family:var(--serif);font-size:1.5rem;color:var(--accent-light);white-space:nowrap}
 .price-note{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:16px 20px;margin-top:3px;font-size:0.82rem;color:var(--silver);line-height:1.7}
 .price-note strong{color:var(--gold)}
 
-/* INCLUSIONS & EXCLUSIONS */
-.inc-exc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+/* INCLUSIONS */
+.inc-exc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
 .inc-box{background:rgba(26,122,74,0.08);border:1px solid rgba(26,122,74,0.25);padding:28px}
 .exc-box{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);padding:28px}
-.box-title{font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.box-title{font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:16px}
 .inc-box .box-title{color:var(--accent-light)}
 .exc-box .box-title{color:var(--gold)}
 .inc-list,.exc-list{display:flex;flex-direction:column;gap:8px}
 .inc-item,.exc-item{display:flex;align-items:flex-start;gap:10px;font-size:0.84rem;line-height:1.5}
-.inc-item{color:var(--mist)}
-.exc-item{color:var(--silver)}
+.inc-item{color:var(--mist)}.exc-item{color:var(--silver)}
 .inc-check{color:var(--accent-light);font-weight:700;flex-shrink:0;margin-top:1px}
 .exc-check{color:var(--gold);font-weight:700;flex-shrink:0;margin-top:1px}
 
-/* REVIEWS */
-.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:40px}
-.review-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:24px;transition:all 0.3s}
-.review-card:hover{background:rgba(26,122,74,0.05);border-color:rgba(26,122,74,0.2);transform:translateY(-3px)}
-.r-stars{color:var(--gold);font-size:0.8rem;letter-spacing:3px;margin-bottom:10px}
-.r-text{font-family:var(--serif);font-size:0.93rem;font-style:italic;color:var(--offwhite);line-height:1.7;margin-bottom:14px}
-.r-author{display:flex;align-items:center;gap:9px}
-.r-avatar{width:30px;height:30px;background:linear-gradient(135deg,var(--accent),#0f3d26);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:0.82rem;color:var(--white);flex-shrink:0}
-.r-name{font-size:0.78rem;font-weight:600;color:var(--white)}
-.r-job{font-size:0.68rem;color:var(--silver)}
+/* REVIEWS — LARGE & PROMINENT */
+.reviews-section{background:var(--navy);border-top:1px solid rgba(200,146,42,0.15);border-bottom:1px solid rgba(200,146,42,0.15);padding:72px 48px}
+.reviews-inner{max-width:960px;margin:0 auto}
+.reviews-header{text-align:center;margin-bottom:48px}
+.review-count-bar{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:24px;margin-bottom:40px}
+.rc-item{text-align:center}
+.rc-item .n{font-family:var(--serif);font-size:2.4rem;color:var(--gold);display:block;line-height:1}
+.rc-item .l{font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);margin-top:4px;display:block}
+.reviews-big{display:flex;flex-direction:column;gap:3px}
+.review-big{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:36px 40px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;transition:all 0.3s}
+.review-big:hover{background:rgba(200,146,42,0.05);border-color:rgba(200,146,42,0.2)}
+.review-big-left{}
+.rb-stars{color:var(--gold);font-size:1rem;letter-spacing:4px;margin-bottom:14px}
+.rb-text{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--white);line-height:1.75;margin-bottom:18px}
+.rb-author{display:flex;align-items:center;gap:12px}
+.rb-avatar{width:40px;height:40px;background:linear-gradient(135deg,var(--accent),#0f3d26);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1rem;color:var(--white);flex-shrink:0}
+.rb-name{font-size:0.86rem;font-weight:600;color:var(--white)}
+.rb-job{font-size:0.74rem;color:var(--silver)}
+.rb-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:2px;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;align-self:flex-start;margin-top:4px}
 
-/* BOOKING FORM */
-.contact-wrap{background:var(--navy);border-top:2px solid rgba(26,122,74,0.3);padding:72px 48px}
+/* GUARANTEE */
+.guarantee-box{background:rgba(26,122,74,0.1);border:2px solid rgba(26,122,74,0.4);padding:40px;margin-top:36px;text-align:center}
+.guarantee-icon{font-size:3rem;margin-bottom:16px;display:block}
+.guarantee-title{font-family:var(--serif);font-size:2rem;color:var(--white);margin-bottom:12px}
+.guarantee-title em{font-style:italic;color:var(--accent-light)}
+.guarantee-desc{font-size:0.93rem;color:var(--silver);line-height:1.8;max-width:580px;margin:0 auto 20px}
+.guarantee-conditions{display:flex;flex-direction:column;gap:2px;text-align:left;max-width:560px;margin:0 auto}
+.g-cond{display:flex;align-items:flex-start;gap:12px;padding:11px 14px;background:rgba(255,255,255,0.03);border-left:2px solid var(--accent)}
+.g-cond span{font-size:0.84rem;color:var(--mist)}
+
+/* CONTACT */
+.contact-wrap{background:linear-gradient(135deg,var(--ink),var(--navy));border-top:1px solid rgba(26,122,74,0.2);padding:64px 48px}
 .contact-inner{max-width:700px;margin:0 auto}
-.contact-form{display:flex;flex-direction:column;gap:12px;margin-top:32px}
+.contact-form{display:flex;flex-direction:column;gap:12px;margin-top:28px}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .f-group{display:flex;flex-direction:column;gap:5px}
 .f-group label{font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver)}
@@ -153,7 +182,7 @@ nav{background:rgba(9,13,15,0.98);border-bottom:1px solid rgba(26,122,74,0.2);pa
 
 /* FOOTER */
 footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:32px 48px 80px}
-.footer-inner{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner{max-width:960px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-inner p{font-size:0.71rem;color:var(--silver)}
 .footer-inner span{color:var(--gold)}
 .footer-links-row{display:flex;gap:20px;flex-wrap:wrap}
@@ -169,13 +198,17 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
   nav{padding:12px 18px}.nav-links{display:none}.hamburger{display:flex}
   .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--ink);justify-content:center;align-items:center;gap:28px;z-index:999}
   .nav-links.open a{font-size:1.1rem}
-  .hero{padding:56px 18px}.section{padding:52px 18px}
+  .hero{padding:52px 18px}.hero-split{grid-template-columns:1fr;gap:28px}
+  .bond-section{padding:52px 18px}.bond-inner{grid-template-columns:1fr;gap:28px}
+  .bond-stats{grid-template-columns:1fr 1fr}
+  .section{padding:48px 18px}
   .price-grid{grid-template-columns:1fr}
   .inc-exc-grid{grid-template-columns:1fr}
-  .reviews-grid{grid-template-columns:1fr}
-  .payment-steps{grid-template-columns:1fr}
+  .reviews-section{padding:52px 18px}
+  .reviews-grid-clean{grid-template-columns:1fr}
+  .review-proof-strip{gap:16px}
   .f-row{grid-template-columns:1fr}
-  .contact-wrap{padding:52px 18px}
+  .contact-wrap{padding:48px 18px}
   footer{padding:24px 18px 80px}
   .footer-inner{flex-direction:column;text-align:center}
 }
@@ -183,87 +216,238 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
 </head>
 <body>
 
-<div class="urgent">⚡ Same-Day Available — Call before 12pm &amp; we'll do everything we can to clean today! <a href="tel:0403423348">0403 423 348</a></div>
+<!-- URGENT -->
+<div class="urgent">⚡ SAME-DAY END OF LEASE — Call before 12pm &amp; we'll clean today! <a href="tel:0403423348">Call 0403 423 348 NOW</a></div>
+
 <a href="tel:0403423348" class="float-call">📞</a>
 <div class="sticky-cta">
-  <a href="tel:0403423348" class="scta-call">📞 Call Now</a>
-  <a href="#book" class="scta-book">Book Now</a>
+  <a href="tel:0403423348" class="scta-call">📞 Call for Same-Day</a>
+  <a href="#quote" class="scta-book">Get a Quote</a>
 </div>
 
+<!-- NAV -->
 <nav>
   <a href="index.html" class="logo-mark">
     <div class="logo-icon">247</div>
-    <div><div class="logo-name">24/7 Cleaning Specialist</div><div class="logo-sub">End of Lease &amp; Residential</div></div>
+    <div><div class="logo-name">24/7 Cleaning Specialist</div><div class="logo-sub">Same-Day End of Lease</div></div>
   </a>
   <ul class="nav-links" id="navlinks">
     <li><a href="index.html">← Home</a></li>
     <li><a href="commercial.html">Commercial</a></li>
     <li><a href="government.html">Government</a></li>
-    <li><a href="#book">Book Now</a></li>
+    <li><a href="#quote">Get a Quote</a></li>
     <li><a href="tel:0403423348" class="nav-call">📞 0403 423 348</a></li>
   </ul>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — SAME DAY FIRST -->
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">🏠 End of Lease · Bond Back · Steam &amp; Carpet Cleaning</div>
-    <h1 class="hero-h1">Get Your Bond Back.<br><em>Guaranteed.</em></h1>
-    <p class="hero-sub">Melbourne's most reviewed end-of-lease cleaning team. 99% bond return rate. We know exactly what agents and property managers expect — and we deliver it every time.</p>
-    <div class="hero-proof">
-      <span class="stars">★★★★★</span>
-      <span class="proof-text"><strong>2,000+ reviews · 99% bond return rate · 100% completion rate</strong></span>
+    <div class="hero-split">
+      <div>
+        <div class="same-day-badge">⚡ Melbourne's Same-Day Specialists</div>
+        <h1 class="hero-h1"><strong>Need It Cleaned</strong><br><em>Today?</em><br>We're On Our Way.</h1>
+        <p class="hero-sub">Melbourne's most reviewed end-of-lease cleaning team. Call before 12pm and we'll do everything we can to clean your property today — at our standard rate, no surcharge.</p>
+        <div class="hero-btns">
+          <a href="tel:0403423348" class="btn-red">📞 Call Now — Same-Day</a>
+          <a href="#quote" class="btn-outline">Get a Standard Quote</a>
+        </div>
+        <div class="hero-proof">
+          <span class="stars">★★★★★</span>
+          <span><strong>2,000+ reviews · 99% bond return rate · 100% completion</strong></span>
+        </div>
+      </div>
+      <div class="same-day-box">
+        <h3>How Same-Day <em>Booking Works</em></h3>
+        <div class="same-day-steps">
+          <div class="sd-step">
+            <div class="sd-step-num">1</div>
+            <div class="sd-step-text">
+              <h4>Call or Text Us First</h4>
+              <p>Call 0403 423 348 to check today's availability. We confirm your slot within 15 minutes.</p>
+            </div>
+          </div>
+          <div class="sd-step">
+            <div class="sd-step-num">2</div>
+            <div class="sd-step-text">
+              <h4>Pay $50 Priority Deposit</h4>
+              <p>Helen sends you a secure payment link. Pay $50 to lock in your slot — deducted from your total.</p>
+            </div>
+          </div>
+          <div class="sd-step">
+            <div class="sd-step-num">3</div>
+            <div class="sd-step-text">
+              <h4>We Arrive &amp; Clean</h4>
+              <p>Our team arrives, completes the full REIV checklist. Balance charged on completion. Receipt sent instantly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="same-day-note">
+          <strong>Why the $50 deposit?</strong> It confirms your slot is real and reserved. Same-day clients who pay show up — we protect our team's time and yours. The $50 comes off your final bill.
+        </div>
+      </div>
     </div>
-    <div class="hero-btns">
-      <a href="https://square.link/u/PH0sqykV" class="btn-green" target="_blank">💳 Secure Your Booking — $30 Deposit →</a>
-      <a href="tel:0403423348" class="btn-outline">📞 Call 0403 423 348</a>
-    </div>
-    <div class="sameday-note">✓ Same-day available &nbsp;·&nbsp; ✓ 30-day agent satisfaction guarantee &nbsp;·&nbsp; ✓ No surcharge for same-day</div>
   </div>
 </div>
 
-<!-- PAYMENT SECTION -->
+<!-- BOND GUARANTEE -->
+<div class="bond-section">
+  <div class="bond-inner">
+    <div class="reveal">
+      <div class="bond-badge">🛡 30-Day Agent Satisfaction Guarantee</div>
+      <h2 class="bond-h2">Get Your Bond Back.<br><em>Guaranteed.</em></h2>
+      <p class="bond-desc">Most cleaners offer 7 days. We offer 30. If your agent emails us about any cleaning issue within 30 days we return and fix it free — no arguments, no delays.</p>
+      <div class="bond-feats">
+        <div class="bond-feat"><span>✓</span><span><strong>REIV-aligned checklist</strong> — every item agents inspect, covered</span></div>
+        <div class="bond-feat"><span>✓</span><span><strong>Digital receipt</strong> accepted by all Melbourne agents &amp; VCAT</span></div>
+        <div class="bond-feat"><span>✓</span><span><strong>Before &amp; after photos</strong> provided on every job</span></div>
+        <div class="bond-feat"><span>✓</span><span><strong>Commercial equipment</strong> — SteamVac Max 220, Cleanstar 90L</span></div>
+        <div class="bond-feat"><span>✓</span><span><strong>All Melbourne suburbs</strong> — we come to you</span></div>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <div class="bond-stats">
+        <div class="bond-stat"><span class="n">2K+</span><span class="l">Five-Star Reviews</span></div>
+        <div class="bond-stat"><span class="n">99%</span><span class="l">Bond Return Rate</span></div>
+        <div class="bond-stat"><span class="n">100%</span><span class="l">Completion Rate</span></div>
+        <div class="bond-stat"><span class="n">30</span><span class="l">Day Guarantee</span></div>
+      </div>
+      <div style="background:rgba(26,122,74,0.1);border:1px solid rgba(26,122,74,0.3);padding:24px;margin-top:3px">
+        <p style="font-size:0.84rem;color:var(--silver);line-height:1.75;margin-bottom:16px"><strong style="color:var(--accent-light)">What competitors offer:</strong> 7-day guarantee. What we offer: 30 days. We are 4x more confident in our work than anyone else in Melbourne.</p>
+        <a href="tel:0403423348" class="btn-green" style="display:inline-flex">📞 Call to Book: 0403 423 348</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
 <div class="bg-dark">
-  <div class="section reveal" id="book">
-    <div class="s-label">How to Book &amp; Pay</div>
-    <h2 class="s-title">Simple. Secure. <em>Professional.</em></h2>
-    <p class="s-body">We've made booking as easy as possible. Secure your slot with a $30 deposit — remaining balance is charged when our team completes the clean.</p>
-    <div class="payment-box">
-      <h3>Secure Your Booking <em>Right Now</em></h3>
-      <p>Pay your $30 non-refundable booking fee online to lock in your date and time. Your card details are saved securely and the remaining balance is charged on completion.</p>
-      <a href="https://square.link/u/PH0sqykV" class="btn-pay" target="_blank">💳 Pay $30 Booking Fee — Secure My Slot →</a>
-      <p style="font-size:0.76rem;color:var(--silver)">Secure payment by Square · Visa, Mastercard, Amex accepted · Receipt issued instantly</p>
-      <div class="payment-steps">
-        <div class="pay-step">
-          <div class="pay-step-num">01</div>
-          <h4>Pay $30 Deposit Online</h4>
-          <p>Secures your time slot. Non-refundable. Enter your name, phone, property address and preferred date.</p>
-        </div>
-        <div class="pay-step">
-          <div class="pay-step-num">02</div>
-          <h4>We Confirm Your Booking</h4>
-          <p>Helen calls or texts within 1 hour to confirm your booking details and answer any questions.</p>
-        </div>
-        <div class="pay-step">
-          <div class="pay-step-num">03</div>
-          <h4>Team Cleans — Pay Balance</h4>
-          <p>Our team arrives, completes the clean to REIV standard. Remaining balance charged on completion. Receipt sent automatically.</p>
+  <div class="section reveal">
+    <div class="s-label">Starting Prices</div>
+    <h2 class="s-title">Transparent Pricing. <em>No Surprises.</em></h2>
+    <p class="s-body">Prices below are starting guides for standard empty properties. Your final quote is confirmed when you describe your property. Call or text for an accurate price in 30 minutes.</p>
+    <div class="price-grid">
+      <div class="price-card"><div class="price-type">Studio / 1 Bedroom<small>Unfurnished · oven, bathrooms, all rooms</small></div><div class="price-amt">From $245</div></div>
+      <div class="price-card featured"><div class="price-type">2 Bedroom Unit<small>Most popular · full REIV checklist</small></div><div class="price-amt">From $320</div></div>
+      <div class="price-card"><div class="price-type">3 Bedroom House<small>All rooms, outdoor areas on request</small></div><div class="price-amt">From $420</div></div>
+      <div class="price-card"><div class="price-type">4+ Bedroom / Large Home<small>Custom quote — call or text us</small></div><div class="price-amt">Call Us</div></div>
+      <div class="price-card"><div class="price-type">+ Carpet Steam Clean<small>Per area · SteamVac Max 220</small></div><div class="price-amt">+$80</div></div>
+      <div class="price-card"><div class="price-type">+ Couch Steam Clean<small>Per couch · industrial extraction</small></div><div class="price-amt">From $60</div></div>
+    </div>
+    <div class="price-note"><strong>Final quote confirmed on description.</strong> Prices are starting guides for standard, empty, single-storey properties with one bathroom. Furnished properties, double storey, additional bathrooms or heavily soiled properties may vary — always confirmed before we begin. Text your property details to <strong>0403 423 348</strong> for an accurate quote within 30 minutes.</div>
+  </div>
+</div>
+
+<!-- INCLUSIONS & EXCLUSIONS -->
+<div class="bg-navy">
+  <div class="section reveal">
+    <div class="s-label">What's Included &amp; What's Extra</div>
+    <h2 class="s-title">Clear Scope. <em>No Confusion.</em></h2>
+    <p class="s-body">We're upfront about exactly what's in the standard clean and what's a negotiable extra — no surprises on the day.</p>
+    <div class="inc-exc-grid">
+      <div class="inc-box">
+        <div class="box-title">✓ Standard Inclusions</div>
+        <div class="inc-list">
+          <div class="inc-item"><span class="inc-check">✓</span><span>Vacuuming — all carpets and hard floors</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Mopping all hard floor surfaces</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Bathrooms — shower, toilet, vanity, mirrors, tiles</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Kitchen — oven, stove, cabinets, rangehood, benchtops, sink</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Spot wall cleaning — marks and scuffs</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Skirting boards wiped throughout</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Interior windows cleaned</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Wardrobes inside and out</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Light fittings and switches</span></div>
+          <div class="inc-item"><span class="inc-check">✓</span><span>Digital receipt + before &amp; after photos</span></div>
         </div>
       </div>
-      <div class="card-note">
-        <strong>Card on File:</strong> When you pay the $30 booking fee your card is saved securely by Square. The remaining balance is charged to the same card on completion — no cash required, no payment chasing. You receive an automatic tax receipt by email or SMS. · <strong>PayID alternative:</strong> 0403 423 348 (instant bank transfer also accepted for the deposit)
+      <div class="exc-box">
+        <div class="box-title">+ Negotiable Extras</div>
+        <div class="exc-list">
+          <div class="exc-item"><span class="exc-check">+</span><span>Wall washing — full wall clean beyond spot treatment</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Blind washing — all blind types</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Mould treatment — bathrooms, ceilings, windows</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Pet hair removal — heavy treatment</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Double storey properties</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Furnished properties</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Removal of stickers or adhesive residue</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>External cleaning — balconies, garages</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Carpet steam cleaning (+$80 per area)</span></div>
+          <div class="exc-item"><span class="exc-check">+</span><span>Couch steam cleaning (from $60 per couch)</span></div>
+          <div class="exc-item"><span class="exc-check">⚠</span><span style="color:var(--silver)">Stain/rust/discolouration removal not guaranteed for permanent marks — but we always do our best</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS — LARGE & PROMINENT — ONE THIRD OF PAGE -->
+<div class="reviews-section">
+  <div class="reviews-inner">
+    <div class="reviews-header reveal">
+      <div class="s-label">Verified Client Reviews</div>
+      <h2 class="s-title">2,000+ Melburnians <em>Trust Us With Their Bond</em></h2>
+      <p class="s-body">Real reviews. Real clients. Exact words — nothing changed.</p>
+      <div class="review-count-bar">
+        <div class="rc-item"><span class="n">2,000+</span><span class="l">Verified Reviews</span></div>
+        <div class="rc-item"><span class="n">★ 5.0</span><span class="l">Star Rating</span></div>
+        <div class="rc-item"><span class="n">99%</span><span class="l">Bond Return Rate</span></div>
+        <div class="rc-item"><span class="n">100%</span><span class="l">Completion Rate</span></div>
+      </div>
+    </div>
+    <div class="review-proof-strip">
+      <div class="rps-item"><span class="n">2,000+</span><span class="l">Verified Reviews</span></div>
+      <div class="rps-item"><span class="n">★ 5.0</span><span class="l">Star Rating</span></div>
+      <div class="rps-item"><span class="n">99%</span><span class="l">Bond Return Rate</span></div>
+      <div class="rps-item"><span class="n">100%</span><span class="l">Completion Rate</span></div>
+    </div>
+    <div class="reviews-grid-clean">
+      <div class="review-clean reveal">
+        <div class="rc-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 End of Lease</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"They went above and beyond and they are so friendly to deal with!"</p>
+        <div class="rc-author"><div class="rc-avatar">J</div><div><div class="rc-name">Jessica L.</div><div class="rc-job">End of lease clean</div></div></div>
+      </div>
+      <div class="review-clean reveal d1">
+        <div class="rc-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 Bond Clean</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Cleaner now than when I moved in."</p>
+        <div class="rc-author"><div class="rc-avatar">T</div><div><div class="rc-name">Tyler G.</div><div class="rc-job">1-bed + carpet steam clean</div></div></div>
+      </div>
+      <div class="review-clean reveal d2">
+        <div class="rc-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 Bond Clean</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Real estate agent commented how clean everything was."</p>
+        <div class="rc-author"><div class="rc-avatar">T</div><div><div class="rc-name">Tayt B.</div><div class="rc-job">Bond clean — moving out</div></div></div>
+      </div>
+      <div class="review-clean reveal">
+        <div class="rc-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 End of Lease</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Cannot praise enough! 12/10 gold stars."</p>
+        <div class="rc-author"><div class="rc-avatar">S</div><div><div class="rc-name">Sarah B.</div><div class="rc-job">End of lease cleaning</div></div></div>
+      </div>
+      <div class="review-clean reveal d1">
+        <div class="rc-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 End of Lease</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Left the house better and cleaner than its ever been! Highly recommend."</p>
+        <div class="rc-author"><div class="rc-avatar">H</div><div><div class="rc-name">Hussein I.</div><div class="rc-job">End of lease cleaning</div></div></div>
+      </div>
+      <div class="review-clean reveal d2">
+        <div class="rc-badge" style="background:rgba(26,122,74,0.12);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)">🏠 Bond Clean</div>
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-text">"Super professional, left our house looking even better than when we first moved in."</p>
+        <div class="rc-author"><div class="rc-avatar">Q</div><div><div class="rc-name">Qistina Z.</div><div class="rc-job">End of lease cleaning</div></div></div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- GUARANTEE -->
-<div class="bg-navy">
+<div class="bg-dark">
   <div class="section reveal">
     <div class="s-label">Our Guarantee</div>
     <h2 class="s-title">30-Day Agent <em>Satisfaction Guarantee</em></h2>
-    <p class="s-body">Most cleaning companies offer a 7-day guarantee. We offer 30 days — because we are that confident in our work.</p>
+    <p class="s-body">Most competitors offer 7 days. We offer 30 — because we are that confident in our work.</p>
     <div class="guarantee-box">
       <span class="guarantee-icon">🛡</span>
       <div class="guarantee-title">30-Day <em>Agent Satisfaction Guarantee</em></div>
@@ -279,92 +463,12 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
   </div>
 </div>
 
-<!-- PRICING -->
-<div class="bg-dark">
-  <div class="section reveal">
-    <div class="s-label">Starting Prices</div>
-    <h2 class="s-title">Transparent Pricing. <em>No Surprises.</em></h2>
-    <p class="s-body">Prices below are starting guides based on standard empty properties. Your final quote is confirmed when you describe your property — call or text us for an accurate price.</p>
-    <div class="price-grid">
-      <div class="price-card"><div class="price-type">Studio / 1 Bedroom<small>Unfurnished · oven, bathrooms, all rooms</small></div><div class="price-amt">From $245</div></div>
-      <div class="price-card featured"><div class="price-type">2 Bedroom Unit<small>Most popular · full REIV checklist included</small></div><div class="price-amt">From $320</div></div>
-      <div class="price-card"><div class="price-type">3 Bedroom House<small>All rooms, outdoor areas, full clean</small></div><div class="price-amt">From $420</div></div>
-      <div class="price-card"><div class="price-type">4+ Bedroom / Large Home<small>Custom quote — call or text us</small></div><div class="price-amt">Call Us</div></div>
-      <div class="price-card"><div class="price-type">+ Carpet Steam Clean<small>Add to any package · SteamVac Max 220</small></div><div class="price-amt">+$80</div></div>
-      <div class="price-card"><div class="price-type">+ Couch Steam Clean<small>Per couch · industrial extraction</small></div><div class="price-amt">From $60</div></div>
-    </div>
-    <div class="price-note">
-      <strong>Final quote confirmed on description.</strong> Prices above are starting guides for standard, empty, single-storey properties with one bathroom. Furnished properties, double storey, additional bathrooms or heavily soiled properties may vary — always confirmed before we begin. Call <strong>0403 423 348</strong> or text your property details for an accurate quote within 30 minutes.
-    </div>
-  </div>
-</div>
-
-<!-- INCLUSIONS & EXCLUSIONS -->
-<div class="bg-navy">
-  <div class="section reveal">
-    <div class="s-label">What's Included &amp; What's Extra</div>
-    <h2 class="s-title">Clear Scope. <em>No Confusion.</em></h2>
-    <p class="s-body">We're upfront about exactly what's included in our standard clean and what's a negotiable extra — so there are no surprises on the day.</p>
-    <div class="inc-exc-grid">
-      <div class="inc-box">
-        <div class="box-title">✓ Standard Inclusions</div>
-        <div class="inc-list">
-          <div class="inc-item"><span class="inc-check">✓</span><span>Vacuuming — all carpets and hard floors</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Mopping all hard floor surfaces</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Bathrooms — shower, toilet, vanity, mirrors, tiles</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Kitchen — oven inside and out, stove, cabinets inside and out, rangehood, benchtops, sink</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Spot wall cleaning — marks and scuffs</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Skirting boards wiped throughout</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Interior windows cleaned</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Wardrobes inside and out</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Light fittings and switches</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Digital receipt for your agent</span></div>
-          <div class="inc-item"><span class="inc-check">✓</span><span>Before and after photos provided</span></div>
-        </div>
-      </div>
-      <div class="exc-box">
-        <div class="box-title">+ Negotiable Extras</div>
-        <div class="exc-list">
-          <div class="exc-item"><span class="exc-check">+</span><span>Wall washing — full wall clean beyond spot treatment</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Blind washing — all blind types</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Mould treatment — bathrooms, ceilings, windows</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Pet hair removal — heavy pet hair treatment</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Double storey properties</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Furnished properties</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Removal of stickers or adhesive residue</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>External cleaning — balconies, garages, outdoor areas</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Carpet steam cleaning (+$80 per area)</span></div>
-          <div class="exc-item"><span class="exc-check">+</span><span>Couch steam cleaning (from $60 per couch)</span></div>
-          <div class="exc-item"><span class="exc-check">⚠</span><span style="color:var(--silver)">Stain/rust/discolouration removal not guaranteed for permanent marks — but we'll always do our best</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- REVIEWS -->
-<div class="bg-dark">
-  <div class="section reveal">
-    <div class="s-label">Real Client Reviews</div>
-    <h2 class="s-title">What Melbourne Renters <em>Say About Us</em></h2>
-    <p class="s-body">2,000+ verified reviews. These are real clients — exact words, nothing changed.</p>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">"Cleaner now than when I moved in."</p><div class="r-author"><div class="r-avatar">T</div><div><div class="r-name">Tyler G.</div><div class="r-job">1-bed + carpet steam clean</div></div></div></div>
-      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">"Real estate agent commented how clean everything was."</p><div class="r-author"><div class="r-avatar">T</div><div><div class="r-name">Tayt B.</div><div class="r-job">Bond clean — moving out</div></div></div></div>
-      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">"On time and efficient, amazing work, they really take pride in their work! They went above and beyond."</p><div class="r-author"><div class="r-avatar">J</div><div><div class="r-name">Jessica L.</div><div class="r-job">End of lease clean</div></div></div></div>
-      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">"Amazing job! Cornelius completely fixed the bathroom and cleaned the exhaust fans so well that they now actually work! 12/10 gold stars."</p><div class="r-author"><div class="r-avatar">S</div><div><div class="r-name">Sarah B.</div><div class="r-job">End of lease cleaning</div></div></div></div>
-      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">"They were super professional, and left our house looking even better than when we first moved in."</p><div class="r-author"><div class="r-avatar">Q</div><div><div class="r-name">Qistina Z.</div><div class="r-job">End of lease cleaning</div></div></div></div>
-      <div class="review-card"><div class="r-stars">★★★★★</div><p class="r-text">"Left the house better and cleaner than it's ever been! He did the walls and garage as extra. Highly recommend."</p><div class="r-author"><div class="r-avatar">H</div><div><div class="r-name">Hussein I.</div><div class="r-job">End of lease cleaning</div></div></div></div>
-    </div>
-  </div>
-</div>
-
-<!-- BOOKING FORM -->
-<div class="contact-wrap">
+<!-- QUOTE FORM -->
+<div class="contact-wrap" id="quote">
   <div class="contact-inner">
-    <div class="s-label">Get a Quote First</div>
-    <h2 class="s-title">Want a Quote Before <em>Booking?</em></h2>
-    <p class="s-body" style="margin-top:10px">Fill in your details and we'll call or text you back within 30 minutes with an accurate price. For same-day bookings call <a href="tel:0403423348" style="color:var(--accent-light)">0403 423 348</a> directly.</p>
+    <div class="s-label">Get a Quote</div>
+    <h2 class="s-title">Not Urgent? <em>Get a Standard Quote.</em></h2>
+    <p class="s-body" style="margin-top:10px">Fill in your details and we'll call or text you back within 30 minutes with an accurate price. No deposit required for standard bookings. For same-day cleans call <a href="tel:0403423348" style="color:var(--accent-light)">0403 423 348</a> directly.</p>
     <form class="contact-form" onsubmit="handleSubmit(event)">
       <div class="f-row">
         <div class="f-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
@@ -378,7 +482,6 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
         <label>Service Required *</label>
         <select required>
           <option value="" disabled selected>Select...</option>
-          <option>⚡ Same-Day End of Lease (call before 12pm)</option>
           <option>End of Lease — Studio / 1 Bedroom</option>
           <option>End of Lease — 2 Bedroom</option>
           <option>End of Lease — 3 Bedroom</option>
@@ -394,7 +497,7 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
         <div class="f-group"><label>Preferred Date</label><input type="date"></div>
         <div class="f-group"><label>Preferred Time</label><input type="time" value="08:00"></div>
       </div>
-      <div class="f-group"><label>Additional Notes</label><textarea placeholder="How many bedrooms & bathrooms? Single or double storey? Furnished or empty? Condition of property (standard, heavily soiled, mould, pet hair)? Any extras needed (carpet steam, blinds, walls)?"></textarea></div>
+      <div class="f-group"><label>Property Details</label><textarea placeholder="How many bedrooms & bathrooms? Single or double storey? Furnished or empty? Condition of property (standard, heavily soiled, mould, pet hair)? Any extras needed (carpet steam, blinds, walls)?"></textarea></div>
       <button type="submit" class="btn-submit">Get My Quote →</button>
     </form>
   </div>
@@ -415,7 +518,7 @@ footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:
 <script>
 function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
-const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.1});
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 function handleSubmit(e){
   e.preventDefault();
