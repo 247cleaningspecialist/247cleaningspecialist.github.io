@@ -3,891 +3,477 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>24/7 Cleaning — Helen's Dashboard</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>24/7 Cleaning Specialist | Melbourne's Most Reviewed Cleaning Company</title>
+<meta name="description" content="Melbourne's most reviewed cleaning specialist. 2,000+ five-star reviews. End of lease, commercial and government cleaning. Book online instantly.">
+<meta name="keywords" content="cleaning Melbourne, end of lease cleaning Melbourne, commercial cleaning Melbourne, bond cleaning Melbourne, same day cleaning Melbourne">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 :root{
-  --ink:#090d0f;--deep:#0b1418;--navy:#0f1e26;--mid:#1a3040;
-  --gold:#c8922a;--gold-light:#e8b84b;--white:#fff;--offwhite:#f0f4f6;
-  --silver:#8aa8b8;--mist:#c8dde8;--green:#1a7a4a;--red:#c0392b;
-  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Outfit',system-ui,sans-serif;
+  --cream:#faf7f2;
+  --cream-dark:#f2ece2;
+  --cream-mid:#e8dfd0;
+  --cream-deep:#ddd0bc;
+  --gold:#b8861e;
+  --gold-light:#d4a332;
+  --gold-pale:#fdf3dc;
+  --gold-border:#e8c878;
+  --ink:#2c2416;
+  --warm:#6b5535;
+  --muted:#9a8468;
+  --white:#fff;
+  --green:#1a6b40;
+  --green-light:#2d9658;
+  --red:#b83228;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Outfit',system-ui,sans-serif;
 }
-body{background:var(--deep);color:var(--offwhite);font-family:var(--sans);font-weight:300;min-height:100vh}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--cream-dark)}::-webkit-scrollbar-thumb{background:var(--gold)}
 
-/* HEADER */
-.header{background:var(--ink);border-bottom:1px solid rgba(200,146,42,0.2);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.header-brand{display:flex;align-items:center;gap:10px}
-.logo{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),#b8821a);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:900;color:var(--ink)}
-.brand-name{font-family:var(--serif);font-size:1rem;color:var(--white)}
-.brand-sub{font-size:0.6rem;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase}
-.header-right{display:flex;align-items:center;gap:12px}
-.date-display{font-size:0.78rem;color:var(--silver)}
-.helen-badge{background:rgba(200,146,42,0.15);border:1px solid rgba(200,146,42,0.3);padding:6px 12px;border-radius:20px;font-size:0.72rem;color:var(--gold);font-weight:600}
+/* TICKER */
+.ticker-wrap{background:var(--gold);padding:8px 0;overflow:hidden}
+.ticker-inner{display:flex;animation:ticker 60s linear infinite;white-space:nowrap;width:max-content}
+.ticker-inner:hover{animation-play-state:paused}
+.ticker-item{display:inline-flex;align-items:center;gap:8px;padding:0 32px;font-size:0.72rem;color:var(--cream)}
+.ticker-stars{color:var(--cream);letter-spacing:1px}
+.ticker-name{font-weight:600;color:var(--white)}
+.ticker-review{font-style:italic;color:rgba(255,255,255,0.85)}
+.ticker-dot{width:4px;height:4px;background:rgba(255,255,255,0.5);border-radius:50%;flex-shrink:0}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* NAV TABS */
-.tabs{display:flex;gap:2px;background:var(--ink);border-bottom:1px solid rgba(255,255,255,0.07);padding:0 24px}
-.tab{padding:14px 20px;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--silver);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.3s}
-.tab:hover{color:var(--gold-light)}
-.tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+/* NAV */
+nav{background:var(--white);border-bottom:2px solid var(--gold-border);padding:18px 56px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(184,134,30,0.08)}
+.logo-mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-icon{width:44px;height:44px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.82rem;font-weight:900;color:var(--white);letter-spacing:-0.5px}
+.logo-name{font-family:var(--serif);font-size:1.1rem;color:var(--ink);line-height:1.1;font-weight:400}
+.logo-sub{font-size:0.54rem;font-weight:700;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:4px;list-style:none;align-items:center}
+.nav-links a{font-size:0.72rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;color:var(--warm);text-decoration:none;padding:8px 14px;border-radius:3px;transition:all 0.3s}
+.nav-links a:hover{color:var(--gold);background:var(--gold-pale)}
+.nav-call{background:var(--gold)!important;color:var(--white)!important;font-weight:700!important}
+.nav-call:hover{background:var(--gold-light)!important;background:var(--gold-light)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--ink);display:block}
 
-/* MAIN */
-.main{padding:24px;max-width:1200px;margin:0 auto}
-.page{display:none}.page.active{display:block}
+/* FLOAT */
+.float-book{position:fixed;bottom:28px;right:28px;z-index:9999;background:var(--gold);color:var(--white);width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 8px 32px rgba(184,134,30,0.35);transition:all 0.3s}
+.float-book:hover{transform:scale(1.08);box-shadow:0 12px 48px rgba(184,134,30,0.5)}
 
-/* STATS ROW */
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
-.stat-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:20px;position:relative;overflow:hidden}
-.stat-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
-.stat-num{font-family:var(--serif);font-size:2rem;color:var(--white);line-height:1;margin-bottom:4px}
-.stat-num span{color:var(--gold)}
-.stat-lbl{font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver)}
+/* STICKY MOBILE */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:9990;background:var(--white);border-top:2px solid var(--gold-border);padding:10px 16px;gap:8px}
+@media(max-width:768px){.sticky-cta{display:flex}}
+.sticky-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px;font-family:var(--sans);font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;border-radius:3px}
+.scta-primary{background:var(--gold);color:var(--white)}
+.scta-secondary{background:var(--cream-dark);color:var(--warm);border:1px solid var(--cream-deep)}
 
-/* SECTION HEADER */
-.section-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.section-title{font-family:var(--serif);font-size:1.4rem;color:var(--white)}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;font-family:var(--sans);font-size:0.74rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;border-radius:2px;border:none;cursor:pointer;transition:all 0.3s}
-.btn-gold{background:var(--gold);color:var(--ink)}.btn-gold:hover{background:var(--gold-light)}
-.btn-green{background:var(--green);color:#fff}.btn-green:hover{background:#22996e}
-.btn-outline{background:transparent;color:var(--silver);border:1px solid rgba(255,255,255,0.15)}.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
-.btn-red{background:rgba(192,57,43,0.15);color:#e74c3c;border:1px solid rgba(192,57,43,0.3)}.btn-red:hover{background:rgba(192,57,43,0.25)}
-.btn-sm{padding:6px 12px;font-size:0.68rem}
+/* URGENT */
+.urgent{background:var(--red);padding:10px 24px;text-align:center;font-size:0.76rem;font-weight:600;color:var(--white)}
+.urgent a{color:var(--white);text-decoration:none;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.5)}
 
-/* TABLE */
-.table-wrap{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);overflow:hidden;margin-bottom:24px}
-table{width:100%;border-collapse:collapse}
-thead{background:var(--navy)}
-th{padding:12px 16px;text-align:left;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid rgba(255,255,255,0.07)}
-td{padding:13px 16px;font-size:0.82rem;color:var(--offwhite);border-bottom:1px solid rgba(255,255,255,0.05)}
-tr:last-child td{border-bottom:none}
-tr:hover td{background:rgba(200,146,42,0.04)}
-.status{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:2px;font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase}
-.status-confirmed{background:rgba(26,122,74,0.15);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)}
-.status-pending{background:rgba(200,146,42,0.15);color:var(--gold);border:1px solid rgba(200,146,42,0.3)}
-.status-completed{background:rgba(42,80,104,0.3);color:var(--mist);border:1px solid rgba(42,80,104,0.4)}
-.status-paid{background:rgba(26,122,74,0.15);color:#4caf7d;border:1px solid rgba(26,122,74,0.3)}
-.status-unpaid{background:rgba(192,57,43,0.15);color:#e74c3c;border:1px solid rgba(192,57,43,0.3)}
-.status-overdue{background:rgba(192,57,43,0.25);color:#e74c3c;border:1px solid rgba(192,57,43,0.5)}
+/* HERO */
+.hero{background:var(--cream-dark);border-bottom:2px solid var(--gold-border);padding:96px 56px 80px;position:relative;overflow:hidden}
+.hero-pattern{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(184,134,30,0.06) 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
+.hero-inner{max-width:960px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:12px;margin-bottom:28px}
+.eyebrow-line{width:40px;height:1px;background:var(--gold)}
+.eyebrow-text{font-size:0.64rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold)}
+.hero-h1{font-family:var(--serif);font-size:clamp(3rem,6vw,5.5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:20px;letter-spacing:-0.02em}
+.hero-h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:1.05rem;font-weight:300;color:var(--warm);line-height:1.85;max-width:580px;margin:0 auto 32px}
+.hero-proof{display:inline-flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--gold-border);padding:12px 24px;margin-bottom:36px;box-shadow:0 2px 12px rgba(184,134,30,0.1)}
+.proof-stars{color:var(--gold);font-size:0.9rem;letter-spacing:3px}
+.proof-text{font-size:0.8rem;color:var(--warm)}
+.proof-text strong{color:var(--ink)}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--white);padding:16px 32px;font-family:var(--sans);font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all 0.3s}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 28px rgba(184,134,30,0.3)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:var(--white);color:var(--warm);padding:16px 32px;font-family:var(--sans);font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:2px solid var(--cream-deep);border-radius:3px;transition:all 0.3s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
 
-/* MODAL */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:1000;align-items:center;justify-content:center;padding:20px}
-.modal-overlay.open{display:flex}
-.modal{background:var(--navy);border:1px solid rgba(200,146,42,0.25);width:100%;max-width:580px;max-height:90vh;overflow-y:auto}
-.modal-header{background:var(--ink);padding:20px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(200,146,42,0.2)}
-.modal-title{font-family:var(--serif);font-size:1.2rem;color:var(--white)}
-.modal-close{background:none;border:none;color:var(--silver);font-size:1.2rem;cursor:pointer;padding:4px}
-.modal-close:hover{color:var(--white)}
-.modal-body{padding:24px}
-.modal-footer{padding:16px 24px;border-top:1px solid rgba(255,255,255,0.07);display:flex;gap:10px;justify-content:flex-end}
+/* SERVICES */
+.services-section{background:var(--white);padding:80px 56px}
+.section-header{text-align:center;margin-bottom:52px}
+.section-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:0.63rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.section-eyebrow::before,.section-eyebrow::after{content:'';width:28px;height:1px;background:var(--gold-border)}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--ink);line-height:1.15}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-sub{font-size:0.95rem;color:var(--muted);line-height:1.8;max-width:520px;margin:12px auto 0}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto}
+.service-card{background:var(--cream);border:1px solid var(--cream-mid);padding:48px 36px;text-decoration:none;display:block;transition:all 0.4s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-accent,var(--gold));transform:scaleX(0);transform-origin:left;transition:transform 0.4s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(184,134,30,0.12);border-color:var(--gold-border)}
+.service-card:hover::before{transform:scaleX(1)}
+.card-icon{font-size:2.4rem;margin-bottom:18px;display:block}
+.card-title{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--ink);margin-bottom:10px;line-height:1.2}
+.card-desc{font-size:0.84rem;color:var(--muted);line-height:1.8;margin-bottom:20px}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.ctag{font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--gold-pale);color:var(--gold)}
+.card-link{font-size:0.74rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:6px;transition:gap 0.3s}
+.service-card:hover .card-link{gap:10px}
 
-/* FORM */
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.form-grid.single{grid-template-columns:1fr}
-.f-group{display:flex;flex-direction:column;gap:6px}
-.f-group.full{grid-column:1/-1}
-.f-group label{font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver)}
-.f-group input,.f-group select,.f-group textarea{
-  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
-  border-radius:2px;padding:10px 13px;font-family:var(--sans);font-size:0.84rem;
-  color:var(--white);outline:none;transition:border-color 0.3s;width:100%
-}
-.f-group input:focus,.f-group select:focus,.f-group textarea:focus{border-color:var(--gold);background:rgba(200,146,42,0.05)}
-.f-group select option{background:var(--deep)}
-.f-group textarea{resize:vertical;min-height:80px}
-.divider{border:none;border-top:1px solid rgba(255,255,255,0.08);margin:20px 0}
+/* STATS */
+.stats-section{background:var(--gold);padding:56px}
+.stats-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.2)}
+.stat-item{background:var(--gold);padding:36px 24px;text-align:center;transition:background 0.3s}
+.stat-item:hover{background:var(--gold-light)}
+.stat-num{font-family:var(--serif);font-size:3rem;font-weight:300;color:var(--white);line-height:1;margin-bottom:6px}
+.stat-lbl{font-size:0.62rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.75)}
 
-/* INVOICE PREVIEW */
-.invoice-preview{background:var(--white);color:#2c2c2c;padding:32px;font-family:'Outfit',sans-serif;margin-top:16px;border-radius:2px}
-.inv-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;padding-bottom:20px;border-bottom:3px solid #c8922a}
-.inv-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:#0f1e26}
-.inv-logo span{display:block;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#c8922a;font-family:'Outfit',sans-serif;font-weight:700;margin-top:2px}
-.inv-meta{text-align:right}
-.inv-meta h2{font-size:1.4rem;color:#c8922a;font-family:'Cormorant Garamond',serif;margin-bottom:4px}
-.inv-meta p{font-size:0.75rem;color:#666;line-height:1.6}
-.inv-parties{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
-.inv-party h4{font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#c8922a;margin-bottom:6px}
-.inv-party p{font-size:0.8rem;color:#444;line-height:1.7}
-.inv-table{width:100%;border-collapse:collapse;margin-bottom:20px}
-.inv-table th{background:#0f1e26;color:#fff;padding:10px 14px;text-align:left;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase}
-.inv-table td{padding:11px 14px;font-size:0.82rem;border-bottom:1px solid #eee;color:#333}
-.inv-table tr:last-child td{border-bottom:none}
-.inv-totals{text-align:right;margin-bottom:20px}
-.inv-totals table{margin-left:auto;min-width:240px;border-collapse:collapse}
-.inv-totals td{padding:6px 14px;font-size:0.82rem;color:#444}
-.inv-totals .total-row td{font-weight:700;color:#0f1e26;border-top:2px solid #c8922a;font-size:0.9rem;padding-top:10px}
-.inv-footer{background:#f8f8f8;padding:14px;border-radius:2px;font-size:0.74rem;color:#666;line-height:1.7}
-.inv-footer strong{color:#0f1e26}
+/* TRUST */
+.trust-bar{background:var(--cream-dark);border-top:1px solid var(--cream-deep);border-bottom:1px solid var(--cream-deep);padding:16px 56px;display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--warm)}
+.trust-dot{width:5px;height:5px;background:var(--gold);border-radius:50%}
 
-/* CALENDAR */
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin-top:16px}
-.cal-day-hdr{text-align:center;padding:8px 4px;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--silver)}
-.cal-day{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);padding:8px;min-height:80px;cursor:pointer;transition:all 0.2s;position:relative}
-.cal-day:hover{background:rgba(200,146,42,0.06);border-color:rgba(200,146,42,0.25)}
-.cal-day.today{border-color:rgba(200,146,42,0.5);background:rgba(200,146,42,0.08)}
-.cal-day.other-month{opacity:0.35}
-.cal-day-num{font-size:0.78rem;font-weight:600;color:var(--white);margin-bottom:4px}
-.cal-day.today .cal-day-num{color:var(--gold)}
-.cal-event{background:rgba(26,122,74,0.3);border-left:2px solid #4caf7d;padding:2px 5px;font-size:0.62rem;color:#4caf7d;margin-bottom:2px;border-radius:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cal-event.commercial{background:rgba(200,146,42,0.2);border-left-color:var(--gold);color:var(--gold)}
-.cal-event.government{background:rgba(42,80,104,0.3);border-left-color:var(--mist);color:var(--mist)}
-.cal-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.cal-nav button{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:var(--silver);padding:7px 14px;cursor:pointer;border-radius:2px;font-size:0.8rem;transition:all 0.2s}
-.cal-nav button:hover{border-color:var(--gold);color:var(--gold)}
-.cal-title{font-family:var(--serif);font-size:1.3rem;color:var(--white)}
+/* REVIEWS */
+.reviews-section{background:var(--cream);padding:80px 56px}
+.review-cats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
+.review-cat{font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:8px 18px;border-radius:2px;border:1px solid var(--cream-deep);color:var(--muted);cursor:pointer;transition:all 0.3s;background:var(--white)}
+.review-cat.active,.review-cat:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-pale)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto}
+.review-card{background:var(--white);border:1px solid var(--cream-mid);padding:28px;transition:all 0.3s;display:none}
+.review-card.show{display:block}
+.review-card:hover{box-shadow:0 8px 32px rgba(184,134,30,0.1);transform:translateY(-3px);border-color:var(--gold-border)}
+.r-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:2px;font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:var(--gold-pale);color:var(--gold);margin-bottom:10px}
+.r-stars{color:var(--gold);font-size:0.85rem;letter-spacing:3px;margin-bottom:10px}
+.r-text{font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--ink);line-height:1.7;margin-bottom:16px}
+.r-author{display:flex;align-items:center;gap:10px}
+.r-avatar{width:34px;height:34px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:0.85rem;color:var(--white);flex-shrink:0}
+.r-name{font-size:0.8rem;font-weight:600;color:var(--ink)}
+.r-job{font-size:0.7rem;color:var(--muted)}
 
-/* QUICK ACTIONS */
-.quick-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
-.action-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:20px;cursor:pointer;transition:all 0.3s;text-align:center}
-.action-card:hover{background:rgba(200,146,42,0.07);border-color:rgba(200,146,42,0.3);transform:translateY(-2px)}
-.action-icon{font-size:1.8rem;margin-bottom:8px}
-.action-title{font-size:0.82rem;font-weight:600;color:var(--white);margin-bottom:4px}
-.action-desc{font-size:0.72rem;color:var(--silver)}
+/* STORY */
+.story-section{background:var(--cream-dark);border-top:2px solid var(--gold-border);border-bottom:2px solid var(--gold-border);padding:80px 56px}
+.story-inner{max-width:800px;margin:0 auto;text-align:center}
+.story-h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);margin-bottom:20px;line-height:1.2}
+.story-h2 em{font-style:italic;color:var(--gold)}
+.story-text{font-size:0.95rem;color:var(--warm);line-height:1.9;margin-bottom:16px}
+.story-quote{border-left:3px solid var(--gold);padding:24px 32px;margin:32px 0;text-align:left;background:var(--white)}
+.story-quote blockquote{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.7;margin-bottom:10px}
+.story-quote cite{font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-style:normal}
+.migrant-note{background:var(--gold-pale);border:1px solid var(--gold-border);padding:20px 24px;font-size:0.85rem;color:var(--warm);line-height:1.75;text-align:left}
+.migrant-note strong{color:var(--gold)}
 
-/* UPCOMING */
-.upcoming-list{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
-.upcoming-item{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:16px 18px;display:flex;align-items:center;gap:16px;transition:all 0.2s}
-.upcoming-item:hover{background:rgba(200,146,42,0.05);border-color:rgba(200,146,42,0.2)}
-.upcoming-date{text-align:center;min-width:52px;background:rgba(200,146,42,0.1);border:1px solid rgba(200,146,42,0.2);padding:8px 6px;border-radius:2px}
-.upcoming-date .day{font-family:var(--serif);font-size:1.5rem;color:var(--gold);line-height:1}
-.upcoming-date .month{font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--silver)}
-.upcoming-info{flex:1}
-.upcoming-client{font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:2px}
-.upcoming-detail{font-size:0.76rem;color:var(--silver)}
-.upcoming-amount{font-family:var(--serif);font-size:1.2rem;color:var(--gold);white-space:nowrap}
+/* CONTACT */
+.contact-section{background:var(--white);padding:80px 56px}
+.contact-inner{max-width:800px;margin:0 auto;text-align:center}
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.contact-card{background:var(--cream);border:1px solid var(--cream-mid);padding:32px 20px;text-align:center;text-decoration:none;transition:all 0.3s}
+.contact-card:hover{border-color:var(--gold-border);transform:translateY(-4px);box-shadow:0 12px 40px rgba(184,134,30,0.12)}
+.cc-icon{font-size:1.8rem;margin-bottom:12px;display:block}
+.cc-title{font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.cc-value{font-size:0.95rem;color:var(--ink);font-weight:500}
+.cc-sub{font-size:0.74rem;color:var(--muted);margin-top:4px}
 
-/* NOTIFICATION */
-.notification{position:fixed;bottom:24px;right:24px;background:var(--green);color:#fff;padding:14px 20px;border-radius:2px;font-size:0.82rem;font-weight:600;display:none;z-index:9999;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
-.notification.show{display:block;animation:slideIn 0.3s ease}
-@keyframes slideIn{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+/* FOOTER */
+footer{background:var(--cream-dark);border-top:2px solid var(--gold-border);padding:56px 56px 24px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;margin-bottom:36px}
+.footer-brand p{font-size:0.83rem;color:var(--muted);line-height:1.8;max-width:260px;margin-top:12px}
+.footer-tagline{font-size:0.72rem;color:var(--gold);font-style:italic;margin-top:8px}
+.footer-col h4{font-size:0.6rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col a{font-size:0.83rem;color:var(--muted);text-decoration:none;transition:color 0.3s}
+.footer-col a:hover{color:var(--ink)}
+.footer-bottom{border-top:1px solid var(--cream-deep);padding-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-bottom p{font-size:0.72rem;color:var(--muted)}
+.footer-bottom span{color:var(--gold)}
+.abn-badge{font-size:0.65rem;color:var(--muted);background:var(--white);border:1px solid var(--cream-deep);padding:5px 10px}
 
-/* EMPTY STATE */
-.empty{text-align:center;padding:48px 24px;color:var(--silver)}
-.empty-icon{font-size:2.5rem;margin-bottom:12px;opacity:0.5}
-.empty p{font-size:0.88rem}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:0.1s}.d2{transition-delay:0.2s}.d3{transition-delay:0.3s}
 
-@media(max-width:768px){
-  .stats-row{grid-template-columns:1fr 1fr}
-  .quick-actions{grid-template-columns:1fr}
-  .form-grid{grid-template-columns:1fr}
-  .tabs{overflow-x:auto}
-  .tab{white-space:nowrap;padding:12px 14px}
-  .main{padding:14px}
+@media(max-width:960px){
+  .ticker-wrap{display:none}
+  nav{padding:14px 20px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--white);justify-content:center;align-items:center;gap:32px;z-index:999}
+  .nav-links.open a{font-size:1.1rem}
+  .hero{padding:64px 20px}
+  .services-section{padding:56px 20px}
+  .services-grid{grid-template-columns:1fr;gap:16px}
+  .stats-section{padding:44px 20px}
+  .stats-inner{grid-template-columns:1fr 1fr;gap:1px}
+  .trust-bar{padding:14px 20px;gap:14px}
+  .reviews-section{padding:56px 20px}
+  .reviews-grid{grid-template-columns:1fr}
+  .story-section{padding:56px 20px}
+  .contact-section{padding:56px 20px}
+  .contact-cards{grid-template-columns:1fr}
+  footer{padding:40px 20px 80px}
+  .footer-top{grid-template-columns:1fr;gap:28px}
+  .footer-bottom{flex-direction:column;text-align:center}
 }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<div class="header">
-  <div class="header-brand">
-    <div class="logo">247</div>
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jessica L.</span><span class="ticker-dot"></span><span class="ticker-review">"They went above and beyond — so friendly to deal with!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Andrew F.</span><span class="ticker-dot"></span><span class="ticker-review">"Very good work, easy to deal with." — Restaurant</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jarrah H.</span><span class="ticker-dot"></span><span class="ticker-review">"Efficient & great quality. Will be keeping him on." — Warehouse</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Sarah B.</span><span class="ticker-dot"></span><span class="ticker-review">"Cannot praise enough! 12/10 gold stars."</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tracey L.</span><span class="ticker-dot"></span><span class="ticker-review">"Very professional, highly recommend." — Office</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Hussein I.</span><span class="ticker-dot"></span><span class="ticker-review">"Left the house better than it's ever been!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Amy O.</span><span class="ticker-dot"></span><span class="ticker-review">"Amazing to work with!! On time and great work!" — Hospitality</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jessica L.</span><span class="ticker-dot"></span><span class="ticker-review">"They went above and beyond — so friendly to deal with!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Andrew F.</span><span class="ticker-dot"></span><span class="ticker-review">"Very good work, easy to deal with." — Restaurant</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Jarrah H.</span><span class="ticker-dot"></span><span class="ticker-review">"Efficient & great quality. Will be keeping him on." — Warehouse</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Sarah B.</span><span class="ticker-dot"></span><span class="ticker-review">"Cannot praise enough! 12/10 gold stars."</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Tracey L.</span><span class="ticker-dot"></span><span class="ticker-review">"Very professional, highly recommend." — Office</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Hussein I.</span><span class="ticker-dot"></span><span class="ticker-review">"Left the house better than it's ever been!"</span></div>
+    <div class="ticker-item"><span class="ticker-stars">★★★★★</span><span class="ticker-name">Amy O.</span><span class="ticker-dot"></span><span class="ticker-review">"Amazing to work with!! On time and great work!" — Hospitality</span></div>
+  </div>
+</div>
+
+<div class="urgent">⚡ Same-Day End of Lease Available — <a href="residential.html#quote">Book Now →</a></div>
+<a href="residential.html#quote" class="float-book">📅</a>
+<div class="sticky-cta">
+  <a href="residential.html#quote" class="scta-primary">⚡ Book Now</a>
+  <a href="#contact" class="scta-secondary">Get a Quote</a>
+</div>
+
+<nav>
+  <div class="logo-mark">
+    <div class="logo-icon">247</div>
     <div>
-      <div class="brand-name">24/7 Cleaning Specialist</div>
-      <div class="brand-sub">Business Dashboard</div>
+      <div class="logo-name">24/7 Cleaning Specialist</div>
+      <div class="logo-sub">Melbourne's Most Reviewed</div>
     </div>
   </div>
-  <div class="header-right">
-    <div class="date-display" id="dateDisplay"></div>
-    <div class="helen-badge">👋 Helen's Dashboard</div>
+  <ul class="nav-links" id="navlinks">
+    <li><a href="residential.html">End of Lease</a></li>
+    <li><a href="commercial.html">Commercial</a></li>
+    <li><a href="government.html">Government</a></li>
+    <li><a href="blog.html">Guides</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="residential.html#quote" class="nav-call">Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-line"></div>
+      <div class="eyebrow-text">Melbourne's Most Reviewed Cleaning Specialist</div>
+      <div class="eyebrow-line"></div>
+    </div>
+    <h1 class="hero-h1">Professional Cleaning<br>for Every <em>Client &amp; Contract</em></h1>
+    <p class="hero-sub">From same-day end-of-lease bond cleans to restaurant deep cleans, office contracts and council facilities — backed by 2,000+ five-star reviews.</p>
+    <div class="hero-proof">
+      <span class="proof-stars">★★★★★</span>
+      <span class="proof-text"><strong>2,000+ reviews · 100% completion · Residential, Commercial &amp; Government</strong></span>
+    </div>
+    <div class="hero-btns">
+      <a href="residential.html#quote" class="btn-gold">Book Now — Instant Online Booking</a>
+      <a href="#services" class="btn-outline">View Our Services</a>
+    </div>
+  </div>
+</section>
+
+<div class="services-section" id="services">
+  <div class="section-header reveal">
+    <div class="section-eyebrow">Our Services</div>
+    <h2 class="section-title">Whatever Needs Cleaning —<br><em>We're Here for It</em></h2>
+    <p class="section-sub">Three specialist divisions serving Melbourne's residential, commercial and government clients.</p>
+  </div>
+  <div class="services-grid">
+    <a href="residential.html" class="service-card reveal" style="--card-accent:#1a6b40">
+      <span class="card-icon">🏠</span>
+      <div class="card-title">End of Lease &amp; Residential</div>
+      <p class="card-desc">Same-day available. 30-day agent satisfaction guarantee. REIV-aligned checklist. Book online instantly.</p>
+      <div class="card-tags">
+        <span class="ctag">Bond Back</span>
+        <span class="ctag">Same-Day</span>
+        <span class="ctag">Steam Clean</span>
+      </div>
+      <div class="card-link">View &amp; Book →</div>
+    </a>
+    <a href="commercial.html" class="service-card reveal d1" style="--card-accent:#b8861e">
+      <span class="card-icon">🏢</span>
+      <div class="card-title">Commercial &amp; Corporate</div>
+      <p class="card-desc">Offices, restaurants, warehouses and strata. Free site inspection. Fixed quote. Net 14 day invoicing.</p>
+      <div class="card-tags">
+        <span class="ctag">Offices</span>
+        <span class="ctag">Restaurants</span>
+        <span class="ctag">Warehouses</span>
+      </div>
+      <div class="card-link">View Services →</div>
+    </a>
+    <a href="government.html" class="service-card reveal d2" style="--card-accent:#2a5068">
+      <span class="card-icon">🏛</span>
+      <div class="card-title">Government &amp; Council</div>
+      <p class="card-desc">Tender-ready with full compliance documentation. Serving Melbourne councils. Net 30 day invoicing.</p>
+      <div class="card-tags">
+        <span class="ctag">Tender Ready</span>
+        <span class="ctag">WHS Compliant</span>
+        <span class="ctag">eProcure</span>
+      </div>
+      <div class="card-link">View Services →</div>
+    </a>
   </div>
 </div>
 
-<!-- TABS -->
-<div class="tabs">
-  <div class="tab active" onclick="switchTab('dashboard')">📊 Dashboard</div>
-  <div class="tab" onclick="switchTab('bookings')">📅 Bookings</div>
-  <div class="tab" onclick="switchTab('calendar')">🗓 Calendar</div>
-  <div class="tab" onclick="switchTab('invoices')">📋 Invoices</div>
-  <div class="tab" onclick="switchTab('clients')">👥 Clients</div>
+<div class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-item reveal"><div class="stat-num">2,000+</div><div class="stat-lbl">Five-Star Reviews</div></div>
+    <div class="stat-item reveal d1"><div class="stat-num">100%</div><div class="stat-lbl">Completion Rate</div></div>
+    <div class="stat-item reveal d2"><div class="stat-num">12,000+</div><div class="stat-lbl">Cleans Completed</div></div>
+    <div class="stat-item reveal d3"><div class="stat-num">10+ Years</div><div class="stat-lbl">Experience</div></div>
+  </div>
 </div>
 
-<!-- MAIN -->
-<div class="main">
+<div class="trust-bar">
+  <div class="trust-item"><div class="trust-dot"></div>ABN Registered</div>
+  <div class="trust-item"><div class="trust-dot"></div>Fully Insured</div>
+  <div class="trust-item"><div class="trust-dot"></div>No Subcontracting</div>
+  <div class="trust-item"><div class="trust-dot"></div>WHS Compliant</div>
+  <div class="trust-item"><div class="trust-dot"></div>30-Day Guarantee</div>
+  <div class="trust-item"><div class="trust-dot"></div>Book Online Instantly</div>
+  <div class="trust-item"><div class="trust-dot"></div>7 Days a Week</div>
+</div>
 
-  <!-- ── DASHBOARD ── -->
-  <div class="page active" id="page-dashboard">
-    <div class="stats-row">
-      <div class="stat-card"><div class="stat-num" id="stat-bookings">0</div><div class="stat-lbl">Total Bookings</div></div>
-      <div class="stat-card"><div class="stat-num" id="stat-revenue">$<span id="stat-rev-num">0</span></div><div class="stat-lbl">Total Revenue</div></div>
-      <div class="stat-card"><div class="stat-num" id="stat-unpaid">$<span id="stat-unpaid-num">0</span></div><div class="stat-lbl">Outstanding</div></div>
-      <div class="stat-card"><div class="stat-num" id="stat-today">0</div><div class="stat-lbl">Jobs Today</div></div>
-    </div>
-
-    <div class="section-hdr">
-      <div class="section-title">Quick Actions</div>
-    </div>
-    <div class="quick-actions">
-      <div class="action-card" onclick="openModal('booking-modal')">
-        <div class="action-icon">📅</div>
-        <div class="action-title">New Booking</div>
-        <div class="action-desc">Add a new job to the calendar</div>
-      </div>
-      <div class="action-card" onclick="openModal('invoice-modal')">
-        <div class="action-icon">📋</div>
-        <div class="action-title">Create Invoice</div>
-        <div class="action-desc">Generate and send a tax invoice</div>
-      </div>
-      <div class="action-card" onclick="openModal('client-modal')">
-        <div class="action-icon">👤</div>
-        <div class="action-title">Add Client</div>
-        <div class="action-desc">Save a new client to your records</div>
-      </div>
-    </div>
-
-    <div class="section-hdr">
-      <div class="section-title">Upcoming Jobs</div>
-      <button class="btn btn-gold" onclick="switchTab('bookings')">View All →</button>
-    </div>
-    <div class="upcoming-list" id="upcoming-list">
-      <div class="empty"><div class="empty-icon">📅</div><p>No upcoming jobs yet. Add your first booking!</p></div>
-    </div>
+<div class="reviews-section">
+  <div class="section-header reveal">
+    <div class="section-eyebrow">Verified Reviews</div>
+    <h2 class="section-title">Trusted Across Every<br><em>Industry &amp; Client Type</em></h2>
+    <p class="section-sub">Real reviews. Real clients. Exact words — nothing changed.</p>
   </div>
-
-  <!-- ── BOOKINGS ── -->
-  <div class="page" id="page-bookings">
-    <div class="section-hdr">
-      <div class="section-title">All Bookings</div>
-      <button class="btn btn-gold" onclick="openModal('booking-modal')">+ New Booking</button>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Date & Time</th>
-            <th>Client</th>
-            <th>Service</th>
-            <th>Address</th>
-            <th>Amount</th>
-            <th>Status</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="bookings-tbody">
-          <tr><td colspan="7" style="text-align:center;padding:32px;color:var(--silver)">No bookings yet. Click + New Booking to add one.</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <div class="review-cats">
+    <button class="review-cat active" onclick="filterReviews('all',this)">All Reviews</button>
+    <button class="review-cat" onclick="filterReviews('residential',this)">🏠 Residential</button>
+    <button class="review-cat" onclick="filterReviews('commercial',this)">🏢 Commercial</button>
+    <button class="review-cat" onclick="filterReviews('hospitality',this)">🍽 Hospitality</button>
+    <button class="review-cat" onclick="filterReviews('warehouse',this)">🏗 Warehouse</button>
   </div>
-
-  <!-- ── CALENDAR ── -->
-  <div class="page" id="page-calendar">
-    <div class="cal-nav">
-      <button onclick="changeMonth(-1)">← Prev</button>
-      <div class="cal-title" id="cal-title"></div>
-      <button onclick="changeMonth(1)">Next →</button>
-    </div>
-    <div class="cal-grid" id="cal-grid">
-      <div class="cal-day-hdr">Mon</div>
-      <div class="cal-day-hdr">Tue</div>
-      <div class="cal-day-hdr">Wed</div>
-      <div class="cal-day-hdr">Thu</div>
-      <div class="cal-day-hdr">Fri</div>
-      <div class="cal-day-hdr">Sat</div>
-      <div class="cal-day-hdr">Sun</div>
-    </div>
-    <div style="display:flex;gap:16px;margin-top:16px;flex-wrap:wrap">
-      <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--silver)"><div style="width:12px;height:12px;background:rgba(26,122,74,0.3);border-left:2px solid #4caf7d"></div>End of Lease / Residential</div>
-      <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--silver)"><div style="width:12px;height:12px;background:rgba(200,146,42,0.2);border-left:2px solid var(--gold)"></div>Commercial</div>
-      <div style="display:flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--silver)"><div style="width:12px;height:12px;background:rgba(42,80,104,0.3);border-left:2px solid var(--mist)"></div>Government</div>
-    </div>
+  <div class="reviews-grid">
+    <div class="review-card show" data-cat="residential"><div class="r-badge">🏠 End of Lease</div><div class="r-stars">★★★★★</div><p class="r-text">"They went above and beyond and they are so friendly to deal with!"</p><div class="r-author"><div class="r-avatar">J</div><div><div class="r-name">Jessica L.</div><div class="r-job">End of lease clean</div></div></div></div>
+    <div class="review-card show" data-cat="residential"><div class="r-badge">🏠 Bond Clean</div><div class="r-stars">★★★★★</div><p class="r-text">"Cleaner now than when I moved in."</p><div class="r-author"><div class="r-avatar">T</div><div><div class="r-name">Tyler G.</div><div class="r-job">1-bed + carpet steam clean</div></div></div></div>
+    <div class="review-card show" data-cat="residential"><div class="r-badge">🏠 End of Lease</div><div class="r-stars">★★★★★</div><p class="r-text">"Cannot praise enough! 12/10 gold stars."</p><div class="r-author"><div class="r-avatar">S</div><div><div class="r-name">Sarah B.</div><div class="r-job">End of lease cleaning</div></div></div></div>
+    <div class="review-card show" data-cat="residential"><div class="r-badge">🏠 Bond Clean</div><div class="r-stars">★★★★★</div><p class="r-text">"Left the house better and cleaner than it's ever been!"</p><div class="r-author"><div class="r-avatar">H</div><div><div class="r-name">Hussein I.</div><div class="r-job">End of lease cleaning</div></div></div></div>
+    <div class="review-card show" data-cat="commercial"><div class="r-badge">🏢 Office</div><div class="r-stars">★★★★★</div><p class="r-text">"Very professional highly recommend."</p><div class="r-author"><div class="r-avatar">T</div><div><div class="r-name">Tracey L.</div><div class="r-job">Office deep cleaning</div></div></div></div>
+    <div class="review-card show" data-cat="commercial"><div class="r-badge">🏢 Settlement</div><div class="r-stars">★★★★★</div><p class="r-text">"Prompt communicator, delivered a really good clean. Would recommend."</p><div class="r-author"><div class="r-avatar">K</div><div><div class="r-name">Kyle C.</div><div class="r-job">Settlement clean</div></div></div></div>
+    <div class="review-card show" data-cat="hospitality"><div class="r-badge">🍽 Restaurant</div><div class="r-stars">★★★★★</div><p class="r-text">"Very good work easy to deal with."</p><div class="r-author"><div class="r-avatar">A</div><div><div class="r-name">Andrew F.</div><div class="r-job">Deep cleaning — restaurant</div></div></div></div>
+    <div class="review-card show" data-cat="hospitality"><div class="r-badge">🍽 Hospitality</div><div class="r-stars">★★★★★</div><p class="r-text">"Amazing to work with!! On time and great work!"</p><div class="r-author"><div class="r-avatar">A</div><div><div class="r-name">Amy O.</div><div class="r-job">Commercial hospitality clean</div></div></div></div>
+    <div class="review-card show" data-cat="warehouse"><div class="r-badge">🏗 Warehouse</div><div class="r-stars">★★★★★</div><p class="r-text">"Efficient &amp; great quality. Will be keeping him on for more work."</p><div class="r-author"><div class="r-avatar">J</div><div><div class="r-name">Jarrah H.</div><div class="r-job">Warehouse bathrooms</div></div></div></div>
+    <div class="review-card show" data-cat="warehouse"><div class="r-badge">🏗 Common Areas</div><div class="r-stars">★★★★★</div><p class="r-text">"Did a great job on the carpets. Happy to recommend."</p><div class="r-author"><div class="r-avatar">R</div><div><div class="r-name">Rowan C.</div><div class="r-job">5 floor common areas</div></div></div></div>
+    <div class="review-card show" data-cat="residential"><div class="r-badge">🏠 End of Lease</div><div class="r-stars">★★★★★</div><p class="r-text">"Super professional, left our house looking even better than when we first moved in."</p><div class="r-author"><div class="r-avatar">Q</div><div><div class="r-name">Qistina Z.</div><div class="r-job">End of lease cleaning</div></div></div></div>
+    <div class="review-card show" data-cat="residential"><div class="r-badge">🏠 Deep Clean</div><div class="r-stars">★★★★★</div><p class="r-text">"What an amazing experience — results that exceeded our expectations."</p><div class="r-author"><div class="r-avatar">C</div><div><div class="r-name">Colleen M.</div><div class="r-job">Deep clean</div></div></div></div>
   </div>
+</div>
 
-  <!-- ── INVOICES ── -->
-  <div class="page" id="page-invoices">
-    <div class="section-hdr">
-      <div class="section-title">Invoices</div>
-      <button class="btn btn-gold" onclick="openModal('invoice-modal')">+ New Invoice</button>
+<div class="story-section">
+  <div class="story-inner reveal">
+    <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:20px">
+      <div style="width:40px;height:1px;background:var(--gold)"></div>
+      <div style="font-size:0.64rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold)">Our Story</div>
+      <div style="width:40px;height:1px;background:var(--gold)"></div>
     </div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Invoice #</th>
-            <th>Date</th>
-            <th>Client</th>
-            <th>Service</th>
-            <th>Amount</th>
-            <th>Due Date</th>
-            <th>Status</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="invoices-tbody">
-          <tr><td colspan="8" style="text-align:center;padding:32px;color:var(--silver)">No invoices yet. Click + New Invoice to create one.</td></tr>
-        </tbody>
-      </table>
+    <h2 class="story-h2">Built From Nothing.<br><em>Built With Purpose.</em></h2>
+    <p class="story-text">We arrived in Australia as a migrant family with a dream and a work ethic that refused to quit. As husband and wife, we built 24/7 Cleaning Specialist from the ground up — no shortcuts, no handouts, just relentless hard work and an uncompromising belief in doing things properly.</p>
+    <p class="story-text">Over 10 years, we turned a small operation into a 5-star, 12,000+ clean business with 2,000 verified reviews and a 100% completion rate.</p>
+    <div class="story-quote">
+      <blockquote>"We didn't come this far to stay small. Every facility we walk into — we treat it like our own name is on the door. Because it is."</blockquote>
+      <cite>— Cornelius &amp; Helen, Founders · 24/7 Cleaning Specialist · Melbourne, VIC</cite>
     </div>
+    <div class="migrant-note"><strong>Why this matters:</strong> As a migrant family business built in Melbourne — local governments and commercial clients who value community investment actively prefer working with us.</div>
   </div>
+</div>
 
-  <!-- ── CLIENTS ── -->
-  <div class="page" id="page-clients">
-    <div class="section-hdr">
-      <div class="section-title">Client Directory</div>
-      <button class="btn btn-gold" onclick="openModal('client-modal')">+ Add Client</button>
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Ready to Book or<br><em>Get a Quote?</em></h2>
+      <p class="section-sub">Book online instantly or reach out directly. We respond within 2 hours.</p>
     </div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>Type</th>
-            <th>Address</th>
-            <th>Total Jobs</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="clients-tbody">
-          <tr><td colspan="7" style="text-align:center;padding:32px;color:var(--silver)">No clients yet. Add your first client!</td></tr>
-        </tbody>
-      </table>
+    <div class="contact-cards">
+      <a href="residential.html#quote" class="contact-card reveal">
+        <span class="cc-icon">📅</span>
+        <div class="cc-title">Book Online</div>
+        <div class="cc-value">Book Instantly</div>
+        <div class="cc-sub">Same-day &amp; future bookings</div>
+      </a>
+      <a href="mailto:sales@247cleaningspecialist.com.au" class="contact-card reveal d1">
+        <span class="cc-icon">✉️</span>
+        <div class="cc-title">Email Us</div>
+        <div class="cc-value">sales@247cleaning<br>specialist.com.au</div>
+        <div class="cc-sub">Response within 2 hours</div>
+      </a>
+      <a href="sms:0403423348" class="contact-card reveal d2">
+        <span class="cc-icon">💬</span>
+        <div class="cc-title">Text Us</div>
+        <div class="cc-value">0403 423 348</div>
+        <div class="cc-sub">Send your address &amp; we'll quote</div>
+      </a>
     </div>
-  </div>
-
-</div><!-- end main -->
-
-<!-- ── BOOKING MODAL ── -->
-<div class="modal-overlay" id="booking-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <div class="modal-title">📅 New Booking</div>
-      <button class="modal-close" onclick="closeModal('booking-modal')">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="form-grid">
-        <div class="f-group">
-          <label>Client Name *</label>
-          <input type="text" id="b-client" placeholder="John Smith" list="client-list">
-          <datalist id="client-list"></datalist>
-        </div>
-        <div class="f-group">
-          <label>Phone *</label>
-          <input type="tel" id="b-phone" placeholder="04XX XXX XXX">
-        </div>
-        <div class="f-group">
-          <label>Email</label>
-          <input type="email" id="b-email" placeholder="client@email.com">
-        </div>
-        <div class="f-group">
-          <label>Service Type *</label>
-          <select id="b-service">
-            <option value="">Select service...</option>
-            <option value="eol-1bed">End of Lease — 1 Bed ($245)</option>
-            <option value="eol-2bed">End of Lease — 2 Bed ($320)</option>
-            <option value="eol-3bed">End of Lease — 3 Bed ($420)</option>
-            <option value="eol-4bed">End of Lease — 4+ Bed (Custom)</option>
-            <option value="steam">Steam & Carpet Clean (+$80)</option>
-            <option value="commercial">Commercial Office Clean</option>
-            <option value="builders">Builders / Post-Construction</option>
-            <option value="deep">Deep / Specialised Clean</option>
-            <option value="government">Government / Council</option>
-          </select>
-        </div>
-        <div class="f-group">
-          <label>Date *</label>
-          <input type="date" id="b-date">
-        </div>
-        <div class="f-group">
-          <label>Time *</label>
-          <input type="time" id="b-time" value="08:00">
-        </div>
-        <div class="f-group full">
-          <label>Property Address *</label>
-          <input type="text" id="b-address" placeholder="123 Example St, Sunshine VIC 3020">
-        </div>
-        <div class="f-group">
-          <label>Quote Amount ($) *</label>
-          <input type="number" id="b-amount" placeholder="320">
-        </div>
-        <div class="f-group">
-          <label>Booking Fee Paid</label>
-          <select id="b-deposit">
-            <option value="0">No deposit</option>
-            <option value="30">$30 booking fee paid</option>
-          </select>
-        </div>
-        <div class="f-group full">
-          <label>Notes</label>
-          <textarea id="b-notes" placeholder="Any special requirements, access instructions, key location..."></textarea>
-        </div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-outline" onclick="closeModal('booking-modal')">Cancel</button>
-      <button class="btn btn-gold" onclick="saveBooking()">Save Booking</button>
+    <div style="margin-top:20px;padding:18px 24px;background:var(--cream);border:1px solid var(--cream-mid);text-align:center" class="reveal">
+      <p style="font-size:0.82rem;color:var(--muted)">💳 <strong style="color:var(--ink)">PayID:</strong> 0403 423 348 &nbsp;·&nbsp; Tax invoice within 24 hours &nbsp;·&nbsp; ABN 98 672 172 226 &nbsp;·&nbsp; GST Registered</p>
     </div>
   </div>
 </div>
 
-<!-- ── INVOICE MODAL ── -->
-<div class="modal-overlay" id="invoice-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <div class="modal-title">📋 Create Invoice</div>
-      <button class="modal-close" onclick="closeModal('invoice-modal')">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="form-grid">
-        <div class="f-group">
-          <label>Client Name *</label>
-          <input type="text" id="i-client" placeholder="John Smith" list="client-list-inv">
-          <datalist id="client-list-inv"></datalist>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-mark" style="margin-bottom:14px">
+          <div class="logo-icon">247</div>
+          <div><div class="logo-name">24/7 Cleaning Specialist</div><div class="logo-sub">Melbourne's Most Reviewed</div></div>
         </div>
-        <div class="f-group">
-          <label>Client Email *</label>
-          <input type="email" id="i-email" placeholder="client@email.com">
-        </div>
-        <div class="f-group">
-          <label>Client Address</label>
-          <input type="text" id="i-client-addr" placeholder="Client address">
-        </div>
-        <div class="f-group">
-          <label>Service Date *</label>
-          <input type="date" id="i-date">
-        </div>
-        <div class="f-group">
-          <label>Payment Due</label>
-          <select id="i-due">
-            <option value="on-arrival">Due on arrival (residential)</option>
-            <option value="net14">Net 14 days (commercial)</option>
-            <option value="net30">Net 30 days (government)</option>
-          </select>
-        </div>
-        <div class="f-group">
-          <label>Client Type</label>
-          <select id="i-type">
-            <option value="residential">Residential</option>
-            <option value="commercial">Commercial</option>
-            <option value="government">Government / Council</option>
-            <option value="agent">Real Estate Agent</option>
-          </select>
-        </div>
+        <p>A migrant family business built in Melbourne. 2,000+ five-star reviews. 100% completion rate. Serving residential, commercial and government clients across Greater Melbourne.</p>
+        <p class="footer-tagline">"If it needs to be cleaned, we're here to clean it for you."</p>
       </div>
-      <hr class="divider">
-      <div style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center">
-        <div style="font-size:0.78rem;font-weight:600;color:var(--silver);letter-spacing:0.1em;text-transform:uppercase">Line Items</div>
-        <button class="btn btn-outline btn-sm" onclick="addLineItem()">+ Add Item</button>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="residential.html">End of Lease Cleaning</a></li>
+          <li><a href="residential.html">Bond Back Guarantee</a></li>
+          <li><a href="residential.html">Steam &amp; Carpet Clean</a></li>
+          <li><a href="commercial.html">Commercial Office Clean</a></li>
+          <li><a href="commercial.html">Restaurant &amp; Hospitality</a></li>
+          <li><a href="commercial.html">Warehouse &amp; Facilities</a></li>
+          <li><a href="government.html">Government &amp; Council</a></li>
+        </ul>
       </div>
-      <div id="line-items">
-        <div class="form-grid" style="margin-bottom:8px" id="line-0">
-          <div class="f-group"><label>Description</label><input type="text" class="li-desc" placeholder="End of Lease Clean — 2 Bedroom"></div>
-          <div class="f-group"><label>Amount ($)</label><input type="number" class="li-amt" placeholder="320" oninput="calcTotal()"></div>
-        </div>
-      </div>
-      <div style="display:flex;justify-content:flex-end;margin-top:12px;gap:24px">
-        <div style="font-size:0.82rem;color:var(--silver)">Subtotal: <span id="inv-subtotal" style="color:var(--white)">$0.00</span></div>
-        <div style="font-size:0.82rem;color:var(--silver)">GST (10%): <span id="inv-gst" style="color:var(--white)">$0.00</span></div>
-        <div style="font-size:0.9rem;font-weight:700;color:var(--gold)">Total: <span id="inv-total">$0.00</span></div>
-      </div>
-      <hr class="divider">
-      <div class="f-group">
-        <label>Notes / Payment Instructions</label>
-        <textarea id="i-notes" placeholder="Payment via PayID: 0403 423 348 or call to arrange card payment.">Payment via PayID: 0403 423 348 — or call 0403 423 348 to pay by card. Tax invoice issued by 24/7 Cleaning Specialist — Cornells Industries Pty Ltd ABN 98 672 172 226.</textarea>
-      </div>
-      <div id="invoice-preview-wrap" style="display:none">
-        <hr class="divider">
-        <div style="font-size:0.78rem;font-weight:600;color:var(--silver);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px">Invoice Preview</div>
-        <div id="invoice-preview-html"></div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="residential.html#quote">Book Now</a></li>
+          <li><a href="blog.html">Free Guides</a></li>
+          <li><a href="government.html">Tender Ready</a></li>
+          <li><a href="mailto:sales@247cleaningspecialist.com.au">Email Us</a></li>
+          <li><a href="sms:0403423348">Text 0403 423 348</a></li>
+        </ul>
       </div>
     </div>
-    <div class="modal-footer">
-      <button class="btn btn-outline" onclick="closeModal('invoice-modal')">Cancel</button>
-      <button class="btn btn-outline" onclick="previewInvoice()">Preview</button>
-      <button class="btn btn-gold" onclick="saveInvoice()">Save Invoice</button>
+    <div class="footer-bottom">
+      <p>© 2026 24/7 Cleaning Specialist — Cornells Industries Pty Ltd. ABN 98 672 172 226. <span>Melbourne 3000, VIC.</span></p>
+      <div class="abn-badge">🏛 ABN 98 672 172 226 — GST Registered</div>
     </div>
   </div>
-</div>
-
-<!-- ── CLIENT MODAL ── -->
-<div class="modal-overlay" id="client-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <div class="modal-title">👤 Add Client</div>
-      <button class="modal-close" onclick="closeModal('client-modal')">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="form-grid">
-        <div class="f-group"><label>Full Name *</label><input type="text" id="c-name" placeholder="John Smith"></div>
-        <div class="f-group"><label>Phone *</label><input type="tel" id="c-phone" placeholder="04XX XXX XXX"></div>
-        <div class="f-group full"><label>Email</label><input type="email" id="c-email" placeholder="client@email.com"></div>
-        <div class="f-group"><label>Client Type</label>
-          <select id="c-type">
-            <option value="residential">Residential</option>
-            <option value="commercial">Commercial</option>
-            <option value="government">Government / Council</option>
-            <option value="agent">Real Estate Agent</option>
-          </select>
-        </div>
-        <div class="f-group full"><label>Address</label><input type="text" id="c-address" placeholder="123 Example St, Suburb VIC"></div>
-        <div class="f-group full"><label>Notes</label><textarea id="c-notes" placeholder="Any notes about this client..."></textarea></div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-outline" onclick="closeModal('client-modal')">Cancel</button>
-      <button class="btn btn-gold" onclick="saveClient()">Save Client</button>
-    </div>
-  </div>
-</div>
-
-<!-- NOTIFICATION -->
-<div class="notification" id="notification"></div>
+</footer>
 
 <script>
-// ── STATE ──
-let state = JSON.parse(localStorage.getItem('247cs_state') || '{}');
-if(!state.bookings) state.bookings = [];
-if(!state.invoices) state.invoices = [];
-if(!state.clients) state.clients = [];
-if(!state.invCounter) state.invCounter = 1001;
-let lineCount = 1;
-let calDate = new Date();
-
-function save() { localStorage.setItem('247cs_state', JSON.stringify(state)); }
-
-// ── DATE ──
-const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-function fmt(d){ const dt=new Date(d); return dt.toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'}); }
-function fmtShort(d){ const dt=new Date(d); return dt.toLocaleDateString('en-AU',{day:'numeric',month:'short'}); }
-document.getElementById('dateDisplay').textContent = new Date().toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-
-// ── TABS ──
-function switchTab(tab) {
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  event.target.classList.add('active');
-  document.getElementById('page-'+tab).classList.add('active');
-  if(tab==='calendar') renderCalendar();
-  if(tab==='dashboard') renderDashboard();
-  if(tab==='bookings') renderBookings();
-  if(tab==='invoices') renderInvoices();
-  if(tab==='clients') renderClients();
-}
-
-// ── MODALS ──
-function openModal(id) {
-  document.getElementById(id).classList.add('open');
-  if(id==='booking-modal') { const d=new Date(); document.getElementById('b-date').valueAsDate=d; }
-  if(id==='invoice-modal') { const d=new Date(); document.getElementById('i-date').valueAsDate=d; updateClientDatalist(); }
-  if(id==='booking-modal') updateClientDatalist();
-}
-function closeModal(id) { document.getElementById(id).classList.remove('open'); }
-
-function updateClientDatalist() {
-  ['client-list','client-list-inv'].forEach(id=>{
-    const dl=document.getElementById(id); if(!dl) return;
-    dl.innerHTML = state.clients.map(c=>`<option value="${c.name}">`).join('');
+function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+function filterReviews(cat,btn){
+  document.querySelectorAll('.review-cat').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.review-card').forEach(card=>{
+    card.classList.toggle('show',cat==='all'||card.dataset.cat===cat);
   });
 }
-
-// ── NOTIFICATIONS ──
-function notify(msg, color='var(--green)') {
-  const n=document.getElementById('notification');
-  n.textContent=msg; n.style.background=color;
-  n.classList.add('show');
-  setTimeout(()=>n.classList.remove('show'), 3000);
-}
-
-// ── SERVICE PRICES ──
-const svcPrices = {'eol-1bed':245,'eol-2bed':320,'eol-3bed':420,'eol-4bed':0,'steam':80,'commercial':0,'builders':0,'deep':0,'government':0};
-const svcNames = {'eol-1bed':'End of Lease — 1 Bedroom','eol-2bed':'End of Lease — 2 Bedroom','eol-3bed':'End of Lease — 3 Bedroom','eol-4bed':'End of Lease — 4+ Bedroom','steam':'Steam & Carpet Clean','commercial':'Commercial Office Clean','builders':'Builders / Post-Construction Clean','deep':'Deep / Specialised Clean','government':'Government / Council Facility Clean'};
-
-document.getElementById('b-service').addEventListener('change',function(){
-  const p = svcPrices[this.value];
-  if(p>0) document.getElementById('b-amount').value = p;
-});
-
-// ── SAVE BOOKING ──
-function saveBooking() {
-  const client=document.getElementById('b-client').value.trim();
-  const date=document.getElementById('b-date').value;
-  const service=document.getElementById('b-service').value;
-  const amount=parseFloat(document.getElementById('b-amount').value)||0;
-  if(!client||!date||!service||!amount) { notify('Please fill in all required fields','var(--red)'); return; }
-  const booking = {
-    id: Date.now(),
-    client, phone:document.getElementById('b-phone').value,
-    email:document.getElementById('b-email').value,
-    service, serviceName:svcNames[service]||service,
-    date, time:document.getElementById('b-time').value,
-    address:document.getElementById('b-address').value,
-    amount, deposit:parseInt(document.getElementById('b-deposit').value)||0,
-    notes:document.getElementById('b-notes').value,
-    status:'confirmed'
-  };
-  state.bookings.push(booking);
-  // Auto-add client if new
-  if(!state.clients.find(c=>c.name===client)) {
-    state.clients.push({id:Date.now()+1,name:client,phone:booking.phone,email:booking.email,type:'residential',address:booking.address,notes:'',jobs:1});
-  }
-  save(); closeModal('booking-modal'); renderDashboard(); renderBookings();
-  notify('✓ Booking saved for '+client+' on '+fmtShort(date));
-  // Clear form
-  ['b-client','b-phone','b-email','b-address','b-notes'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('b-service').value=''; document.getElementById('b-amount').value='';
-}
-
-// ── RENDER BOOKINGS ──
-function renderBookings() {
-  const tbody=document.getElementById('bookings-tbody');
-  if(!state.bookings.length) { tbody.innerHTML='<tr><td colspan="7" style="text-align:center;padding:32px;color:var(--silver)">No bookings yet.</td></tr>'; return; }
-  const sorted=[...state.bookings].sort((a,b)=>new Date(a.date)-new Date(b.date));
-  tbody.innerHTML = sorted.map(b=>`
-    <tr>
-      <td>${fmt(b.date)} ${b.time||''}</td>
-      <td><strong>${b.client}</strong><br><span style="font-size:0.72rem;color:var(--silver)">${b.phone||''}</span></td>
-      <td>${b.serviceName||b.service}</td>
-      <td style="font-size:0.78rem;color:var(--silver)">${b.address||'—'}</td>
-      <td style="color:var(--gold);font-family:var(--serif);font-size:1rem">$${b.amount.toFixed(2)}</td>
-      <td><span class="status status-${b.status}">${b.status}</span></td>
-      <td style="display:flex;gap:6px;flex-wrap:wrap">
-        <button class="btn btn-outline btn-sm" onclick="completeBooking(${b.id})">✓ Done</button>
-        <button class="btn btn-outline btn-sm" onclick="invoiceFromBooking(${b.id})">Invoice</button>
-        <button class="btn btn-red btn-sm" onclick="deleteBooking(${b.id})">Delete</button>
-      </td>
-    </tr>`).join('');
-}
-
-function completeBooking(id) {
-  const b=state.bookings.find(x=>x.id===id); if(!b) return;
-  b.status='completed'; save(); renderBookings(); renderDashboard();
-  notify('✓ Job marked as completed');
-}
-function deleteBooking(id) {
-  if(!confirm('Delete this booking?')) return;
-  state.bookings=state.bookings.filter(x=>x.id!==id); save(); renderBookings(); renderDashboard();
-  notify('Booking deleted','#c0392b');
-}
-function invoiceFromBooking(id) {
-  const b=state.bookings.find(x=>x.id===id); if(!b) return;
-  openModal('invoice-modal');
-  setTimeout(()=>{
-    document.getElementById('i-client').value=b.client;
-    document.getElementById('i-email').value=b.email||'';
-    document.getElementById('i-date').value=b.date;
-    document.querySelector('.li-desc').value=b.serviceName||b.service;
-    document.querySelector('.li-amt').value=b.amount;
-    calcTotal();
-  },100);
-}
-
-// ── INVOICE ──
-let lineItemCount = 1;
-function addLineItem() {
-  const container=document.getElementById('line-items');
-  const div=document.createElement('div');
-  div.className='form-grid'; div.style.marginBottom='8px'; div.id='line-'+lineItemCount;
-  div.innerHTML=`<div class="f-group"><label>Description</label><input type="text" class="li-desc" placeholder="Additional service"></div><div class="f-group" style="display:flex;gap:6px;align-items:flex-end"><div style="flex:1"><label>Amount ($)</label><input type="number" class="li-amt" placeholder="0" oninput="calcTotal()"></div><button class="btn btn-red btn-sm" style="margin-bottom:0;height:40px" onclick="this.parentElement.parentElement.remove();calcTotal()">✕</button></div>`;
-  container.appendChild(div); lineItemCount++; calcTotal();
-}
-function calcTotal() {
-  const amts=[...document.querySelectorAll('.li-amt')].map(i=>parseFloat(i.value)||0);
-  const sub=amts.reduce((a,b)=>a+b,0);
-  const gst=sub*0.1;
-  document.getElementById('inv-subtotal').textContent='$'+sub.toFixed(2);
-  document.getElementById('inv-gst').textContent='$'+gst.toFixed(2);
-  document.getElementById('inv-total').textContent='$'+(sub+gst).toFixed(2);
-}
-function getInvNum() { return 'INV-'+state.invCounter; }
-function getDueDate(type, fromDate) {
-  const d=new Date(fromDate||Date.now());
-  if(type==='net14') d.setDate(d.getDate()+14);
-  else if(type==='net30') d.setDate(d.getDate()+30);
-  return d.toISOString().split('T')[0];
-}
-function previewInvoice() {
-  const html=buildInvoiceHTML(); 
-  document.getElementById('invoice-preview-html').innerHTML=html;
-  document.getElementById('invoice-preview-wrap').style.display='block';
-}
-function buildInvoiceHTML() {
-  const client=document.getElementById('i-client').value||'Client';
-  const email=document.getElementById('i-email').value||'';
-  const addr=document.getElementById('i-client-addr').value||'';
-  const date=document.getElementById('i-date').value||new Date().toISOString().split('T')[0];
-  const dueType=document.getElementById('i-due').value;
-  const dueDate = dueType==='on-arrival'?'On Arrival':fmt(getDueDate(dueType,date));
-  const notes=document.getElementById('i-notes').value||'';
-  const descs=[...document.querySelectorAll('.li-desc')].map(i=>i.value||'Service');
-  const amts=[...document.querySelectorAll('.li-amt')].map(i=>parseFloat(i.value)||0);
-  const sub=amts.reduce((a,b)=>a+b,0);
-  const gst=sub*0.1; const total=sub+gst;
-  const rows=descs.map((d,i)=>`<tr><td>${d}</td><td style="text-align:right">$${amts[i].toFixed(2)}</td></tr>`).join('');
-  return `<div class="invoice-preview">
-    <div class="inv-header">
-      <div><div class="inv-logo">24/7 Cleaning Specialist<span>Cornells Industries Pty Ltd</span></div><div style="font-size:0.72rem;color:#666;margin-top:8px;line-height:1.7">ABN 98 672 172 226<br>0403 423 348<br>sales@247cleaningspecialist.com.au<br>Sunshine, VIC 3012</div></div>
-      <div class="inv-meta"><h2>TAX INVOICE</h2><p>${getInvNum()}<br>Date: ${fmt(date)}<br>Due: ${dueDate}</p></div>
-    </div>
-    <div class="inv-parties">
-      <div class="inv-party"><h4>From</h4><p><strong>24/7 Cleaning Specialist</strong><br>Cornells Industries Pty Ltd<br>ABN 98 672 172 226<br>Sunshine VIC 3012</p></div>
-      <div class="inv-party"><h4>To</h4><p><strong>${client}</strong><br>${addr}<br>${email}</p></div>
-    </div>
-    <table class="inv-table"><thead><tr><th>Description</th><th style="text-align:right">Amount</th></tr></thead><tbody>${rows}</tbody></table>
-    <div class="inv-totals"><table><tr><td>Subtotal (excl. GST)</td><td>$${sub.toFixed(2)}</td></tr><tr><td>GST (10%)</td><td>$${gst.toFixed(2)}</td></tr><tr class="total-row"><td>Total (incl. GST)</td><td>$${total.toFixed(2)}</td></tr></table></div>
-    <div class="inv-footer"><strong>Payment Options:</strong><br>${notes}</div>
-  </div>`;
-}
-function saveInvoice() {
-  const client=document.getElementById('i-client').value.trim();
-  if(!client) { notify('Please enter client name','var(--red)'); return; }
-  const amts=[...document.querySelectorAll('.li-amt')].map(i=>parseFloat(i.value)||0);
-  const sub=amts.reduce((a,b)=>a+b,0); const total=sub*1.1;
-  const date=document.getElementById('i-date').value;
-  const dueType=document.getElementById('i-due').value;
-  const dueDate=dueType==='on-arrival'?date:getDueDate(dueType,date);
-  const invoice = {
-    id:Date.now(), invNum:getInvNum(), client,
-    email:document.getElementById('i-email').value,
-    date, dueDate, dueType,
-    desc:[...document.querySelectorAll('.li-desc')].map(i=>i.value).join(', '),
-    subtotal:sub, gst:sub*0.1, total, status:'unpaid',
-    html:buildInvoiceHTML()
-  };
-  state.invoices.push(invoice); state.invCounter++;
-  save(); closeModal('invoice-modal'); renderInvoices(); renderDashboard();
-  notify('✓ Invoice '+invoice.invNum+' saved for '+client);
-  document.getElementById('invoice-preview-wrap').style.display='none';
-  document.getElementById('line-items').innerHTML=`<div class="form-grid" style="margin-bottom:8px"><div class="f-group"><label>Description</label><input type="text" class="li-desc" placeholder="End of Lease Clean — 2 Bedroom"></div><div class="f-group"><label>Amount ($)</label><input type="number" class="li-amt" placeholder="320" oninput="calcTotal()"></div></div>`;
-  calcTotal();
-}
-function renderInvoices() {
-  const tbody=document.getElementById('invoices-tbody');
-  if(!state.invoices.length) { tbody.innerHTML='<tr><td colspan="8" style="text-align:center;padding:32px;color:var(--silver)">No invoices yet.</td></tr>'; return; }
-  const sorted=[...state.invoices].sort((a,b)=>new Date(b.date)-new Date(a.date));
-  tbody.innerHTML=sorted.map(inv=>{
-    const overdue=inv.status==='unpaid'&&new Date(inv.dueDate)<new Date();
-    const status=overdue?'overdue':inv.status;
-    return `<tr>
-      <td style="font-weight:600;color:var(--gold)">${inv.invNum}</td>
-      <td>${fmt(inv.date)}</td>
-      <td>${inv.client}</td>
-      <td style="font-size:0.78rem;color:var(--silver)">${inv.desc}</td>
-      <td style="color:var(--gold);font-family:var(--serif)">$${inv.total.toFixed(2)}</td>
-      <td style="font-size:0.78rem">${inv.dueType==='on-arrival'?'On Arrival':fmt(inv.dueDate)}</td>
-      <td><span class="status status-${status}">${status}</span></td>
-      <td style="display:flex;gap:6px;flex-wrap:wrap">
-        ${inv.status==='unpaid'?`<button class="btn btn-green btn-sm" onclick="markPaid(${inv.id})">✓ Paid</button>`:''}
-        <button class="btn btn-outline btn-sm" onclick="printInvoice(${inv.id})">Print</button>
-        <button class="btn btn-red btn-sm" onclick="deleteInvoice(${inv.id})">Delete</button>
-      </td>
-    </tr>`;
-  }).join('');
-}
-function markPaid(id) {
-  const inv=state.invoices.find(x=>x.id===id); if(!inv) return;
-  inv.status='paid'; save(); renderInvoices(); renderDashboard();
-  notify('✓ Invoice marked as paid');
-}
-function deleteInvoice(id) {
-  if(!confirm('Delete this invoice?')) return;
-  state.invoices=state.invoices.filter(x=>x.id!==id); save(); renderInvoices(); renderDashboard();
-}
-function printInvoice(id) {
-  const inv=state.invoices.find(x=>x.id===id); if(!inv) return;
-  const w=window.open('','_blank');
-  w.document.write(`<!DOCTYPE html><html><head><title>${inv.invNum}</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>body{font-family:'Outfit',sans-serif;margin:32px}.invoice-preview{max-width:800px;margin:0 auto}.inv-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;padding-bottom:20px;border-bottom:3px solid #c8922a}.inv-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:#0f1e26}.inv-logo span{display:block;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#c8922a;font-family:'Outfit',sans-serif;font-weight:700;margin-top:2px}.inv-meta{text-align:right}.inv-meta h2{font-size:1.4rem;color:#c8922a;font-family:'Cormorant Garamond',serif;margin-bottom:4px}.inv-meta p{font-size:0.75rem;color:#666;line-height:1.6}.inv-parties{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}.inv-party h4{font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#c8922a;margin-bottom:6px}.inv-party p{font-size:0.8rem;color:#444;line-height:1.7}.inv-table{width:100%;border-collapse:collapse;margin-bottom:20px}.inv-table th{background:#0f1e26;color:#fff;padding:10px 14px;text-align:left;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase}.inv-table td{padding:11px 14px;font-size:0.82rem;border-bottom:1px solid #eee;color:#333}.inv-totals{text-align:right;margin-bottom:20px}.inv-totals table{margin-left:auto;min-width:240px;border-collapse:collapse}.inv-totals td{padding:6px 14px;font-size:0.82rem;color:#444}.total-row td{font-weight:700;color:#0f1e26;border-top:2px solid #c8922a;font-size:0.9rem;padding-top:10px}.inv-footer{background:#f8f8f8;padding:14px;font-size:0.74rem;color:#666;line-height:1.7}@media print{body{margin:0}}</style></head><body>${inv.html}</body></html>`);
-  w.document.close(); setTimeout(()=>w.print(),500);
-}
-
-// ── CLIENTS ──
-function saveClient() {
-  const name=document.getElementById('c-name').value.trim();
-  const phone=document.getElementById('c-phone').value.trim();
-  if(!name||!phone) { notify('Name and phone are required','var(--red)'); return; }
-  state.clients.push({id:Date.now(),name,phone,email:document.getElementById('c-email').value,type:document.getElementById('c-type').value,address:document.getElementById('c-address').value,notes:document.getElementById('c-notes').value,jobs:0});
-  save(); closeModal('client-modal'); renderClients();
-  notify('✓ Client '+name+' saved');
-  ['c-name','c-phone','c-email','c-address','c-notes'].forEach(id=>document.getElementById(id).value='');
-}
-function renderClients() {
-  const tbody=document.getElementById('clients-tbody');
-  if(!state.clients.length) { tbody.innerHTML='<tr><td colspan="7" style="text-align:center;padding:32px;color:var(--silver)">No clients yet.</td></tr>'; return; }
-  tbody.innerHTML=state.clients.map(c=>{
-    const jobs=state.bookings.filter(b=>b.client===c.name).length;
-    const typeColors={'residential':'status-confirmed','commercial':'status-pending','government':'status-completed','agent':'status-pending'};
-    return `<tr>
-      <td><strong>${c.name}</strong></td>
-      <td><a href="tel:${c.phone}" style="color:var(--gold);text-decoration:none">${c.phone}</a></td>
-      <td style="font-size:0.78rem;color:var(--silver)">${c.email||'—'}</td>
-      <td><span class="status ${typeColors[c.type]||'status-pending'}">${c.type}</span></td>
-      <td style="font-size:0.78rem;color:var(--silver)">${c.address||'—'}</td>
-      <td style="text-align:center;font-family:var(--serif);font-size:1.1rem;color:var(--gold)">${jobs}</td>
-      <td><button class="btn btn-red btn-sm" onclick="deleteClient(${c.id})">Delete</button></td>
-    </tr>`;
-  }).join('');
-}
-function deleteClient(id) {
-  if(!confirm('Delete this client?')) return;
-  state.clients=state.clients.filter(c=>c.id!==id); save(); renderClients();
-}
-
-// ── DASHBOARD ──
-function renderDashboard() {
-  const today=new Date().toISOString().split('T')[0];
-  const totalRev=state.invoices.filter(i=>i.status==='paid').reduce((a,b)=>a+b.total,0);
-  const unpaid=state.invoices.filter(i=>i.status==='unpaid').reduce((a,b)=>a+b.total,0);
-  const todayJobs=state.bookings.filter(b=>b.date===today).length;
-  document.getElementById('stat-bookings').textContent=state.bookings.length;
-  document.getElementById('stat-rev-num').textContent=totalRev.toLocaleString('en-AU',{minimumFractionDigits:0,maximumFractionDigits:0});
-  document.getElementById('stat-unpaid-num').textContent=unpaid.toLocaleString('en-AU',{minimumFractionDigits:0,maximumFractionDigits:0});
-  document.getElementById('stat-today').textContent=todayJobs;
-  const upcoming=state.bookings.filter(b=>b.date>=today&&b.status==='confirmed').sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,5);
-  const ul=document.getElementById('upcoming-list');
-  if(!upcoming.length) { ul.innerHTML='<div class="empty"><div class="empty-icon">📅</div><p>No upcoming jobs. Add your first booking!</p></div>'; return; }
-  ul.innerHTML=upcoming.map(b=>{
-    const dt=new Date(b.date); const day=dt.getDate(); const mon=months[dt.getMonth()].slice(0,3).toUpperCase();
-    return `<div class="upcoming-item">
-      <div class="upcoming-date"><div class="day">${day}</div><div class="month">${mon}</div></div>
-      <div class="upcoming-info">
-        <div class="upcoming-client">${b.client}</div>
-        <div class="upcoming-detail">${b.serviceName||b.service} · ${b.time||''} · ${b.address||'No address'}</div>
-      </div>
-      <div class="upcoming-amount">$${b.amount.toFixed(2)}</div>
-    </div>`;
-  }).join('');
-}
-
-// ── CALENDAR ──
-function renderCalendar() {
-  const year=calDate.getFullYear(), month=calDate.getMonth();
-  document.getElementById('cal-title').textContent=months[month]+' '+year;
-  const firstDay=new Date(year,month,1).getDay();
-  const daysInMonth=new Date(year,month+1,0).getDate();
-  const daysInPrev=new Date(year,month,0).getDate();
-  const today=new Date();
-  const grid=document.getElementById('cal-grid');
-  // Remove old day cells
-  grid.querySelectorAll('.cal-day').forEach(d=>d.remove());
-  // Mon=0 offset
-  let startOffset=(firstDay+6)%7;
-  for(let i=startOffset-1;i>=0;i--) {
-    const d=document.createElement('div'); d.className='cal-day other-month';
-    d.innerHTML=`<div class="cal-day-num">${daysInPrev-i}</div>`; grid.appendChild(d);
-  }
-  for(let day=1;day<=daysInMonth;day++) {
-    const dateStr=`${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
-    const isToday=today.getDate()===day&&today.getMonth()===month&&today.getFullYear()===year;
-    const dayBookings=state.bookings.filter(b=>b.date===dateStr);
-    const d=document.createElement('div'); d.className='cal-day'+(isToday?' today':'');
-    let eventsHTML=dayBookings.map(b=>{
-      const cls=b.service==='government'?'government':b.service==='commercial'?'commercial':'';
-      return `<div class="cal-event ${cls}">${b.time||''} ${b.client}</div>`;
-    }).join('');
-    d.innerHTML=`<div class="cal-day-num">${day}</div>${eventsHTML}`;
-    d.onclick=()=>{ openModal('booking-modal'); document.getElementById('b-date').value=dateStr; };
-    grid.appendChild(d);
-  }
-  const remaining=42-startOffset-daysInMonth;
-  for(let i=1;i<=remaining;i++) {
-    const d=document.createElement('div'); d.className='cal-day other-month';
-    d.innerHTML=`<div class="cal-day-num">${i}</div>`; grid.appendChild(d);
-  }
-}
-function changeMonth(dir) { calDate.setMonth(calDate.getMonth()+dir); renderCalendar(); }
-
-// ── INIT ──
-renderDashboard();
 </script>
+<script src="chatbot.js"></script>
 </body>
 </html>
