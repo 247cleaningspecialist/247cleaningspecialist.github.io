@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victorian Rental Laws 2026 — What Every Tenant Needs to Know | 24/7 Cleaning Specialist</title>
+<meta name="description" content="What the Residential Tenancies Act says about bond deductions, cleaning obligations and your right to dispute in Victoria 2026. Free guide from Melbourne's most reviewed cleaners.">
+<meta name="keywords" content="Victorian rental laws 2026, Residential Tenancies Act Victoria, bond deduction laws Melbourne, tenant rights Victoria cleaning, end of lease laws Victoria">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#090d0f;--deep:#0b1418;--navy:#0f1e26;
+  --gold:#c8922a;--gold-light:#e8b84b;--white:#fff;--offwhite:#f0f4f6;
+  --silver:#8aa8b8;--mist:#c8dde8;--green:#1a7a4a;--red:#c0392b;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Outfit',system-ui,sans-serif;
+}
+body{background:var(--deep);color:var(--offwhite);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--ink)}::-webkit-scrollbar-thumb{background:var(--gold)}
+nav{background:rgba(9,13,15,0.98);border-bottom:1px solid rgba(200,146,42,0.15);padding:14px 48px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.logo-mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),#b8821a);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:900;color:var(--ink)}
+.logo-name{font-family:var(--serif);font-size:0.95rem;color:var(--white);line-height:1}
+.logo-sub{font-size:0.55rem;font-weight:700;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:8px;list-style:none;align-items:center}
+.nav-links a{font-size:0.71rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--silver);text-decoration:none;padding:7px 12px;border-radius:2px;transition:all 0.3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-call{background:var(--gold)!important;color:var(--ink)!important;font-weight:700!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--white);display:block}
+.float-call{position:fixed;bottom:24px;right:24px;z-index:9999;background:var(--gold);color:var(--ink);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(200,146,42,0.5)}
+
+/* ARTICLE */
+.article-hero{background:linear-gradient(135deg,rgba(200,146,42,0.1),rgba(9,13,15,0.98));border-bottom:1px solid rgba(200,146,42,0.2);padding:64px 48px}
+.article-hero-inner{max-width:800px;margin:0 auto}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--silver);text-decoration:none;margin-bottom:20px;transition:color 0.3s}
+.back-link:hover{color:var(--gold)}
+.article-tag{display:inline-flex;align-items:center;gap:5px;font-size:0.6rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);background:rgba(200,146,42,0.1);border:1px solid rgba(200,146,42,0.2);padding:3px 10px;border-radius:2px;margin-bottom:16px}
+.article-h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:16px}
+.article-h1 em{font-style:italic;color:var(--gold-light)}
+.article-meta{font-size:0.75rem;color:var(--silver);display:flex;gap:16px;flex-wrap:wrap}
+.article-meta span{display:flex;align-items:center;gap:5px}
+
+/* CONTENT */
+.article-wrap{max-width:800px;margin:0 auto;padding:56px 48px}
+.article-content h2{font-family:var(--serif);font-size:1.7rem;font-weight:400;color:var(--white);margin:40px 0 14px;line-height:1.3}
+.article-content h2 em{font-style:italic;color:var(--gold-light)}
+.article-content h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--gold-light);margin:28px 0 10px}
+.article-content p{font-size:0.93rem;color:var(--silver);line-height:1.9;margin-bottom:16px}
+.article-content strong{color:var(--white);font-weight:600}
+.article-content a{color:var(--gold);text-decoration:underline}
+.highlight-box{background:rgba(200,146,42,0.08);border:1px solid rgba(200,146,42,0.25);border-left:4px solid var(--gold);padding:20px 24px;margin:24px 0}
+.highlight-box p{margin:0;font-size:0.9rem;color:var(--mist)}
+.highlight-box strong{color:var(--gold)}
+.law-box{background:rgba(42,80,104,0.15);border:1px solid rgba(42,80,104,0.35);padding:20px 24px;margin:24px 0}
+.law-box h4{font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--mist);margin-bottom:8px}
+.law-box p{margin:0;font-size:0.88rem;color:var(--silver);font-style:italic}
+.checklist{display:flex;flex-direction:column;gap:6px;margin:16px 0}
+.check-item{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.03);border-left:2px solid var(--gold);font-size:0.88rem;color:var(--mist)}
+.check-item span{flex-shrink:0;color:var(--gold);font-weight:700}
+.warning-box{background:rgba(192,57,43,0.1);border:1px solid rgba(192,57,43,0.3);border-left:4px solid var(--red);padding:20px 24px;margin:24px 0}
+.warning-box p{margin:0;font-size:0.9rem;color:var(--mist)}
+.warning-box strong{color:#e74c3c}
+
+/* CTA BOX */
+.article-cta{background:linear-gradient(135deg,rgba(26,122,74,0.15),rgba(9,13,15,0.97));border:2px solid rgba(26,122,74,0.4);padding:40px;margin:48px 0;text-align:center}
+.article-cta h3{font-family:var(--serif);font-size:1.8rem;color:var(--white);margin-bottom:12px}
+.article-cta h3 em{font-style:italic;color:#4caf7d}
+.article-cta p{font-size:0.9rem;color:var(--silver);margin-bottom:20px;line-height:1.75}
+.btn-green{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;padding:13px 26px;font-family:var(--sans);font-size:0.79rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s;margin:4px}
+.btn-green:hover{background:#22996e;transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);padding:13px 26px;font-family:var(--sans);font-size:0.79rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.2);border-radius:2px;transition:all 0.3s;margin:4px}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+
+/* RELATED */
+.related-section{background:var(--navy);border-top:1px solid rgba(200,146,42,0.15);padding:48px}
+.related-inner{max-width:800px;margin:0 auto}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.related-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);padding:20px;text-decoration:none;transition:all 0.3s}
+.related-card:hover{background:rgba(200,146,42,0.06);border-color:rgba(200,146,42,0.25)}
+.related-card h4{font-family:var(--serif);font-size:1rem;color:var(--white);margin-bottom:6px}
+.related-card p{font-size:0.78rem;color:var(--silver)}
+.related-card span{font-size:0.72rem;color:var(--gold);font-weight:600;margin-top:8px;display:block}
+
+footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:32px 48px 20px}
+.footer-inner{max-width:800px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner p{font-size:0.71rem;color:var(--silver)}
+.footer-inner span{color:var(--gold)}
+.footer-links-row{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links-row a{font-size:0.76rem;color:var(--silver);text-decoration:none}
+.footer-links-row a:hover{color:var(--white)}
+
+@media(max-width:900px){
+  nav{padding:12px 18px}.nav-links{display:none}.hamburger{display:flex}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--ink);justify-content:center;align-items:center;gap:28px;z-index:999}
+  .article-hero{padding:48px 18px}
+  .article-wrap{padding:40px 18px}
+  .related-section{padding:40px 18px}
+  .related-grid{grid-template-columns:1fr}
+  footer{padding:24px 18px}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<a href="tel:0403423348" class="float-call">📞</a>
+<nav>
+  <a href="index.html" class="logo-mark">
+    <div class="logo-icon">247</div>
+    <div><div class="logo-name">24/7 Cleaning Specialist</div><div class="logo-sub">Melbourne's Most Reviewed</div></div>
+  </a>
+  <ul class="nav-links" id="navlinks">
+    <li><a href="index.html">← Home</a></li>
+    <li><a href="residential.html">End of Lease</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="tel:0403423348" class="nav-call">📞 0403 423 348</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <a href="blog.html" class="back-link">← Back to all articles</a>
+    <div class="article-tag">⚖️ Victorian Law</div>
+    <h1 class="article-h1">Victorian Rental Laws 2026 —<br><em>What Every Tenant Needs to Know</em></h1>
+    <div class="article-meta">
+      <span>📅 May 2026</span>
+      <span>⏱ 5 min read</span>
+      <span>✍️ 24/7 Cleaning Specialist</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-content">
+
+    <p>Moving out of a rental property in Victoria can be stressful — especially when you're not sure what your landlord can and cannot legally deduct from your bond. The good news is that Victorian law is actually very clear on this, and it strongly protects tenants who know their rights.</p>
+
+    <div class="highlight-box">
+      <p><strong>Key fact:</strong> According to Consumer Affairs Victoria, 36% of Victorian tenants lose part or all of their bond at move-out — and cleaning is the single most common reason for deductions. Knowing the law puts you in a far stronger position.</p>
+    </div>
+
+    <h2>The Residential Tenancies Act 1997 — <em>Your Foundation</em></h2>
+
+    <p>The Residential Tenancies Act 1997 (Vic) is the primary law governing rental agreements in Victoria. It was significantly updated in 2021 with major amendments that strengthened tenant protections. Here's what it says about end of lease cleaning obligations.</p>
+
+    <div class="law-box">
+      <h4>Residential Tenancies Act 1997 (Vic) — Section 63</h4>
+      <p>"A renter must leave the rented premises in a reasonably clean condition, having regard to the condition of the premises at the start of the tenancy."</p>
+    </div>
+
+    <p>The critical phrase here is <strong>"reasonably clean condition"</strong> — not "professionally cleaned" and not "as new." The standard is based on how the property was when you moved in, accounting for fair wear and tear.</p>
+
+    <h2>What <em>Fair Wear and Tear</em> Means</h2>
+
+    <p>Fair wear and tear is the gradual deterioration that occurs from normal, everyday use of a property. Your landlord cannot charge you for fair wear and tear. Examples include:</p>
+
+    <div class="checklist">
+      <div class="check-item"><span>✓</span><span>Faded paint or minor scuffs from normal use</span></div>
+      <div class="check-item"><span>✓</span><span>Worn carpet in high-traffic areas</span></div>
+      <div class="check-item"><span>✓</span><span>Minor marks on walls from furniture</span></div>
+      <div class="check-item"><span>✓</span><span>Loose door handles or hinges from regular use</span></div>
+      <div class="check-item"><span>✓</span><span>Light fittings that have aged naturally</span></div>
+    </div>
+
+    <p>What is <strong>not</strong> fair wear and tear — and can be charged:</p>
+
+    <div class="checklist">
+      <div class="check-item"><span>✗</span><span>Grease and grime built up in the oven or rangehood</span></div>
+      <div class="check-item"><span>✗</span><span>Mould in bathrooms from inadequate ventilation or cleaning</span></div>
+      <div class="check-item"><span>✗</span><span>Heavily soiled carpets beyond normal use</span></div>
+      <div class="check-item"><span>✗</span><span>Burns, stains or damage caused by the tenant</span></div>
+      <div class="check-item"><span>✗</span><span>Rubbish or belongings left behind</span></div>
+    </div>
+
+    <h2>The 2021 Rental Reforms — <em>What Changed for Tenants</em></h2>
+
+    <p>In March 2021 Victoria introduced significant reforms to the Residential Tenancies Act. These changes shifted the balance of power significantly toward tenants. Key changes relevant to cleaning and bond disputes:</p>
+
+    <h3>Professional Cleaning — No Longer Automatic</h3>
+    <p>Before 2021, many leases contained clauses requiring tenants to have the property professionally cleaned at the end of tenancy. The 2021 reforms changed this significantly. A landlord can only require professional cleaning if the property was professionally cleaned before you moved in and they told you this in writing at the start of the tenancy. If they didn't — you only need to clean to a "reasonably clean" standard yourself.</p>
+
+    <h3>Entry Condition Report is Critical</h3>
+    <p>The condition of the property at the start of your tenancy is documented in the Entry Condition Report (ECR). This document is your legal protection. Whatever was noted as pre-existing at the start cannot be charged to you at the end. Always make sure your ECR is accurate and comprehensive when you move in.</p>
+
+    <h3>Exit Condition Report</h3>
+    <p>Your landlord or agent must complete an Exit Condition Report within 10 business days of your lease ending. You have the right to be present at the final inspection — Consumer Affairs Victoria strongly recommends attending.</p>
+
+    <div class="warning-box">
+      <p><strong>Important:</strong> If your landlord tries to claim bond money for items that were already damaged or dirty when you moved in, you can dispute this using your Entry Condition Report as evidence. Document everything with photos when you move in and when you move out.</p>
+    </div>
+
+    <h2>Bond Deductions — <em>What's Legal and What's Not</em></h2>
+
+    <p>Your landlord can only claim bond money for:</p>
+
+    <div class="checklist">
+      <div class="check-item"><span>✓</span><span>Unpaid rent</span></div>
+      <div class="check-item"><span>✓</span><span>Damage to the property beyond fair wear and tear</span></div>
+      <div class="check-item"><span>✓</span><span>Cleaning costs if the property was not left reasonably clean</span></div>
+      <div class="check-item"><span>✓</span><span>Removal of belongings left behind</span></div>
+    </div>
+
+    <p>Your landlord cannot claim bond money for:</p>
+
+    <div class="checklist">
+      <div class="check-item"><span>✗</span><span>Fair wear and tear</span></div>
+      <div class="check-item"><span>✗</span><span>Pre-existing damage documented in the Entry Condition Report</span></div>
+      <div class="check-item"><span>✗</span><span>General maintenance that is the landlord's responsibility</span></div>
+      <div class="check-item"><span>✗</span><span>Upgrades or improvements</span></div>
+    </div>
+
+    <h2>How to Dispute a Bond Claim</h2>
+
+    <p>If your landlord makes a bond claim you believe is unfair, here's the process in Victoria:</p>
+
+    <h3>Step 1 — Try to resolve it directly</h3>
+    <p>Contact your landlord or property manager in writing. Explain why you disagree with the deduction and reference your Entry Condition Report and exit photos as evidence.</p>
+
+    <h3>Step 2 — Apply to the RTBA</h3>
+    <p>The Residential Tenancies Bond Authority (RTBA) holds all Victorian rental bonds. If you and your landlord cannot agree, either party can apply to the RTBA to have the bond released. The RTBA will refer disputed claims to Consumer Affairs Victoria for conciliation.</p>
+
+    <h3>Step 3 — VCAT</h3>
+    <p>If conciliation fails, the matter can be heard at the Victorian Civil and Administrative Tribunal (VCAT). VCAT decisions are legally binding. The average wait time for a disputed bond return exceeds 30 days once it reaches VCAT — which is why preventing disputes through professional cleaning is always the better option.</p>
+
+    <div class="highlight-box">
+      <p><strong>Important:</strong> Since March 2021, Victorian landlords cannot list you on a tenancy database simply for challenging a bond claim at VCAT or through Consumer Affairs Victoria. You have the right to dispute without fear of blacklisting.</p>
+    </div>
+
+    <h2>Your Practical Protection Plan</h2>
+
+    <p>Based on Victorian law and our experience across 12,000+ cleans, here's what actually protects your bond:</p>
+
+    <div class="checklist">
+      <div class="check-item"><span>1</span><span><strong>Document on move-in:</strong> Photograph every room, every mark, every imperfection. Date the photos and email them to your agent.</span></div>
+      <div class="check-item"><span>2</span><span><strong>Check your Entry Condition Report:</strong> Make sure every existing issue is documented. If it's not on the ECR, add it in writing before signing.</span></div>
+      <div class="check-item"><span>3</span><span><strong>Professional clean before final inspection:</strong> A professional clean with a REIV-aligned checklist is the single most effective way to prevent bond disputes.</span></div>
+      <div class="check-item"><span>4</span><span><strong>Attend the final inspection:</strong> You have the right to be there. If the agent identifies any issues you can address them immediately.</span></div>
+      <div class="check-item"><span>5</span><span><strong>Get a digital receipt:</strong> A professional cleaning receipt is accepted by all Melbourne agents and VCAT as evidence of compliance.</span></div>
+    </div>
+
+    <div class="article-cta">
+      <h3>Ready to Protect <em>Your Bond?</em></h3>
+      <p>Melbourne's most reviewed end of lease cleaning team. 99% bond return rate. 30-day agent satisfaction guarantee. Same-day available — call before 12pm.</p>
+      <div>
+        <a href="residential.html" class="btn-green">Book a Clean →</a>
+        <a href="tel:0403423348" class="btn-outline">📞 0403 423 348</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="related-section">
+  <div class="related-inner">
+    <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Related Articles</div>
+    <div style="font-family:var(--serif);font-size:1.5rem;color:var(--white);margin-bottom:4px">Keep Reading</div>
+    <div class="related-grid">
+      <a href="blog-inspection-checklist.html" class="related-card">
+        <h4>The Complete Melbourne End of Lease Inspection Checklist 2026</h4>
+        <p>Room by room — exactly what agents check.</p>
+        <span>Read Article →</span>
+      </a>
+      <a href="blog-get-bond-back.html" class="related-card">
+        <h4>How to Get Your Full Bond Back in Melbourne</h4>
+        <p>56% of deductions are for cleaning. Here's how to avoid them.</p>
+        <span>Read Article →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 24/7 Cleaning Specialist — Cornells Industries Pty Ltd. ABN 98 672 172 226. <span>Melbourne 3000, VIC.</span></p>
+    <div class="footer-links-row">
+      <a href="index.html">Home</a>
+      <a href="residential.html">End of Lease</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+</script>
+<script src="chatbot.js"></script>
+</body>
+</html>
