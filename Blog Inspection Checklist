@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melbourne End of Lease Inspection Checklist 2026 | 24/7 Cleaning Specialist</title>
+<meta name="description" content="The complete end of lease inspection checklist for Melbourne renters 2026. Room by room — exactly what real estate agents check. Free guide from Melbourne's most reviewed cleaning team.">
+<meta name="keywords" content="end of lease inspection checklist Melbourne 2026, bond cleaning checklist Melbourne, real estate inspection checklist Victoria, REIV cleaning checklist Melbourne">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#090d0f;--deep:#0b1418;--navy:#0f1e26;
+  --gold:#c8922a;--gold-light:#e8b84b;--white:#fff;--offwhite:#f0f4f6;
+  --silver:#8aa8b8;--mist:#c8dde8;--green:#1a7a4a;--red:#c0392b;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Outfit',system-ui,sans-serif;
+}
+body{background:var(--deep);color:var(--offwhite);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--ink)}::-webkit-scrollbar-thumb{background:var(--gold)}
+nav{background:rgba(9,13,15,0.98);border-bottom:1px solid rgba(200,146,42,0.15);padding:14px 48px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.logo-mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),#b8821a);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:900;color:var(--ink)}
+.logo-name{font-family:var(--serif);font-size:0.95rem;color:var(--white);line-height:1}
+.logo-sub{font-size:0.55rem;font-weight:700;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:8px;list-style:none;align-items:center}
+.nav-links a{font-size:0.71rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--silver);text-decoration:none;padding:7px 12px;border-radius:2px;transition:all 0.3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-call{background:var(--gold)!important;color:var(--ink)!important;font-weight:700!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--white);display:block}
+.float-call{position:fixed;bottom:24px;right:24px;z-index:9999;background:var(--gold);color:var(--ink);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;text-decoration:none;box-shadow:0 8px 32px rgba(200,146,42,0.5)}
+.article-hero{background:linear-gradient(135deg,rgba(26,122,74,0.12),rgba(9,13,15,0.98));border-bottom:1px solid rgba(26,122,74,0.2);padding:64px 48px}
+.article-hero-inner{max-width:800px;margin:0 auto}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--silver);text-decoration:none;margin-bottom:20px;transition:color 0.3s}
+.back-link:hover{color:var(--gold)}
+.article-tag{display:inline-flex;align-items:center;gap:5px;font-size:0.6rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#4caf7d;background:rgba(26,122,74,0.1);border:1px solid rgba(26,122,74,0.3);padding:3px 10px;border-radius:2px;margin-bottom:16px}
+.article-h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:16px}
+.article-h1 em{font-style:italic;color:#4caf7d}
+.article-meta{font-size:0.75rem;color:var(--silver);display:flex;gap:16px;flex-wrap:wrap}
+.article-wrap{max-width:800px;margin:0 auto;padding:56px 48px}
+.article-content h2{font-family:var(--serif);font-size:1.7rem;font-weight:400;color:var(--white);margin:40px 0 14px;line-height:1.3}
+.article-content h2 em{font-style:italic;color:#4caf7d}
+.article-content h3{font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#4caf7d;margin:28px 0 12px}
+.article-content p{font-size:0.93rem;color:var(--silver);line-height:1.9;margin-bottom:16px}
+.article-content strong{color:var(--white);font-weight:600}
+.highlight-box{background:rgba(26,122,74,0.08);border:1px solid rgba(26,122,74,0.25);border-left:4px solid var(--green);padding:20px 24px;margin:24px 0}
+.highlight-box p{margin:0;font-size:0.9rem;color:var(--mist)}
+.highlight-box strong{color:#4caf7d}
+.room-section{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);margin:24px 0;overflow:hidden}
+.room-header{background:rgba(26,122,74,0.12);border-bottom:1px solid rgba(26,122,74,0.2);padding:16px 20px;display:flex;align-items:center;gap:12px}
+.room-icon{font-size:1.4rem}
+.room-title{font-family:var(--serif);font-size:1.1rem;color:var(--white)}
+.room-subtitle{font-size:0.7rem;color:var(--silver);margin-top:2px}
+.room-items{padding:16px 20px;display:flex;flex-direction:column;gap:6px}
+.room-item{display:flex;align-items:center;gap:10px;font-size:0.85rem;color:var(--mist);padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.room-item:last-child{border-bottom:none}
+.room-item .tick{color:#4caf7d;font-weight:700;flex-shrink:0}
+.room-item .hot{color:var(--red);font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:rgba(192,57,43,0.15);border:1px solid rgba(192,57,43,0.3);padding:1px 6px;border-radius:2px;margin-left:auto;flex-shrink:0}
+.warning-box{background:rgba(192,57,43,0.1);border:1px solid rgba(192,57,43,0.3);border-left:4px solid var(--red);padding:20px 24px;margin:24px 0}
+.warning-box p{margin:0;font-size:0.9rem;color:var(--mist)}
+.warning-box strong{color:#e74c3c}
+.article-cta{background:linear-gradient(135deg,rgba(26,122,74,0.15),rgba(9,13,15,0.97));border:2px solid rgba(26,122,74,0.4);padding:40px;margin:48px 0;text-align:center}
+.article-cta h3{font-family:var(--serif);font-size:1.8rem;color:var(--white);margin-bottom:12px}
+.article-cta h3 em{font-style:italic;color:#4caf7d}
+.article-cta p{font-size:0.9rem;color:var(--silver);margin-bottom:20px;line-height:1.75}
+.btn-green{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;padding:13px 26px;font-family:var(--sans);font-size:0.79rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s;margin:4px}
+.btn-green:hover{background:#22996e;transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);padding:13px 26px;font-family:var(--sans);font-size:0.79rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.2);border-radius:2px;transition:all 0.3s;margin:4px}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.related-section{background:var(--navy);border-top:1px solid rgba(200,146,42,0.15);padding:48px}
+.related-inner{max-width:800px;margin:0 auto}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.related-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);padding:20px;text-decoration:none;transition:all 0.3s}
+.related-card:hover{background:rgba(200,146,42,0.06);border-color:rgba(200,146,42,0.25)}
+.related-card h4{font-family:var(--serif);font-size:1rem;color:var(--white);margin-bottom:6px}
+.related-card p{font-size:0.78rem;color:var(--silver)}
+.related-card span{font-size:0.72rem;color:var(--gold);font-weight:600;margin-top:8px;display:block}
+footer{background:var(--ink);border-top:1px solid rgba(200,146,42,0.15);padding:32px 48px 20px}
+.footer-inner{max-width:800px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner p{font-size:0.71rem;color:var(--silver)}
+.footer-inner span{color:var(--gold)}
+.footer-links-row{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links-row a{font-size:0.76rem;color:var(--silver);text-decoration:none}
+.footer-links-row a:hover{color:var(--white)}
+@media(max-width:900px){
+  nav{padding:12px 18px}.nav-links{display:none}.hamburger{display:flex}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--ink);justify-content:center;align-items:center;gap:28px;z-index:999}
+  .article-hero{padding:48px 18px}
+  .article-wrap{padding:40px 18px}
+  .related-section{padding:40px 18px}
+  .related-grid{grid-template-columns:1fr}
+  footer{padding:24px 18px}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<a href="tel:0403423348" class="float-call">📞</a>
+<nav>
+  <a href="index.html" class="logo-mark">
+    <div class="logo-icon">247</div>
+    <div><div class="logo-name">24/7 Cleaning Specialist</div><div class="logo-sub">Melbourne's Most Reviewed</div></div>
+  </a>
+  <ul class="nav-links" id="navlinks">
+    <li><a href="index.html">← Home</a></li>
+    <li><a href="residential.html">End of Lease</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="tel:0403423348" class="nav-call">📞 0403 423 348</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <a href="blog.html" class="back-link">← Back to all articles</a>
+    <div class="article-tag">✅ Inspection Guide</div>
+    <h1 class="article-h1">The Complete Melbourne End of Lease<br><em>Inspection Checklist 2026</em></h1>
+    <div class="article-meta">
+      <span>📅 May 2026</span>
+      <span>⏱ 7 min read</span>
+      <span>✍️ 24/7 Cleaning Specialist</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-content">
+
+    <p>Failing your final inspection is one of the most stressful — and expensive — experiences a Melbourne renter can have. The good news is that property managers and real estate agents use a consistent checklist. Know what's on that checklist and you know exactly what to clean.</p>
+
+    <div class="highlight-box">
+      <p><strong>From our experience across 12,000+ cleans:</strong> The kitchen and bathroom together account for the vast majority of re-clean requests. If you only have limited time, that is where to focus first. Items marked 🔴 HOT are the most commonly failed.</p>
+    </div>
+
+    <h2>The REIV-Aligned <em>Inspection Checklist</em></h2>
+    <p>The Real Estate Institute of Victoria (REIV) provides a standard inspection checklist used by most Melbourne property managers. Here is the full checklist, room by room.</p>
+
+    <div class="room-section">
+      <div class="room-header">
+        <div class="room-icon">🍳</div>
+        <div>
+          <div class="room-title">Kitchen</div>
+          <div class="room-subtitle">Most commonly failed area — allow extra time here</div>
+        </div>
+      </div>
+      <div class="room-items">
+        <div class="room-item"><span class="tick">✓</span><span>Oven interior — racks, base, door, glass panel</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Rangehood — filters, exterior, underside</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Stovetop — all burners, drip trays, surrounding area</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Splashback — degreased and polished</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>All cupboards — inside and outside, including hinges</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Benchtops — all surfaces, corners and edges</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Sink and taps — descaled and polished</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Dishwasher interior — if applicable</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Microwave — inside and outside</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Floor — swept, mopped, corners and edges</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Window above sink — inside</span></div>
+      </div>
+    </div>
+
+    <div class="room-section">
+      <div class="room-header">
+        <div class="room-icon">🚿</div>
+        <div>
+          <div class="room-title">Bathrooms & Ensuite</div>
+          <div class="room-subtitle">Second most commonly failed — agents inspect every detail</div>
+        </div>
+      </div>
+      <div class="room-items">
+        <div class="room-item"><span class="tick">✓</span><span>Shower screen — soap scum and water marks removed</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Shower tiles — grout cleaned, mould removed</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Shower head and taps — descaled</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Toilet — bowl, seat, lid, cistern and base</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Basin and taps — descaled and polished</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Mirrors — streak-free</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Vanity — inside and outside</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Bath — if applicable, remove all stains and soap scum</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Exhaust fan — dust removed from cover</span><span class="hot">🔴 HOT</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Floor — mopped, grout cleaned</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Walls — spot cleaned</span></div>
+      </div>
+    </div>
+
+    <div class="room-section">
+      <div class="room-header">
+        <div class="room-icon">🛏</div>
+        <div>
+          <div class="room-title">Bedrooms</div>
+          <div class="room-subtitle">All bedrooms — including built-in wardrobes</div>
+        </div>
+      </div>
+      <div class="room-items">
+        <div class="room-item"><span class="tick">✓</span><span>Wardrobes — shelves, rails, floor inside, doors outside</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Skirting boards — dust and marks removed</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Light fittings — dust removed</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Light switches and power points — wiped</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Windows — interior cleaned, tracks wiped</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Window sills — dust and marks removed</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Doors and door frames — both sides</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Walls — spot cleaned for marks and scuffs</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Floors — vacuumed (carpet) or mopped (hard floor)</span></div>
+      </div>
+    </div>
+
+    <div class="room-section">
+      <div class="room-header">
+        <div class="room-icon">🛋</div>
+        <div>
+          <div class="room-title">Living Areas & Dining Room</div>
+          <div class="room-subtitle">Including hallways and entry</div>
+        </div>
+      </div>
+      <div class="room-items">
+        <div class="room-item"><span class="tick">✓</span><span>All hard surfaces — dusted and wiped</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Skirting boards throughout</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Light fittings and ceiling fans</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Light switches and power points</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Windows — interior glass and tracks</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Doors and door frames</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Air conditioning unit — if applicable, wipe exterior</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Floors — vacuumed and mopped</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Blinds — dusted (full blind washing is extra)</span></div>
+      </div>
+    </div>
+
+    <div class="room-section">
+      <div class="room-header">
+        <div class="room-icon">👕</div>
+        <div>
+          <div class="room-title">Laundry</div>
+          <div class="room-subtitle">Often overlooked — agents always check</div>
+        </div>
+      </div>
+      <div class="room-items">
+        <div class="room-item"><span class="tick">✓</span><span>Tub — cleaned and polished</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Taps — descaled</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Cupboards — inside and outside</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Washing machine connection area</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Floor — swept and mopped</span></div>
+        <div class="room-item"><span class="tick">✓</span><span>Walls — spot cleaned</span></div>
+      </div>
+    </div>
+
+    <h2>The 5 Items <em>Most Commonly Failed</em></h2>
+
+    <div class="warning-box">
+      <p><strong>Based on our 12,000+ cleans across Melbourne:</strong> These 5 items cause the most re-clean requests. Make sure these are spotless before your inspection.</p>
+    </div>
+
+    <p><strong>1. Oven interior</strong> — Built-up grease is the number one inspection fail across Melbourne. An oven that looks clean on the outside can still fail if the interior racks and base are not thoroughly degreased.</p>
+    <p><strong>2. Shower screen</strong> — Soap scum and water mineral deposits build up on glass shower screens over time. A quick wipe is not enough — they need to be treated with a descaler and polished to streak-free clarity.</p>
+    <p><strong>3. Rangehood filters</strong> — Agents specifically check rangehood filters for grease buildup. These need to be soaked and degreased, not just wiped.</p>
+    <p><strong>4. Exhaust fans</strong> — Dust accumulates on exhaust fan covers in bathrooms and is a very common inspection flag. It takes 2 minutes to clean but is often missed.</p>
+    <p><strong>5. Skirting boards</strong> — Agents run their finger along skirting boards. Dust and marks that accumulate over a tenancy must be fully removed.</p>
+
+    <h2>What's <em>Not</em> on the Standard Checklist</h2>
+    <p>The following items are not typically included in a standard end of lease clean and are usually quoted as extras:</p>
+    <p>Full wall washing, blind washing, mould remediation, external windows above ground level, garage floors, and garden maintenance. Discuss these with your cleaning company before booking to get an accurate quote.</p>
+
+    <div class="article-cta">
+      <h3>Want Us to Handle <em>the Whole Checklist?</em></h3>
+      <p>Our REIV-aligned checklist covers every item on this page. 99% bond return rate. 30-day agent satisfaction guarantee. Same-day available.</p>
+      <div>
+        <a href="residential.html" class="btn-green">Book a Clean →</a>
+        <a href="tel:0403423348" class="btn-outline">📞 0403 423 348</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="related-section">
+  <div class="related-inner">
+    <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Related Articles</div>
+    <div style="font-family:var(--serif);font-size:1.5rem;color:var(--white);margin-bottom:4px">Keep Reading</div>
+    <div class="related-grid">
+      <a href="blog-bond-laws.html" class="related-card">
+        <h4>Victorian Rental Laws 2026 — What Every Tenant Needs to Know</h4>
+        <p>Your legal rights around bond deductions.</p>
+        <span>Read Article →</span>
+      </a>
+      <a href="blog-get-bond-back.html" class="related-card">
+        <h4>How to Get Your Full Bond Back in Melbourne</h4>
+        <p>56% of deductions are for cleaning. Here's how to avoid them.</p>
+        <span>Read Article →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 24/7 Cleaning Specialist — Cornells Industries Pty Ltd. ABN 98 672 172 226. <span>Melbourne 3000, VIC.</span></p>
+    <div class="footer-links-row">
+      <a href="index.html">Home</a>
+      <a href="residential.html">End of Lease</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+</script>
+<script src="chatbot.js"></script>
+</body>
+</html>
